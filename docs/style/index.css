@@ -1,8 +1,9 @@
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 11fr 3rem 10fr;
+    height: 100%;
+    width: 100%;
 }
 
 .contents-story {
