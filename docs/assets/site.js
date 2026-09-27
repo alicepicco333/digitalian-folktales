@@ -108,7 +108,14 @@
     'cmp.s4': { en: 'Read the texts', it: 'Leggi i testi' },
 
     'guide.kicker': { en: 'Guide & sources', it: 'Guida e fonti' },
-    'guide.title': { en: 'About this edition', it: 'Informazioni sull’edizione' }
+    'guide.title': { en: 'About this edition', it: 'Informazioni sull’edizione' },
+    'guide.s1': { en: 'User guide', it: 'Guida alla lettura' },
+    'guide.s2': { en: 'Sources and coverage', it: 'Fonti e copertura' },
+    'guide.s3': { en: 'Who we are', it: 'Chi siamo' },
+    'src.sent': { en: 'Sentiment', it: 'Sentiment' },
+    'tale.parallel.h': { en: 'Parallel text', it: 'Testo a fronte' },
+    'tale.sub.friuli': { en: 'Three episodes collected in Friuli and told in Friulian, from Dolfo Zorzùt’s Sot la nape…; the first is transcribed here beside its Italian translation.', it: 'Tre episodi raccolti in Friuli e narrati in friulano, da Sot la nape… di Dolfo Zorzùt; il primo è trascritto qui accanto alla sua traduzione italiana.' },
+    'tale.sub.sicily': { en: 'Two stories told in Bagheria in Sicilian, from Giuseppe Pitrè’s collection; both are transcribed here beside their Italian translation.', it: 'Due storie raccontate a Bagheria in siciliano, dalla raccolta di Giuseppe Pitrè; entrambe sono trascritte qui accanto alla loro traduzione italiana.' }
   };
 
   function getLang() {
@@ -197,8 +204,8 @@
     var focus = el.getAttribute('data-focus');        /* tale id for locator */
     fetch(base + 'topojson/it.topojson').then(function (r) { return r.json(); }).then(function (topo) {
       var fc = rewind(topojson.feature(topo, topo.objects.it));
-      var W = mode === 'atlas' ? 640 : 220, H = mode === 'atlas' ? 720 : 250;
-      var pad = mode === 'atlas' ? { l: 8, r: 190, t: 12, b: 12 } : { l: 4, r: 4, t: 4, b: 4 };
+      var W = mode === 'atlas' ? 640 : 220, H = mode === 'atlas' ? 660 : 250;
+      var pad = mode === 'atlas' ? { l: 4, r: 150, t: 8, b: 8 } : { l: 4, r: 4, t: 4, b: 4 };
       var proj = d3.geoConicConformal().rotate([-12.5, 0]).parallels([38, 44]);
       proj.fitExtent([[pad.l, pad.t], [W - pad.r, H - pad.b]], fc);
       var path = d3.geoPath(proj);
@@ -236,7 +243,7 @@
           var f = fc.features.filter(function (x) { return x.properties.reg_istat_code === tl.regionCode; })[0];
           var b = path.bounds(f);
           var ax = b[1][0] + 6, ay = (b[0][1] + b[1][1]) / 2;
-          var lx = W - pad.r + 36, ly = tl.id === 'friuli' ? ay - 6 : ay - 18;
+          var lx = W - pad.r + 12, ly = tl.id === 'friuli' ? ay - 6 : ay - 18;
           gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 8) + ',' + ly, 'class': 'leader' }));
           gPts.appendChild(s('text', { x: lx, y: ly - 2, 'class': 'label', text: tl.region }));
           gPts.appendChild(s('text', { x: lx, y: ly + 14, 'class': 'label sub', text: tl.places.map(function (p) { return p.name; }).join(' · ') }));
@@ -386,15 +393,15 @@
     return Number(v).toLocaleString(lang === 'it' ? 'it-IT' : 'en-GB', { minimumFractionDigits: dec, maximumFractionDigits: dec });
   }
   function drawTrack(holder, m, max) {
-    var w = holder.clientWidth || 300, H = 34, x0 = 2, x1 = w - 2;
+    var w = holder.clientWidth || 300, H = 40, x0 = 2, x1 = w - 2;
     var sc = function (v) { return x0 + (x1 - x0) * (v / max); };
     var svg = s('svg', { width: w, height: H, 'aria-hidden': 'true', focusable: 'false' });
     svg.appendChild(s('line', { x1: x0, x2: x1, y1: 15, y2: 15, 'class': 'base' }));
     [0, max].forEach(function (tv) {
       svg.appendChild(s('line', { x1: sc(tv), x2: sc(tv), y1: 11, y2: 19, 'class': 'tick' }));
     });
-    svg.appendChild(s('text', { x: x0, y: 32, 'class': 'ticklabel', text: '0' }));
-    svg.appendChild(s('text', { x: x1, y: 32, 'text-anchor': 'end', 'class': 'ticklabel', text: fmt(max, max < 1 ? 1 : 0) }));
+    svg.appendChild(s('text', { x: x0, y: 38, 'class': 'ticklabel', text: '0' }));
+    svg.appendChild(s('text', { x: x1, y: 38, 'text-anchor': 'end', 'class': 'ticklabel', text: fmt(max, max < 1 ? 1 : 0) }));
     ['friuli', 'sicily'].forEach(function (id) {
       var v = tale(id).metrics[m.key], cx = sc(v), cy = id === 'friuli' ? 8 : 22;
       var dot = id === 'friuli'
