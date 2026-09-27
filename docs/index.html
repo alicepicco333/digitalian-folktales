@@ -1,95 +1,137 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digitalian Folktales</title>
+  <meta name="description" content="A digital edition of tales from Italo Calvino’s Fiabe italiane, read alongside the Friulian and Sicilian dialect versions Calvino drew on.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5efe3'/%3E%3Ctext x='6' y='25' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%238c2418'%3Ef%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-base="">
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style/index.css">
-    </head>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">Digitalian <i>Folktales</i></a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page" data-i18n="nav.tales">Tales</a>
+        <a href="analysis/comparison.html" data-i18n="nav.compare">Compare</a>
+        <a href="guide.html" data-i18n="nav.guide">Guide &amp; sources</a>
+        <button class="lang-switch" type="button" lang="it" aria-label="Leggi in italiano">IT</button>
+      </nav>
+    </div>
+  </header>
 
-    <body>
-        
-        <div class="contents">
-
-            <section class="contents-header">
-                <div style="flex-grow: 1;"></div>
-                <div class = "contents-header-menu">
-                    <span>user guide</span>
-                    <span>who we are</span>
-                    <span>IT</span>
-                </div>
-            </section>
-
-
-
-            <section class="contents-body">
-
-                <div class="contents-search-page">
-
-                    <div class="logo-container">
-                        <div class = "logo">
-                            <span>digitalian</span>
-                            <span>folktales</span>
-                        </div>
-                    </div>
-
-                    <div class="searchbar-container">
-                        <input class="search-input" placeholder="e.g. Gesù e San Pietro in Friuli" 
-                        list="stories-names" autofocus oninput='onInput()' id='search-input'/>
-                        <datalist id="stories-names">
-                            <option value="Gesù e San Pietro in Friuli">
-                            <option value="Gesù e San Pietro in Sicilia">
-                        </datalist>
-                    </div>
-                    
-                    <div class="searchbar-footer">
-                        <div class = "searchbar-footer-buttons">
-                            <span><a href="index.html" style="cursor: not-allowed;">advanced search</a></span>
-                            <span><a href="analysis/comparison.html">compare two folkstories</a></span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
-
+  <main id="main">
+    <section class="hero">
+      <div class="wrap grid">
+        <div class="hero-title">
+          <p class="kicker" data-i18n="home.kicker">Digital edition · Italo Calvino, Fiabe italiane</p>
+          <h1 class="display" data-i18n="home.title">Calvino’s folktales, read against the dialects they came from.</h1>
         </div>
-    </body>
+        <p class="lede hero-lede" data-i18n="home.lede">Calvino retold Italy’s folktales in standard Italian from regional collections. This edition returns two of his tales to their sources: the Friulian and Sicilian texts as collected, an Italian translation aligned passage by passage, and a structured reading of each tale’s type, places, people and events.</p>
+        <div class="hero-figures">
+          <dl class="figures">
+            <div><dt data-i18n="fig.tales">tales</dt><dd id="fig-tales">2</dd></div>
+            <div><dt data-i18n="fig.episodes">episodes catalogued</dt><dd id="fig-episodes">5</dd></div>
+            <div><dt data-i18n="fig.transcribed">episodes transcribed and translated</dt><dd id="fig-transcribed">3</dd></div>
+            <div><dt data-i18n="fig.segments">aligned passages</dt><dd id="fig-segments">15</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
-    
+    <section class="section" aria-labelledby="s1">
+      <div class="wrap grid">
+        <div class="atlas">
+          <div class="atlas-map">
+            <p class="kicker">I</p>
+            <h2 class="h2" id="s1" data-i18n="home.s1">The tales, by region of origin</h2>
+            <div data-map="atlas" data-labelledby="s1" style="margin-top:24px; aspect-ratio: 640 / 720;"></div>
+            <p class="map-note" data-i18n="home.s1.note">Regions are shaded where a tale was collected; dots mark the places of collection named in the record (positions approximate). Select a region to open its tale.</p>
+          </div>
+          <div class="atlas-index">
+            <ol class="tale-index" data-tale-index></ol>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        const namesToURLs = [
-            {
-                name: 'Gesù e San Pietro in Friuli',
-                url: 'analysis/gesù-e-san-pietro-in-friuli.html'
-            },
-            {
-                name: 'Gesù e San Pietro in Sicilia',
-                url: 'analysis/gesù-e-san-pietro-in-sicilia.html'
-            }
-    ]
+    <section class="section" aria-labelledby="s2">
+      <div class="wrap grid">
+        <div class="section-head">
+          <span class="idx">II</span>
+          <h2 class="h2" id="s2" data-i18n="home.s2">How to read the edition</h2>
+        </div>
+        <div class="section-body">
+          <div class="triad">
+            <div>
+              <h3 data-i18n="home.t1.h">The dialect text</h3>
+              <p data-i18n="home.t1.p">Set in the reading serif at full weight: the tale as it was told and written down, in Friulian or Sicilian.</p>
+              <p class="specimen" lang="scn">Quannau lu Maistru java caminannu cu li tridici Apostuli…</p>
+            </div>
+            <div>
+              <h3 data-i18n="home.t2.h">The Italian translation</h3>
+              <p data-i18n="home.t2.p">Aligned beside it, passage by passage, in a quieter tone of the same serif, so the eye can move across without losing its place.</p>
+              <p class="specimen tr" lang="it">Mentre il Maestro camminava con i tredici Apostoli…</p>
+            </div>
+            <div>
+              <h3 data-i18n="home.t3.h">The reading</h3>
+              <p data-i18n="home.t3.p">Each episode’s ATU tale type, the sequence of places, the people, the supernatural figures and the resolution, as recorded by the project team.</p>
+              <p class="specimen" style="font-family:var(--sans);font-size:0.9375rem"><span class="atu shared">ATU 774</span> · <span lang="en">Countryside / road — Village 1 — Village 2</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        function onInput() {
-            var val = document.getElementById('search-input').value;
-            var opts = document.getElementById('stories-names').childNodes;
-            for (var i = 0; i < opts.length; i++) {
+    <section class="section" aria-labelledby="s3">
+      <div class="wrap grid">
+        <div class="section-head">
+          <span class="idx">III</span>
+          <h2 class="h2" id="s3" data-i18n="home.s3">Sources</h2>
+        </div>
+        <div class="section-body">
+          <ul class="biblio">
+            <li><span class="role" data-i18n="src.calvino">Retelling</span><span class="ref">Italo Calvino, <i lang="it">Fiabe italiane</i>: <span lang="it">“Gesù e San Pietro in Friuli”</span>; <span lang="it">“Gesù e San Pietro in Sicilia”</span>.</span></li>
+            <li><span class="role" data-i18n="src.zorzut">Friulian source</span><span class="ref" lang="it">Dolfo Zorzùt, <i lang="fur">Sot la nape…</i> (I racconti del popolo friulano), 3 voll., Udine 1924, 1925, 1927.</span></li>
+            <li><span class="role" data-i18n="src.pitre">Sicilian source</span><span class="ref" lang="it"><i>Fiabe, novelle e racconti popolari siciliani</i>, raccolti e illustrati da Giuseppe Pitrè, 4 voll., Palermo 1875. Biblioteca delle tradizioni popolari siciliane, voll. IV–VII.</span></li>
+            <li><span class="role" data-i18n="src.sff">Friulian texts used</span><span class="ref" lang="it">Catalogo di Racconti Popolari Friulani, Società Filologica Friulana — <a href="https://raccontipopolari.filologicafriulana.it/">raccontipopolari.filologicafriulana.it</a></span></li>
+            <li><span class="role" data-i18n="src.atu">Tale types</span><span class="ref">Aarne–Thompson–Uther (ATU) index of tale types.</span></li>
+          </ul>
+          <p style="margin-top:20px"><a href="guide.html" data-i18n="home.s3.link">More on sources, methods and the team</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                if (opts[i].value === val) {
+  <footer class="site-footer">
+    <div class="wrap">
+      <span data-i18n="footer.note">A digital edition of tales from Italo Calvino’s Fiabe italiane and their dialect sources.</span>
+      <a href="https://github.com/alicepicco333/digitalian-folktales" data-i18n="footer.repo">Source on GitHub</a>
+    </div>
+  </footer>
 
-                    namesToURLs.forEach(element => 
-                        {
-                            if (element.name === val) {
-                                window.open(element.url,"_self")
-                            }
-                        }
-                    );
-
-                    break;
-                }
-            }
-        }
-
-
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/site.js"></script>
+  <script>
+    /* Key figures, computed from the edition data rather than typed in. */
+    (function () {
+      var T = window.EDITION.tales, A = window.EDITION.alignment;
+      var eps = 0, done = 0, segs = 0;
+      T.forEach(function (t) { eps += t.episodes.length; done += t.episodes.filter(function (e) { return e.transcribed; }).length; });
+      Object.keys(A).forEach(function (k) { A[k].episodes.forEach(function (e) { segs += e.pairs.length; }); });
+      document.getElementById('fig-tales').textContent = T.length;
+      document.getElementById('fig-episodes').textContent = eps;
+      document.getElementById('fig-transcribed').textContent = done;
+      document.getElementById('fig-segments').textContent = segs;
+    })();
+  </script>
+</body>
 </html>
