@@ -205,7 +205,8 @@
     fetch(base + 'topojson/it.topojson').then(function (r) { return r.json(); }).then(function (topo) {
       var fc = rewind(topojson.feature(topo, topo.objects.it));
       var W = mode === 'atlas' ? 640 : 220, H = mode === 'atlas' ? 660 : 250;
-      var pad = mode === 'atlas' ? { l: 4, r: 150, t: 8, b: 8 } : { l: 4, r: 4, t: 4, b: 4 };
+      var k = mode === 'atlas' ? Math.min(2, Math.max(1, 520 / (el.clientWidth || 520))) : 1;
+      var pad = mode === 'atlas' ? { l: 4, r: 150 * k, t: 8, b: 8 } : { l: 4, r: 4, t: 4, b: 4 };
       var proj = d3.geoConicConformal().rotate([-12.5, 0]).parallels([38, 44]);
       proj.fitExtent([[pad.l, pad.t], [W - pad.r, H - pad.b]], fc);
       var path = d3.geoPath(proj);
@@ -243,10 +244,10 @@
           var f = fc.features.filter(function (x) { return x.properties.reg_istat_code === tl.regionCode; })[0];
           var b = path.bounds(f);
           var ax = b[1][0] + 6, ay = (b[0][1] + b[1][1]) / 2;
-          var lx = W - pad.r + 12, ly = tl.id === 'friuli' ? ay - 6 : ay - 18;
+          var lx = W - pad.r + 12, ly = tl.id === 'friuli' ? ay - 6 : ay - 18 * k;
           gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 8) + ',' + ly, 'class': 'leader' }));
-          gPts.appendChild(s('text', { x: lx, y: ly - 2, 'class': 'label', text: tl.region }));
-          gPts.appendChild(s('text', { x: lx, y: ly + 14, 'class': 'label sub', text: tl.places.map(function (p) { return p.name; }).join(' · ') }));
+          gPts.appendChild(s('text', { x: lx, y: ly - 2, 'class': 'label', style: 'font-size:' + (13 * k) + 'px;stroke-width:' + (4 * k) + 'px', text: tl.id === 'friuli' && k > 1.3 ? 'Friuli' : tl.region }));
+          if (k < 1.3) gPts.appendChild(s('text', { x: lx, y: ly + 14, 'class': 'label sub', text: tl.places.map(function (p) { return p.name; }).join(' · ') }));
         });
       }
       svg.appendChild(gPts);

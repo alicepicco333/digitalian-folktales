@@ -363,6 +363,7 @@ details.table-view table { margin-top: 8px; }
 }
 @media (max-width: 900px) {
   :root { --margin: 24px; }
+  .page-head .grid > * { grid-column: 1 / -1 !important; }
   .section-head, .section-body { grid-column: 1 / span 12; }
   .section-head { margin-bottom: 24px; }
   .record { grid-column: 1 / span 12; margin-bottom: 24px; }
