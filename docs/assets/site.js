@@ -7,9 +7,30 @@
 
   /* ------------------------------------------------------------------ i18n */
   var STR = {
-    'nav.tales': { en: 'Tales', it: 'Fiabe' },
-    'nav.compare': { en: 'Compare', it: 'Confronto' },
-    'nav.guide': { en: 'Guide & sources', it: 'Guida e fonti' },
+    'nav.tales': { en: 'tales', it: 'fiabe' },
+    'nav.compare': { en: 'compare stories', it: 'confronta le fiabe' },
+    'nav.guide': { en: 'user guide', it: 'guida' },
+    'nav.who': { en: 'who we are', it: 'chi siamo' },
+    'page.compare': { en: 'Comparing Stories', it: 'Fiabe a confronto' },
+    'page.guide': { en: 'User Guide', it: 'Guida' },
+    'home.tagline': { en: 'a digital edition of tales from Italo Calvino’s Fiabe italiane, read against the dialect versions he drew on', it: 'edizione digitale di fiabe dalle Fiabe italiane di Italo Calvino, lette accanto alle versioni dialettali da cui provengono' },
+    'search.label': { en: 'Search the tales', it: 'Cerca tra le fiabe' },
+    'search.ph': { en: 'e.g. Gesù e San Pietro in Friuli, Cormòns, ATU 774, hare…', it: 'es. Gesù e San Pietro in Friuli, Cormòns, ATU 774, lepre…' },
+    'search.go': { en: 'search', it: 'cerca' },
+    'search.map': { en: 'browse the map', it: 'sfoglia la mappa' },
+    'search.compare': { en: 'compare two folktales', it: 'confronta due fiabe' },
+    'search.guide': { en: 'how to read the edition', it: 'come leggere l’edizione' },
+    'search.none': { en: 'No tale or episode matches “{q}”.', it: 'Nessuna fiaba o episodio corrisponde a “{q}”.' },
+    'search.count': { en: '{n} results', it: '{n} risultati' },
+    'kind.tale': { en: 'tale', it: 'fiaba' },
+    'kind.episode': { en: 'episode {n}', it: 'episodio {n}' },
+    'tick.tales': { en: 'tales', it: 'fiabe' },
+    'tick.episodes': { en: 'episodes catalogued', it: 'episodi catalogati' },
+    'tick.done': { en: 'transcribed and translated', it: 'trascritti e tradotti' },
+    'tick.segs': { en: 'aligned passages', it: 'passi allineati' },
+    'map.suggested': { en: 'suggested stories', it: 'altre fiabe' },
+    'map.here': { en: 'you are here', it: 'sei qui' },
+    'card.no': { en: 'card no. {n}', it: 'scheda n. {n}' },
     'lang.label': { en: 'Leggi in italiano', it: 'Read in English' },
     'skip': { en: 'Skip to content', it: 'Vai al contenuto' },
     'footer.note': { en: 'A digital edition of tales from Italo Calvino’s Fiabe italiane and their dialect sources.', it: 'Edizione digitale di fiabe dalle Fiabe italiane di Italo Calvino e delle loro fonti dialettali.' },
@@ -22,16 +43,16 @@
     'fig.episodes': { en: 'episodes catalogued', it: 'episodi catalogati' },
     'fig.transcribed': { en: 'episodes transcribed and translated', it: 'episodi trascritti e tradotti' },
     'fig.segments': { en: 'aligned passages', it: 'passi allineati' },
-    'home.s1': { en: 'The tales, by region of origin', it: 'Le fiabe, per regione d’origine' },
-    'home.s1.note': { en: 'Regions are shaded where a tale was collected; dots mark the places of collection named in the record (positions approximate). Select a region to open its tale.', it: 'Sono evidenziate le regioni in cui una fiaba è stata raccolta; i punti indicano i luoghi di rilevamento registrati (posizioni approssimative). Seleziona una regione per aprire la fiaba.' },
-    'home.s2': { en: 'How to read the edition', it: 'Come leggere l’edizione' },
-    'home.t1.h': { en: 'The dialect text', it: 'Il testo dialettale' },
-    'home.t1.p': { en: 'Set in the reading serif at full weight: the tale as it was told and written down, in Friulian or Sicilian.', it: 'Composto nel carattere di lettura a piena intensità: la fiaba come fu narrata e trascritta, in friulano o in siciliano.' },
-    'home.t2.h': { en: 'The Italian translation', it: 'La traduzione italiana' },
-    'home.t2.p': { en: 'Aligned beside it, passage by passage, in a quieter tone of the same serif, so the eye can move across without losing its place.', it: 'Allineata accanto, passo per passo, in un tono più quieto dello stesso carattere, perché l’occhio possa passare dall’una all’altro senza perdersi.' },
-    'home.t3.h': { en: 'The reading', it: 'La lettura' },
+    'home.s1': { en: 'the tales, by place of collection', it: 'le fiabe, per luogo di raccolta' },
+    'home.s1.note': { en: 'Circles mark the places of collection named in each record (positions approximate). Select a region to open its tale.', it: 'I cerchi indicano i luoghi di rilevamento registrati in ogni scheda (posizioni approssimative). Seleziona una regione per aprire la fiaba.' },
+    'home.s2': { en: 'how to read the edition', it: 'come leggere l’edizione' },
+    'home.t1.h': { en: 'the dialect text', it: 'il testo dialettale' },
+    'home.t1.p': { en: 'Typed in Courier, like the field record it comes from: the tale as it was told and written down, in Friulian or Sicilian.', it: 'Battuto in Courier, come la scheda di rilevamento da cui proviene: la fiaba come fu narrata e trascritta, in friulano o in siciliano.' },
+    'home.t2.h': { en: 'the Italian translation', it: 'la traduzione italiana' },
+    'home.t2.p': { en: 'Set beside it in a book serif, aligned passage by passage, so the eye can move across without losing its place.', it: 'Composta accanto in un carattere da libro, allineata passo per passo, perché l’occhio possa passare dall’una all’altro senza perdersi.' },
+    'home.t3.h': { en: 'the reading', it: 'la lettura' },
     'home.t3.p': { en: 'Each episode’s ATU tale type, the sequence of places, the people, the supernatural figures and the resolution, as recorded by the project team.', it: 'Per ogni episodio: tipo ATU, sequenza dei luoghi, personaggi, figure soprannaturali e scioglimento, come registrati dal gruppo di progetto.' },
-    'home.s3': { en: 'Sources', it: 'Fonti' },
+    'home.s3': { en: 'sources', it: 'fonti' },
     'home.s3.link': { en: 'More on sources, methods and the team', it: 'Altro su fonti, metodo e gruppo di lavoro' },
 
     'src.calvino': { en: 'Retelling', it: 'Riscrittura' },
@@ -57,15 +78,15 @@
     'tale.trans': { en: 'Italian', it: 'Italiano' },
     'tale.hint': { en: 'Hover or tab through a passage to hold its counterpart.', it: 'Passa sopra un passo, o raggiungilo con Tab, per evidenziarne il corrispondente.' },
     'tale.editorial': { en: 'Editorial note (in Italian, from the edition files)', it: 'Nota editoriale (dai file dell’edizione)' },
-    'tale.h.orig': { en: '{d} — as collected', it: '{d} — come raccolto' },
-    'tale.h.trans': { en: 'Italian — translation', it: 'Italiano — traduzione' },
+    'tale.h.orig': { en: 'original text · {d}', it: 'testo originale · {d}' },
+    'tale.h.trans': { en: 'Italian translation', it: 'traduzione italiana' },
     'tale.episode': { en: 'Episode {n}', it: 'Episodio {n}' },
     'tale.gap': { en: 'The source record for this episode is catalogued above, but its text is not transcribed in this edition.', it: 'La scheda di questo episodio è riportata qui sopra, ma il testo non è trascritto in questa edizione.' },
     'tale.gap.meta': { en: 'This episode is described in the tale’s record only; the edition contains no text for it yet.', it: 'Questo episodio è descritto solo nella scheda della fiaba; l’edizione non ne contiene ancora il testo.' },
     'tale.loadfail': { en: 'The texts could not be loaded. Open the site through a web server (for example, the published GitHub Pages site) rather than from the file system.', it: 'Non è stato possibile caricare i testi. Apri il sito tramite un server web (ad esempio la versione pubblicata su GitHub Pages) e non dal file system.' },
-    'tale.reading': { en: 'Reading the tale', it: 'Lettura della fiaba' },
+    'tale.reading': { en: 'reading the tale', it: 'lettura della fiaba' },
     'tale.reading.p': { en: 'Tale type, itinerary and cast of each episode, from the project’s annotation.', it: 'Tipo, itinerario e personaggi di ogni episodio, dall’annotazione del progetto.' },
-    'tale.metrics': { en: 'Measurements', it: 'Misure' },
+    'tale.metrics': { en: 'measurements', it: 'misure' },
     'tale.metrics.link': { en: 'See both tales measured side by side', it: 'Vedi le misure delle due fiabe a confronto' },
     'tale.also': { en: 'The other tale', it: 'L’altra fiaba' },
 
@@ -95,23 +116,23 @@
     'cmp.kicker': { en: 'Comparison', it: 'Confronto' },
     'cmp.title': { en: 'Two cycles of Jesus and St. Peter, north and south', it: 'Due cicli di Gesù e San Pietro, a nord e a sud' },
     'cmp.lede': { en: 'Calvino placed a Friulian and a Sicilian cycle of Jesus-and-Peter tales in the Fiabe italiane. Their records, structure and measurements are set side by side here, from the project’s annotation.', it: 'Calvino incluse nelle Fiabe italiane un ciclo friulano e uno siciliano di racconti su Gesù e San Pietro. Qui ne sono messi a confronto schede, struttura e misure, dall’annotazione del progetto.' },
-    'cmp.s1': { en: 'Structure of each episode', it: 'Struttura di ogni episodio' },
+    'cmp.s1': { en: 'structure of each episode', it: 'struttura di ogni episodio' },
     'cmp.finding': { en: 'Both cycles open with ATU 774, Jests about Christ and Peter — the Friulian first episode and both Sicilian stories. The Friulian cycle then moves to other types: 785 (Lamb’s heart) and 750B (Hospitality Rewarded).', it: 'Entrambi i cicli si aprono con il tipo ATU 774, Jests about Christ and Peter: il primo episodio friulano e le due storie siciliane. Il ciclo friulano passa poi ad altri tipi: 785 (Lamb’s heart) e 750B (Hospitality Rewarded).' },
-    'cmp.s2': { en: 'The records', it: 'Le schede' },
+    'cmp.s2': { en: 'the records', it: 'le schede' },
     'cmp.s2.p': { en: 'Descriptive metadata as recorded for each tale. Numerals I–III refer to episodes.', it: 'Metadati descrittivi come registrati per ciascuna fiaba. I numeri I–III indicano gli episodi.' },
     'cmp.field': { en: 'Field', it: 'Campo' },
-    'cmp.s3': { en: 'Measurements', it: 'Misure' },
+    'cmp.s3': { en: 'measurements', it: 'misure' },
     'cmp.s3.p': { en: 'Each row has its own scale, starting at zero, so values are comparable within a row but not across rows.', it: 'Ogni riga ha una propria scala, che parte da zero: i valori sono confrontabili all’interno della riga, non tra righe diverse.' },
     'cmp.caveat': { en: 'Values as computed by the project team and published in the original edition. The repository does not state whether they were computed on the dialect text or on the translation, and readability formulas calibrated on English are best read comparatively. The hard-word count grows with the length of the text.', it: 'Valori calcolati dal gruppo di progetto e pubblicati nell’edizione originale. Il repository non indica se siano stati calcolati sul testo dialettale o sulla traduzione; le formule di leggibilità tarate sull’inglese vanno lette in senso comparativo. Il numero di parole difficili cresce con la lunghezza del testo.' },
     'cmp.table': { en: 'Show the measurements as a table', it: 'Mostra le misure in tabella' },
     'cmp.metric': { en: 'Measure', it: 'Misura' },
-    'cmp.s4': { en: 'Read the texts', it: 'Leggi i testi' },
+    'cmp.s4': { en: 'read the texts', it: 'leggi i testi' },
 
     'guide.kicker': { en: 'Guide & sources', it: 'Guida e fonti' },
     'guide.title': { en: 'About this edition', it: 'Informazioni sull’edizione' },
-    'guide.s1': { en: 'User guide', it: 'Guida alla lettura' },
-    'guide.s2': { en: 'Sources and coverage', it: 'Fonti e copertura' },
-    'guide.s3': { en: 'Who we are', it: 'Chi siamo' },
+    'guide.s1': { en: 'user guide', it: 'guida alla lettura' },
+    'guide.s2': { en: 'sources and coverage', it: 'fonti e copertura' },
+    'guide.s3': { en: 'who we are', it: 'chi siamo' },
     'src.sent': { en: 'Sentiment', it: 'Sentiment' },
     'tale.parallel.h': { en: 'Parallel text', it: 'Testo a fronte' },
     'tale.sub.friuli': { en: 'Three episodes collected in Friuli and told in Friulian, from Dolfo Zorzùt’s Sot la nape…; the first is transcribed here beside its Italian translation.', it: 'Tre episodi raccolti in Friuli e narrati in friulano, da Sot la nape… di Dolfo Zorzùt; il primo è trascritto qui accanto alla sua traduzione italiana.' },
@@ -201,61 +222,56 @@
   function drawMap(el) {
     if (!window.d3 || !window.topojson) return;
     var mode = el.getAttribute('data-map');           /* atlas | locator */
-    var focus = el.getAttribute('data-focus');        /* tale id for locator */
+    var focus = el.getAttribute('data-focus');        /* current tale id on a tale page */
     fetch(base + 'topojson/it.topojson').then(function (r) { return r.json(); }).then(function (topo) {
       var fc = rewind(topojson.feature(topo, topo.objects.it));
-      var W = mode === 'atlas' ? 640 : 220, H = mode === 'atlas' ? 660 : 250;
-      var k = mode === 'atlas' ? Math.min(2, Math.max(1, 520 / (el.clientWidth || 520))) : 1;
-      var pad = mode === 'atlas' ? { l: 4, r: 150 * k, t: 8, b: 8 } : { l: 4, r: 4, t: 4, b: 4 };
+      var W = mode === 'atlas' ? 640 : 300, H = mode === 'atlas' ? 660 : 330;
+      var k = Math.min(2, Math.max(1, (mode === 'atlas' ? 520 : 260) / (el.clientWidth || 520)));
+      var pad = mode === 'atlas' ? { l: 4, r: 150 * k, t: 10, b: 10 } : { l: 4, r: 96 * k, t: 8, b: 8 };
       var proj = d3.geoConicConformal().rotate([-12.5, 0]).parallels([38, 44]);
       proj.fitExtent([[pad.l, pad.t], [W - pad.r, H - pad.b]], fc);
       var path = d3.geoPath(proj);
-      var svg = s('svg', { 'class': 'map-svg', viewBox: '0 0 ' + W + ' ' + H, role: mode === 'atlas' ? 'group' : 'img' });
-      if (mode === 'atlas') svg.setAttribute('aria-labelledby', el.getAttribute('data-labelledby'));
-      else svg.setAttribute('aria-label', tale(focus).region);
+      var svg = s('svg', { 'class': 'map-svg', viewBox: '0 0 ' + W + ' ' + H, role: 'group' });
+      svg.setAttribute('aria-label', mode === 'atlas' ? t('home.s1') : t('map.suggested'));
       var byCode = {};
       E.tales.forEach(function (tl) { byCode[tl.regionCode] = tl; });
       var gBase = s('g', { 'aria-hidden': 'true' });
       var gHi = s('g');
+      var prefix = mode === 'atlas' ? 'analysis/' : '';
       fc.features.forEach(function (f) {
         var tl = byCode[f.properties.reg_istat_code];
-        var on = tl && (mode === 'atlas' || tl.id === focus);
-        var p = s('path', { d: path(f), 'class': 'region' + (on ? ' is-' + tl.id : '') });
-        if (on && mode === 'atlas') {
-          var a = s('a', { href: 'analysis/' + tl.url, 'aria-label': tl.title + ' — ' + tl.region });
+        var p = s('path', { d: path(f), 'class': 'region' + (tl ? ' on' : '') });
+        if (tl && (mode === 'atlas' || tl.id !== focus)) {
+          var a = s('a', { href: prefix + tl.url, 'aria-label': tl.title + ' — ' + tl.region });
           a.appendChild(p); gHi.appendChild(a);
         } else gBase.appendChild(p);
       });
       svg.appendChild(gBase); svg.appendChild(gHi);
       var gPts = s('g', { 'aria-hidden': 'true' });
+      var r = (mode === 'atlas' ? 12 : 9) * (k > 1.3 ? 1.25 : 1);
       E.tales.forEach(function (tl) {
-        if (mode === 'locator' && tl.id !== focus) return;
         tl.places.forEach(function (pl) {
           var xy = proj([pl.lon, pl.lat]);
-          var r = mode === 'atlas' ? 5 : 4;
-          var mk = tl.id === 'sicily'
-            ? s('rect', { x: xy[0] - r * 0.85, y: xy[1] - r * 0.85, width: r * 1.7, height: r * 1.7, transform: 'rotate(45 ' + xy[0] + ' ' + xy[1] + ')', 'class': 'place sicily' })
-            : s('circle', { cx: xy[0], cy: xy[1], r: r, 'class': 'place friuli' });
-          gPts.appendChild(mk);
+          gPts.appendChild(s('circle', { cx: xy[0], cy: xy[1], r: r, 'class': 'marker ' + tl.id }));
         });
+        var f = fc.features.filter(function (x) { return x.properties.reg_istat_code === tl.regionCode; })[0];
+        var b = path.bounds(f);
+        var ax = b[1][0] + 4, ay = (b[0][1] + b[1][1]) / 2;
+        var lx = W - pad.r + 14, ly = tl.id === 'friuli' ? ay - 4 : ay - 16 * k;
+        var fs = (mode === 'atlas' ? 15 : 13) * k;
+        gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 6) + ',' + (ly - fs * 0.35), 'class': 'leader' }));
+        var name = mode === 'atlas' ? (tl.id === 'friuli' && k > 1.3 ? 'Friuli' : tl.region) : (tl.id === 'friuli' ? 'Friuli' : 'Sicilia');
+        gPts.appendChild(s('text', { x: lx, y: ly, 'class': 'label', style: 'font-size:' + fs + 'px;stroke-width:' + (4 * k) + 'px', text: name }));
+        var sub = mode === 'atlas' ? (k < 1.3 ? tl.places.map(function (p) { return p.name; }).join(' · ') : '') : (tl.id === focus ? t('map.here') : '');
+        if (sub) gPts.appendChild(s('text', { x: lx, y: ly + fs * 1.15, 'class': 'label sub', style: 'font-size:' + (fs * 0.85) + 'px;stroke-width:' + (4 * k) + 'px', text: sub }));
       });
-      if (mode === 'atlas') {
-        E.tales.forEach(function (tl) {
-          var f = fc.features.filter(function (x) { return x.properties.reg_istat_code === tl.regionCode; })[0];
-          var b = path.bounds(f);
-          var ax = b[1][0] + 6, ay = (b[0][1] + b[1][1]) / 2;
-          var lx = W - pad.r + 12, ly = tl.id === 'friuli' ? ay - 6 : ay - 18 * k;
-          gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 8) + ',' + ly, 'class': 'leader' }));
-          gPts.appendChild(s('text', { x: lx, y: ly - 2, 'class': 'label', style: 'font-size:' + (13 * k) + 'px;stroke-width:' + (4 * k) + 'px', text: tl.id === 'friuli' && k > 1.3 ? 'Friuli' : tl.region }));
-          if (k < 1.3) gPts.appendChild(s('text', { x: lx, y: ly + 14, 'class': 'label sub', text: tl.places.map(function (p) { return p.name; }).join(' · ') }));
-        });
-      }
       svg.appendChild(gPts);
       el.innerHTML = '';
       el.appendChild(svg);
     }).catch(function () { el.textContent = ''; });
   }
-  document.querySelectorAll('[data-map]').forEach(drawMap);
+  function redrawMaps() { document.querySelectorAll('[data-map]').forEach(drawMap); }
+  redrawMaps();
 
   /* -------------------------------------------------------- tale index */
   function renderIndex(el) {
@@ -267,27 +283,30 @@
       var codes = [];
       tl.episodes.forEach(function (ep) { if (codes.indexOf(ep.atu.code) < 0) codes.push(ep.atu.code); });
       codes.forEach(function (c, j) {
-        if (j) atus.appendChild(document.createTextNode(', '));
+        if (j) atus.appendChild(document.createTextNode(' · '));
         atus.appendChild(h('span', { 'class': 'atu' + (shared[c] ? ' shared' : ''), text: c }));
       });
-      var li = h('li', { 'class': 'tale-entry' }, [
-        h('span', { 'class': 'no', text: String(i + 1).padStart(2, '0') }),
-        h('div', null, [
-          h('h3', null, [h('a', { href: 'analysis/' + tl.url, text: tl.title })]),
-          h('p', { 'class': 'region-line' }, [marker(tl.id), tl.region + ' · ' + tl.dialect[lang]]),
-          h('dl', { 'class': 'meta-dl' }, [
+      el.appendChild(h('li', { 'class': 'card' }, [
+        h('div', { 'class': 'card-head' }, [
+          h('span', null, [marker(tl.id), tl.region.toLowerCase()]),
+          h('span', { 'class': 'muted', text: t('card.no', { n: String(i + 1).padStart(2, '0') }) })
+        ]),
+        h('div', { 'class': 'card-body' }, [
+          h('h3', { lang: 'it' }, [h('a', { href: 'analysis/' + tl.url, text: tl.title })]),
+          h('dl', { 'class': 'fields' }, [
+            h('dt', { text: t('rec.dialect') }), h('dd', { text: tl.dialect[lang] }),
             h('dt', { text: t('entry.episodes') }),
             h('dd', { text: tl.episodes.map(function (e) { return e.n; }).join(', ') + ' — ' + t('entry.transcribed', { a: done, b: tl.episodes.length }) }),
             h('dt', { text: t('entry.atu') }), atus,
+            h('dt', { text: t('rec.place') }), h('dd', { text: tl.places.map(function (p) { return p.name; }).join(' · ') }),
             h('dt', { text: t('entry.source') }), h('dd', { 'class': 'serif', text: tl.sourceShort })
           ]),
-          h('div', { 'class': 'entry-links' }, [
+          h('div', { 'class': 'card-links' }, [
             h('a', { href: 'analysis/' + tl.url, text: t('entry.read') }),
             h('a', { href: 'analysis/comparison.html', text: t('entry.compare') })
           ])
         ])
-      ]);
-      el.appendChild(li);
+      ]));
     });
   }
 
@@ -310,17 +329,16 @@
       facet(t('f.animals'), listDD(ep.animals, 'f.none.animals')),
       facet(t('f.resolution'), h('dd', { 'class': 'resolution' + (ep.resolution === 'Mixed' ? ' mixed' : ''), text: t('res.' + ep.resolution) })),
       facet(t('f.narrator'), h('dd', { text: ep.narrator + ', ' + ep.geography }))
-    ].forEach(function (pair) { var row = h('div', { 'class': 'facet' }, pair); dl.appendChild(row); });
+    ].forEach(function (pair) { dl.appendChild(h('div', { 'class': 'facet' }, pair)); });
     var isShared = !!shared[ep.atu.code];
     return h('article', { 'class': 'ep-card', 'aria-label': t('tale.episode', { n: ep.n }) + ' — ' + ep.title }, [
-      h('div', { 'class': 'ep-left' }, [
-        h('div', { 'class': 'ep-n', text: t('tale.episode', { n: ep.n }) }),
-        h('div', { 'class': 'ep-atu' + (isShared ? ' shared' : ''), text: ep.atu.code }),
-        isShared ? h('div', { 'class': 'ep-n', text: t('f.shared') }) : null
+      h('div', { 'class': 'card-head' }, [
+        h('span', { text: t('tale.episode', { n: ep.n }).toLowerCase() }),
+        h('span', null, ['ATU ', h('span', { 'class': 'atu' + (isShared ? ' shared' : ''), text: ep.atu.code }), isShared ? h('span', { 'class': 'muted', text: ' · ' + t('f.shared') }) : null])
       ]),
-      h('div', null, [
-        h('h4', { 'class': 'ep-title', text: ep.title }),
-        h('p', { 'class': 'ep-atu-label', style: 'margin:-8px 0 12px', text: 'ATU ' + ep.atu.code + ' · ' + ep.atu.label }),
+      h('div', { 'class': 'card-body' }, [
+        h('h4', { 'class': 'ep-title', lang: 'it', text: ep.title }),
+        h('p', { 'class': 'ep-atu-label', text: ep.atu.label }),
         dl,
         h('span', { 'class': 'transcribed-flag', text: ep.transcribed ? t('f.transcribed') : t('f.notranscribed') })
       ])
@@ -334,7 +352,7 @@
     ids.forEach(function (id) {
       var tl = tale(id);
       var col = h('div', { 'class': 'col' });
-      if (ids.length > 1) col.appendChild(h('h3', { 'class': 'colhead' }, [marker(id), tl.title]));
+      if (ids.length > 1) col.appendChild(h('h3', { 'class': 'colhead', lang: 'it' }, [marker(id), h('a', { href: tl.url, text: tl.title })]));
       tl.episodes.forEach(function (ep) { col.appendChild(epCard(tl, ep, shared)); });
       el.appendChild(col);
     });
@@ -405,9 +423,7 @@
     svg.appendChild(s('text', { x: x1, y: 38, 'text-anchor': 'end', 'class': 'ticklabel', text: fmt(max, max < 1 ? 1 : 0) }));
     ['friuli', 'sicily'].forEach(function (id) {
       var v = tale(id).metrics[m.key], cx = sc(v), cy = id === 'friuli' ? 8 : 22;
-      var dot = id === 'friuli'
-        ? s('circle', { cx: cx, cy: cy, r: 5, 'class': 'dot friuli' })
-        : s('rect', { x: cx - 4.25, y: cy - 4.25, width: 8.5, height: 8.5, transform: 'rotate(45 ' + cx + ' ' + cy + ')', 'class': 'dot sicily' });
+      var dot = s('circle', { cx: cx, cy: cy, r: 5.5, 'class': 'dot ' + id });
       svg.appendChild(dot);
       var hit = s('rect', { x: cx - 10, y: cy - 8, width: 20, height: 16, 'class': 'hit' });
       var label = tale(id).title + ' — ' + m[lang] + ': ' + fmt(v, m.dec);
@@ -489,18 +505,21 @@
     var codes = [];
     tl.episodes.forEach(function (ep) { if (codes.indexOf(ep.atu.code) < 0) codes.push(ep.atu.code); });
     el.innerHTML = '';
-    el.appendChild(h('h2', { text: t('tale.record') }));
-    el.appendChild(h('dl', { 'class': 'meta-dl' }, [
-      h('dt', { text: t('rec.region') }), h('dd', { text: tl.region }),
-      h('dt', { text: t('rec.dialect') }), h('dd', { text: tl.dialect[lang] }),
-      h('dt', { text: t('rec.place') }), h('dd', { text: tl.places.map(function (p) { return p.name; }).join('; ') }),
-      h('dt', { text: t('entry.atu') }), h('dd', { 'class': 'num', text: codes.join(', ') }),
-      h('dt', { text: t('rec.source') }), h('dd', { 'class': 'serif', text: tl.source })
+    el.className = 'card record-card';
+    el.appendChild(h('div', { 'class': 'card-head' }, [h('span', null, [marker(tl.id), t('tale.record').toLowerCase()]), h('span', { 'class': 'muted', text: tl.dialectLang })]));
+    el.appendChild(h('div', { 'class': 'card-body' }, [
+      h('dl', { 'class': 'fields' }, [
+        h('dt', { text: t('rec.region') }), h('dd', { text: tl.region }),
+        h('dt', { text: t('rec.dialect') }), h('dd', { text: tl.dialect[lang] }),
+        h('dt', { text: t('rec.place') }), h('dd', { text: tl.places.map(function (p) { return p.name; }).join('; ') }),
+        h('dt', { text: t('entry.atu') }), h('dd', { 'class': 'num', text: codes.join(' · ') }),
+        h('dt', { text: t('rec.source') }), h('dd', { 'class': 'serif', text: tl.source })
+      ]),
+      h('h4', { text: t('tale.contents').toLowerCase() }),
+      h('ol', null, tl.episodes.map(function (ep) {
+        return h('li', null, [h('span', { 'class': 'muted', text: ep.n }), h('a', { href: '#ep-' + ep.n, lang: 'it', text: ep.title })]);
+      }))
     ]));
-    el.appendChild(h('h2', { style: 'margin-top:28px', text: t('tale.contents') }));
-    el.appendChild(h('ol', null, tl.episodes.map(function (ep) {
-      return h('li', null, [h('span', { 'class': 'muted', text: ep.n }), h('a', { href: '#ep-' + ep.n, text: ep.title })]);
-    })));
   }
 
   /* -------------------------------------------------------- parallel reader */
@@ -547,9 +566,9 @@
       var titleO = al.titleLine ? O[al.titleLine[0]].trim() : null;
       var titleT = al.titleLine ? T[al.titleLine[1]].trim() : null;
       if (titleO) {
-        body.appendChild(h('div', { 'class': 'episode-head', style: 'margin-top:32px' }, [
+        body.appendChild(h('div', { 'class': 'work-title' }, [
           h('h2', { lang: dLang, text: titleO }),
-          h('p', { 'class': 't-title', lang: 'it', text: titleT })
+          h('p', { lang: 'it', text: titleT })
         ]));
       }
 
@@ -606,6 +625,68 @@
       });
     });
   }
+
+
+  /* -------------------------------------------------------- search (home) */
+  function fold(x) { return String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  function searchIndex() {
+    var items = [];
+    E.tales.forEach(function (tl) {
+      items.push({ label: tl.title, kind: t('kind.tale'), href: 'analysis/' + tl.url,
+        hay: fold([tl.title, tl.region, tl.dialect.en, tl.dialect.it, tl.originalTitle, tl.source].concat(tl.places.map(function (p) { return p.name; })).join(' ')) });
+      tl.episodes.forEach(function (ep) {
+        items.push({ label: ep.title + (ep.originalTitle ? ' / ' + ep.originalTitle : ''), kind: tl.region + ' · ' + t('kind.episode', { n: ep.n }), href: 'analysis/' + tl.url + '#ep-' + ep.n,
+          hay: fold([tl.title, ep.title, ep.originalTitle, ep.narrator, ep.geography, 'atu ' + ep.atu.code, ep.atu.label].concat(ep.places, ep.people, ep.animals, ep.actions, ep.supernatural).join(' ')) });
+      });
+    });
+    return items;
+  }
+  function initSearch(form) {
+    var input = form.querySelector('input'), list = form.parentNode.querySelector('.results'), status = form.parentNode.querySelector('.search-status');
+    var current = [], sel = -1;
+    function render(q) {
+      var f = fold(q).trim();
+      list.innerHTML = ''; sel = -1;
+      if (!f) { list.hidden = true; status.textContent = ''; input.setAttribute('aria-expanded', 'false'); return; }
+      var terms = f.split(/\s+/);
+      current = searchIndex().filter(function (it) { return terms.every(function (w) { return it.hay.indexOf(w) >= 0; }); });
+      if (!current.length) {
+        list.appendChild(h('li', null, [h('span', { style: 'display:block;padding:10px 24px', 'class': 'muted', text: t('search.none', { q: q }) })]));
+      }
+      current.forEach(function (it, i) {
+        list.appendChild(h('li', null, [h('a', { href: it.href, id: 'res-' + i, 'aria-selected': 'false' }, [h('span', { lang: 'it', text: it.label }), h('span', { 'class': 'kind', text: it.kind })])]));
+      });
+      list.hidden = false;
+      input.setAttribute('aria-expanded', 'true');
+      status.textContent = t('search.count', { n: current.length });
+    }
+    function move(d) {
+      var links = list.querySelectorAll('a');
+      if (!links.length) return;
+      sel = (sel + d + links.length) % links.length;
+      links.forEach(function (a, i) { a.setAttribute('aria-selected', String(i === sel)); });
+      input.setAttribute('aria-activedescendant', links[sel].id);
+    }
+    input.addEventListener('input', function () { render(input.value); });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      else if (e.key === 'Escape') { input.value = ''; render(''); }
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      render(input.value);
+      var links = list.querySelectorAll('a');
+      if (links.length) location.href = links[Math.max(sel, 0)].getAttribute('href');
+    });
+    document.addEventListener('click', function (e) { if (!form.parentNode.contains(e.target)) { list.hidden = true; input.setAttribute('aria-expanded', 'false'); } });
+  }
+  document.querySelectorAll('form.searchbar').forEach(initSearch);
+  document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph'))); });
+  document.addEventListener('df:lang', function () {
+    document.querySelectorAll('[data-i18n-ph]').forEach(function (el) { el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph'))); });
+    redrawMaps();
+  });
 
   /* -------------------------------------------------------- boot */
   function renderDynamic() {

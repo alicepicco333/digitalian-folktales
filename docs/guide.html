@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guide and sources — Digitalian Folktales</title>
-  <meta name="description" content="How to read Digitalian Folktales, its sources and methods, and who made it.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f5efe3'/%3E%3Ctext x='6' y='25' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%238c2418'%3Ef%3C/text%3E%3C/svg%3E">
+  <title>User Guide — digitalian folktales</title>
+  <meta name="description" content="How to read digitalian folktales, its sources and methods, and who made it.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23fff'/%3E%3Ccircle cx='12' cy='13' r='7' fill='%231f1fe0' fill-opacity='.2' stroke='%231f1fe0' stroke-width='2.5'/%3E%3Ccircle cx='20' cy='21' r='7' fill='%23e0201a' fill-opacity='.2' stroke='%23e0201a' stroke-width='2.5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body data-base="">
@@ -16,31 +16,23 @@
 
   <header class="site-header">
     <div class="wrap">
-      <a class="wordmark" href="index.html">Digitalian <i>Folktales</i></a>
+      <a class="logo-small" href="index.html" aria-label="digitalian folktales — home"><span>digitalian</span><span>folktales</span></a>
+      <h1 class="page-title"><span data-i18n="page.guide">User Guide</span></h1>
       <nav class="site-nav" aria-label="Main">
-        <a href="index.html" data-i18n="nav.tales">Tales</a>
-        <a href="analysis/comparison.html" data-i18n="nav.compare">Compare</a>
-        <a href="guide.html" aria-current="page" data-i18n="nav.guide">Guide &amp; sources</a>
+        <a href="index.html" data-i18n="nav.tales">tales</a>
+        <a href="analysis/comparison.html" data-i18n="nav.compare">compare stories</a>
+        <a href="guide.html" aria-current="page" data-i18n="nav.guide">user guide</a>
+        <a href="guide.html#who" data-i18n="nav.who">who we are</a>
         <button class="lang-switch" type="button" lang="it" aria-label="Leggi in italiano">IT</button>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <header class="page-head">
-      <div class="wrap grid">
-        <p class="kicker" style="grid-column:1/-1" data-i18n="guide.kicker">Guide &amp; sources</p>
-        <h1 class="h1" style="grid-column:1/span 10" data-i18n="guide.title">About this edition</h1>
-      </div>
-    </header>
-
-    <section class="section" aria-labelledby="g1">
-      <div class="wrap grid">
-        <div class="section-head">
-          <span class="idx">I</span>
-          <h2 class="h2" id="g1" data-i18n="guide.s1">User guide</h2>
-        </div>
-        <div class="section-body prose">
+    <section class="section" style="padding-top:32px" aria-labelledby="g1" id="guide">
+      <div class="wrap">
+        <h2 class="rule-label" id="g1"><span class="n">i.</span> <span data-i18n="guide.s1">user guide</span></h2>
+        <div class="prose">
           <div data-lang-block="en">
             <h3>Finding a tale</h3>
             <p>The home page places each tale in the region where it was collected. Select a shaded region on the map, or a title in the index beside it, to open the tale.</p>
@@ -48,7 +40,7 @@
             <p>Each tale page sets the dialect text as collected on the left and its Italian translation on the right. The two are aligned passage by passage: passage numbers such as <span class="num">I.3</span> give the episode and the position within it, and each number is a link you can cite. Hovering over a passage, or moving to it with the Tab key, highlights the pair. Use <em>Dialect</em> or <em>Italian</em> to read one text alone. On a phone, each passage shows the dialect first and the translation beneath it.</p>
             <p>Where one dialect line corresponds to several lines of the translation (or the reverse), they are kept together as a single passage. Line breaks and spelling follow the edition files exactly, including irregularities in the transcriptions.</p>
             <h3>Reading the structure</h3>
-            <p>Under each text, and on the comparison page, every episode is summarised by its ATU tale type, the places it moves through in order, the actions and events, the people, any supernatural figure or animal, and the resolution. These categories come from the project team’s annotation, which the original edition grouped under Propp’s name; they are descriptive categories, not a sequence of Propp’s thirty-one functions. A tale type shared by both cycles is marked in red.</p>
+            <p>Under each text, and on the comparison page, every episode is summarised by its ATU tale type, the places it moves through in order, the actions and events, the people, any supernatural figure or animal, and the resolution. These categories come from the project team’s annotation, which the original edition grouped under Propp’s name; they are descriptive categories, not a sequence of Propp’s thirty-one functions. A tale type shared by both cycles is set in reverse, white on black.</p>
             <h3>Measurements</h3>
             <p>The comparison page plots the text measurements the project team computed for each tale. Every row has its own scale starting at zero; a table view gives the same values.</p>
             <h3>Language</h3>
@@ -61,7 +53,7 @@
             <p>Ogni pagina presenta a sinistra il testo dialettale così come fu raccolto e a destra la traduzione italiana. I due testi sono allineati passo per passo: i numeri come <span class="num">I.3</span> indicano l’episodio e la posizione del passo, e ogni numero è un link citabile. Passando sopra un passo, o raggiungendolo con il tasto Tab, la coppia viene evidenziata. Con <em>Dialetto</em> o <em>Italiano</em> si legge un solo testo. Su telefono, ogni passo mostra prima il dialetto e sotto la traduzione.</p>
             <p>Quando una riga dialettale corrisponde a più righe della traduzione (o viceversa), le righe restano unite in un solo passo. A capo e grafia seguono esattamente i file dell’edizione, comprese le irregolarità delle trascrizioni.</p>
             <h3>Leggere la struttura</h3>
-            <p>Sotto ogni testo, e nella pagina di confronto, ogni episodio è riassunto per tipo ATU, luoghi attraversati in ordine, azioni ed eventi, personaggi, eventuali figure soprannaturali o animali e scioglimento. Le categorie provengono dall’annotazione del gruppo di progetto, che l’edizione originale raccoglieva sotto il nome di Propp; sono categorie descrittive, non una sequenza delle trentuno funzioni di Propp. Un tipo di fiaba comune ai due cicli è segnato in rosso.</p>
+            <p>Sotto ogni testo, e nella pagina di confronto, ogni episodio è riassunto per tipo ATU, luoghi attraversati in ordine, azioni ed eventi, personaggi, eventuali figure soprannaturali o animali e scioglimento. Le categorie provengono dall’annotazione del gruppo di progetto, che l’edizione originale raccoglieva sotto il nome di Propp; sono categorie descrittive, non una sequenza delle trentuno funzioni di Propp. Un tipo di fiaba comune ai due cicli è composto in negativo, bianco su nero.</p>
             <h3>Misure</h3>
             <p>La pagina di confronto mostra le misure testuali calcolate dal gruppo di progetto per ogni fiaba. Ogni riga ha una propria scala che parte da zero; una vista in tabella riporta gli stessi valori.</p>
             <h3>Lingua</h3>
@@ -70,14 +62,10 @@
         </div>
       </div>
     </section>
-
-    <section class="section" aria-labelledby="g2">
-      <div class="wrap grid">
-        <div class="section-head">
-          <span class="idx">II</span>
-          <h2 class="h2" id="g2" data-i18n="guide.s2">Sources and coverage</h2>
-        </div>
-        <div class="section-body">
+    <section class="section" aria-labelledby="g2" id="sources">
+      <div class="wrap">
+        <h2 class="rule-label" id="g2"><span class="n">ii.</span> <span data-i18n="guide.s2">sources and coverage</span></h2>
+        <div style="max-width:980px;margin:0 auto">
           <ul class="biblio">
             <li><span class="role" data-i18n="src.calvino">Retelling</span><span class="ref">Italo Calvino, <i lang="it">Fiabe italiane</i>: <span lang="it">“Gesù e San Pietro in Friuli”</span>; <span lang="it">“Gesù e San Pietro in Sicilia”</span>.</span></li>
             <li><span class="role" data-i18n="src.zorzut">Friulian source</span><span class="ref" lang="it">Dolfo Zorzùt, <i lang="fur">Sot la nape…</i> (I racconti del popolo friulano), 3 voll., Udine 1924, 1925, 1927.</span></li>
@@ -103,14 +91,10 @@
         </div>
       </div>
     </section>
-
-    <section class="section" aria-labelledby="g3">
-      <div class="wrap grid">
-        <div class="section-head">
-          <span class="idx">III</span>
-          <h2 class="h2" id="g3" data-i18n="guide.s3">Who we are</h2>
-        </div>
-        <div class="section-body prose">
+    <section class="section" aria-labelledby="g3" id="who">
+      <div class="wrap">
+        <h2 class="rule-label" id="g3"><span class="n">iii.</span> <span data-i18n="guide.s3">who we are</span></h2>
+        <div class="prose">
           <div data-lang-block="en">
             <p>The texts, translations and annotation were prepared by the project team. The repository’s commit history records the first prototype of the site by Nikolai Gorbachev (n1kg0r) in January 2023, and later work by Alice Picco, including this redesign. The repository does not record further names or the course for which the edition was made.</p>
           </div>
@@ -124,7 +108,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span data-i18n="footer.note">A digital edition of tales from Italo Calvino’s Fiabe italiane and their dialect sources.</span>
+      <span><span lang="en">digitalian folktales</span> · <span data-i18n="footer.note">A digital edition of tales from Italo Calvino’s Fiabe italiane and their dialect sources.</span></span>
       <a href="https://github.com/alicepicco333/digitalian-folktales" data-i18n="footer.repo">Source on GitHub</a>
     </div>
   </footer>
