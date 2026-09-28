@@ -262,8 +262,10 @@
         gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 6) + ',' + (ly - fs * 0.35), 'class': 'leader' }));
         var name = mode === 'atlas' ? (tl.id === 'friuli' && k > 1.3 ? 'Friuli' : tl.region) : (tl.id === 'friuli' ? 'Friuli' : 'Sicilia');
         gPts.appendChild(s('text', { x: lx, y: ly, 'class': 'label', style: 'font-size:' + fs + 'px;stroke-width:' + (4 * k) + 'px', text: name }));
-        var sub = mode === 'atlas' ? (k < 1.3 ? tl.places.map(function (p) { return p.name; }).join(' · ') : '') : (tl.id === focus ? t('map.here') : '');
-        if (sub) gPts.appendChild(s('text', { x: lx, y: ly + fs * 1.15, 'class': 'label sub', style: 'font-size:' + (fs * 0.85) + 'px;stroke-width:' + (4 * k) + 'px', text: sub }));
+        var subs = mode === 'atlas' ? (k < 1.3 ? tl.places.map(function (p) { return p.name; }) : []) : (tl.id === focus ? [t('map.here')] : []);
+        subs.forEach(function (sub, i) {
+          gPts.appendChild(s('text', { x: lx, y: ly + fs * (1.15 + i * 1.05), 'class': 'label sub', style: 'font-size:' + (fs * 0.85) + 'px;stroke-width:' + (4 * k) + 'px', text: sub }));
+        });
       });
       svg.appendChild(gPts);
       el.innerHTML = '';
@@ -333,7 +335,7 @@
     var isShared = !!shared[ep.atu.code];
     return h('article', { 'class': 'ep-card', 'aria-label': t('tale.episode', { n: ep.n }) + ' — ' + ep.title }, [
       h('div', { 'class': 'card-head' }, [
-        h('span', { text: t('tale.episode', { n: ep.n }).toLowerCase() }),
+        h('span', { text: t('tale.episode', { n: ep.n }) }),
         h('span', null, ['ATU ', h('span', { 'class': 'atu' + (isShared ? ' shared' : ''), text: ep.atu.code }), isShared ? h('span', { 'class': 'muted', text: ' · ' + t('f.shared') }) : null])
       ]),
       h('div', { 'class': 'card-body' }, [
@@ -385,7 +387,7 @@
     })))]);
     var tbody = h('tbody');
     rows.forEach(function (r) {
-      tbody.appendChild(h('tr', null, [h('th', { scope: 'row', text: t(r[0]) })].concat(ids.map(function (id) { return h('td', null, [r[1](tale(id))]); }))));
+      tbody.appendChild(h('tr', null, [h('th', { scope: 'row', text: t(r[0]) })].concat(ids.map(function (id) { return h('td', { 'data-label': tale(id).title }, [r[1](tale(id))]); }))));
     });
     el.innerHTML = '';
     el.appendChild(h('div', { 'class': 'table-wrap' }, [h('table', { 'class': 'record-table' }, [thead, tbody])]));
