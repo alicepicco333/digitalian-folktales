@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesù e San Pietro in Sicilia</title>
+        <title type="sub">Digitalian Folktales: Sicilian text, Italian and English translations</title>
+      <respStmt xml:id="team2023"><resp>transcription, Italian translation and annotation (2023)</resp><name>Alice Picco</name><name>Nikolai Gorbachev</name></respStmt>
+      <respStmt xml:id="ed2026"><resp>TEI encoding, English working translation, glossary and linked data (2026)</resp><name>Alice Picco</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digitalian Folktales</publisher>
+        <pubPlace>https://alicepicco333.github.io/digitalian-folktales/</pubPlace>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="source"><author ref="https://www.wikidata.org/wiki/Q978237">Giuseppe Pitrè</author>, <title>Fiabe, novelle e racconti popolari siciliani</title>, 4 voll., <pubPlace>Palermo</pubPlace>, <date>1875</date> (Biblioteca delle tradizioni popolari siciliane, voll. IV–VII), vol. III, <biblScope unit="tale">n. CXXIII</biblScope>, from <biblScope unit="page">54</biblScope>.</bibl>
+        <bibl type="retelling"><author ref="https://www.wikidata.org/wiki/Q154756">Italo Calvino</author>, <title ref="https://www.wikidata.org/wiki/Q3744324">Fiabe italiane</title>, <pubPlace>Torino</pubPlace>, <publisher>Einaudi</publisher>, <date>1956</date>: “Gesù e San Pietro in Sicilia”.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The dialect text keeps the spelling of the source edition. Passages are the units of alignment: each translation passage points to its original with <att>corresp</att>. The Italian translation of the 2023 edition is kept as it was; where the English working translation reads the dialect differently, a note says so.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="scn">Sicilian</language><language ident="it">Italian</language><language ident="en">English</language>
+      </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="gargano"><persName>Gargano</persName><note>narrator (“un certo Gargano”, Pitrè)</note></person>
+          <person xml:id="pitre"><persName ref="https://www.wikidata.org/wiki/Q978237">Giuseppe Pitrè</persName><note>collector</note></person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="bagheria"><placeName ref="https://www.wikidata.org/wiki/Q27000">Bagheria (PA)</placeName><location><geo>38.0833 13.5</geo></location></place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <head type="original" xml:lang="scn">Lu Signuri, S. Petru e li Apostuli.</head>
+      <head xml:lang="it">Il Signore, S. Pietro e gli Apostoli.</head>
+      <head xml:lang="en">The Lord, St Peter and the Apostles</head>
+    </front>
+    <body>
+      <div type="episode" n="I" xml:id="sicily-I" corresp="#gargano #bagheria">
+        <head xml:lang="it">Storia I</head>
+        <head xml:lang="en">Story I: the stones and the bread</head>
+        <div type="original" xml:lang="scn">
+          <div type="passage" xml:id="sicily-I-1" n="I.1" rend="p-start">
+            <p>Quannau lu Maistru java caminannu cu li tridici Apostuli, junceru tutti ’nt’ôn paisi, e pani 'un cci nn’era. Cci dissi lu Maistru: — « Petru, carricàtivi 'na petra l’unu. » Si carricàru 'na petra l'unu, e S. Petru si nni carricau una nica nica. Tutti javanu carricati, e S. Petru java beddu lèggiu. Dici lu Maistru: — «Ora jamu 'nta n'âtru paisi; si ddà pani cci nn'è, l'accattamu; s’un cci nn'è vi fazzu la binidizioni, e li petri v'addiventanu pani. »</p>
+          </div>
+          <div type="passage" xml:id="sicily-I-2" n="I.2">
+            <p>Jeru ‘nta n'âutru paisi; pusaru tutti li petri ’nt ôn chianiolu, e s'arripusaru. Lu Maistru cci fìci a tutti la binidizioni, e li petri addivintaru pani. San Petru, ca s'avia purtatu ’na pitrudda, cci scunchiu l’arma !—  «Maistru, dici, e io comu manciu? » — « Eh ! frati mio ! Tu pirchì ti purtasti ’na pitrudda ? L'àutrì ca jeru gravusi, àppiru pani assai. &gt;</p>
+          </div>
+          <div type="passage" xml:id="sicily-I-3" n="I.3">
+            <p>Jeru cchiù a jiri ddà: e lu Maistru cci fici carricari 'n'àutra petra l’unu. Pigghiò S. Petru, mariuolu, e si nni carricò una grossa assai; e tutti l’àutri si nni pigghiaru una nica. Lu Signuri si vutò cu l’Apostuli: — « Picciotti, ora ridemu tanticchia cu Petru.»</p>
+          </div>
+          <div type="passage" xml:id="sicily-I-4" n="I.4">
+            <p>Junceru ’nt'ôn paisi, e tutti l’Apostuli jittaru la petra pirchì cc'era lu pani; e S. Petru arristò currivatu ca avía purtatu un balatuni senza nuddu piaciri.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#team2023">
+          <div type="passage" corresp="#sicily-I-1">
+            <p>Mentre il Maestro camminava con i tredici Apostoli, giunsero tutti in un paese, e pane non ce n’era. Disse loro il Maestro – “Pietro, caricatevi una pietra l’uno.” Si caricarono una pietra l’uno, e S. Pietro se ne caricò una piccola piccola. Tutti proseguivano carichi, e S. Pietro andava leggero. Dice il Maestro – “Andiamo ora in un altro paese; se lì c’è del pane, lo compriamo; se non c’è, vi faccio la benedizione, e le pietre si tramutano in pane.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-2">
+            <p>Andarono in un altro paese; posarono tutte le pietre in un pianoro, e si riposarono. Il Maestro fece a tutti la benedizione, e le pietre divennero pani. San Pietro, che si era portato un sassolino, si sentì venir meno! – “Maestro, dice, e io come mangio?” – “Eh! Fratello mio! Tu perché ti sei portato un sassolino? Gli altri che si spostavano con un peso, hanno ricevuto molto pane.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-3">
+            <p>Si spostarono ancora: e il Maestro fece caricare loro un’altra pietra ciascuno. San Pietro, furfante, allora se ne caricò una molto grande; e tutti gli altri ne presero una piccola. Il Signore disse agli Apostoli – “Ragazzi, ora ridiamo un po’ con Pietro.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-4">
+            <p>Giunsero ad un paese, e tutti gli apostoli gettarono via la pietra perché c’era il pane; e San Pietro rimase curvo per aver portato un pietrone senza alcun piacere/risultato.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#sicily-I-1">
+            <p>While the Master was walking with the thirteen Apostles, they all came to a village, and there was no bread. The Master said to them: “Peter, each of you pick up a stone.” Each of them picked up a stone, and St Peter picked up a tiny little one. They all walked on laden, and St Peter walked along nice and light. The Master says: “Now let’s go to another village; if there’s bread there, we’ll buy it; if there isn’t, I’ll give you the blessing, and the stones will turn into bread.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-2">
+            <p>They went to another village; they set all the stones down on a patch of flat ground and rested. The Master gave them all the blessing, and the stones became loaves. St Peter, who had brought a pebble, felt his heart sink. “Master,” he says, “and what am I to eat?” “Eh! My brother! Why did you bring a pebble? The others, who went heavy-laden, got plenty of bread.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-3">
+            <p>They moved on again, and the Master had them each pick up another stone. St Peter, the rascal, took a very big one this time, and all the others took small ones. The Lord turned to the Apostles: “Lads, now let’s have a little laugh with Peter.”</p>
+          </div>
+          <div type="passage" corresp="#sicily-I-4">
+            <p>They came to a village, and all the Apostles threw down their stones, because there was bread; and St Peter was left fuming, having carried a great slab for no reward at all.</p>
+            <note type="translation">“Arristò currivatu”: currivatu is “vexed, sulking” (curriva, spite); the 2023 Italian translation has “rimase curvo”, bent.</note>
+          </div>
+        </div>
+      </div>
+      <div type="episode" n="II" xml:id="sicily-II" corresp="#gargano #bagheria">
+        <head xml:lang="it">Storia II</head>
+        <head xml:lang="en">Story II: the oven</head>
+        <div type="original" xml:lang="scn">
+          <div type="passage" xml:id="sicily-II-1" n="II.1" rend="p-start">
+            <p>Camminannu camminannu, scuntraru a udu. Comu S. Petru java avanti; cci dissi: — «Viditi ca ccà appressu cc'è lu Signuri; addumannàticci la grazia di l’arma. » 'Ncugna chiddu, e cci dici :— «Signuri, haju a mè patri malatu di vicchiaja! Lu facissi stari bonu , Maistru. » Si vôta lu Signuri: — «E chi sugnu medicu io! Lu sapiti ch'aviti a fari ? 'Nfilatilu ’nt'ôn furnu, ca vostru patri addiventa un picciriddu. » Accussì fici chiddu, e sò patri addivintò un picciriddu.</p>
+          </div>
+          <div type="passage" xml:id="sicily-II-2" n="II.2">
+            <p>La spècia a S. Petru cci piaciu. Quannu si truvò sulu, java circannu di fari addivintari picciriddu quarchi vecchiu. Giustu giustu cci capita unu chi java a lu scontru di lu Maistru, pirchì avìa la matri ’n fini di morti, e la vulia fatta stari bona. San Petru dici: — «Chi cerchi ? » — « Cercu lu Maistru, ca haju a me matri, donna granni, ca è malata 'nfirma, e lu Maistru sulu pò essiri di dàricci la saluti. » — « E bonu ccà cc'è Petru; sai ch'ha' a fari ? camia un furnu, e ’nfilala ’nta un furnu e idda gualisci.» Ddu puvireddu cci critti, pirchì ca sapìa ca S. Petru era vulutu beni di lu Signuri; e va a la casa, e cuntanti cuntanti va a ’nfila a so matri ’nta la furnu camiatu. Nni vulistivu cchiù ? La vicchiaredda addivìntò un pezzu di carvuni. — « Ah ! santu di ccà e di ddà ! grida lu figghiu; la matri mi fici appizzari stu tignusu!... » Vota e va nni S. Petru. Cc'era lu Maistru, e comu senti la cosa, si misi a rìdiri ca nun si putia tèniri; dici: — « Ah ! Petru ! e chi facisti ?.... &gt; S. Petra circava di scusàrisi, ma lu poviru figghiu jiccava paventi dicennu ca vulia la matri pirchì vulía la matri. La Maistru chi appi a fari? appi a jiri a la casa di la morta, e, cu ’na binidizioni chi cci fici, fici arrivisciri la vicchiaredda: 'na bella giuvina, e livò sta gran chiovu di supra a S. Petru.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#team2023">
+          <div type="passage" corresp="#sicily-II-1">
+            <p>Camminano, camminano, incontrarono un tale. San Pietro che andava avanti gli disse – “Guardate che qua con noi c’è il Signore; chiedetegli la grazia dell’anima.” Quello si avvicina e gli dice: – “Signore, ho mio padre malato di vecchiaia! Fatelo stare bene, Maestro.” Il Signore allora: “E che sono un medico io! Sapete cosa dovete fare? Infilatelo in un forno, così vostro padre diventa un bambino.” Quello seguì le indicazioni, e suo padre diventò un bambino.</p>
+          </div>
+          <div type="passage" corresp="#sicily-II-2">
+            <p>Il trucco a San Pietro piacque. Quando si trovò da solo, cercò di fare diventare bambino qualche vecchio. Il caso volle che incontrò uno che andava dal Maestro perché aveva la madre in fin di vita, e la voleva guarita. San Pietro dice – “Chi cerchi?” – “Cerco il Maestro, che ho mia madre, una donna anziana, che è gravemente malata, e solo il Maestro può darle la salute” – “E bene! qua c’è Pietro; sai che devi fare? accendi un forno, infilala nel forno e vedi che lei guarisce.” Quel poveretto gli credette, perché sapeva che San Pietro era amato dal Signore; va a casa sua e senza pensarci infila sua madre dentro il forno acceso. Ne volete sapere di più? La vecchietta diventò un pezzo di carbone. – “Ah! Santo di qua e di là! grida il figlio, la madre mi ha fatto perdere ‘sto pelato!...” Prende e va da San Pietro. C’era il Maestro, e non appena sentì la storia, si mise a ridere senza riuscire a smettere; dice – “Ah Pietro! Ma che hai fatto?...” San Pietro cercava di scusarsi, ma il povero figlio imprecava dicendo che voleva la madre perché voleva sua madre. Il maestro che fece? Andò alla casa della morta, e, con una benedizione che le fece, la vecchietta tornò in vita: una bella giovane, e tolse a San Pietro di questo pensiero.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#sicily-II-1">
+            <p>Walking and walking, they met a man. As St Peter was going ahead, he said to him: “Look, the Lord is here just behind; ask him for the grace of your soul.” The man comes up and says: “Lord, my father is sick with old age! Make him well, Master.” The Lord turns: “And am I a doctor? Do you know what you must do? Put him in an oven, and your father will become a little child.” So the man did, and his father became a little child.</p>
+          </div>
+          <div type="passage" corresp="#sicily-II-2">
+            <p>The trick pleased St Peter. When he found himself alone, he went about trying to turn some old person into a child. As luck would have it, he met a man on his way to the Master, because his mother was dying and he wanted her made well. St Peter says: “Who are you looking for?” “I’m looking for the Master, because my mother, an old woman, is gravely ill, and only the Master can give her back her health.” “Well then! Peter is here; do you know what to do? Heat an oven, put her in, and she’ll get better.” The poor man believed him, because he knew that St Peter was dear to the Lord; he goes home and, happy as can be, puts his mother into the heated oven. What more do you want to hear? The little old woman turned into a lump of charcoal. “Ah! Saints of here and there!” cries the son, “this scabby-head has made me lose my mother!…” Off he goes to St Peter. The Master was there, and as soon as he heard the story he began to laugh fit to burst; he says: “Ah! Peter! What have you done?…” St Peter tried to excuse himself, but the poor son was cursing, saying he wanted his mother because he wanted his mother. What was the Master to do? He had to go to the dead woman’s house, and with a blessing he brought the little old woman back to life: a beautiful young woman; and he pulled that great nail out of St Peter’s side.</p>
+            <note type="translation">“Livò stu gran chiovu di supra a S. Petru”, took this great nail off St Peter: freed him from his trouble.</note>
+          </div>
+        </div>
+      </div>
+    </body>
+    <back>
+    <div type="glossary" xml:lang="scn">
+      <list type="gloss">
+        <item><term>Maistru</term><gloss xml:lang="it">Maestro</gloss><gloss xml:lang="en">Master</gloss></item>
+        <item><term>tridici</term><gloss xml:lang="it">tredici</gloss><gloss xml:lang="en">thirteen</gloss></item>
+        <item><term>paisi</term><gloss xml:lang="it">paese</gloss><gloss xml:lang="en">village</gloss></item>
+        <item><term>pani</term><gloss xml:lang="it">pane</gloss><gloss xml:lang="en">bread</gloss></item>
+        <item><term>petra</term><term>petri</term><gloss xml:lang="it">pietra, pietre</gloss><gloss xml:lang="en">stone(s)</gloss></item>
+        <item><term>nica</term><gloss xml:lang="it">piccola</gloss><gloss xml:lang="en">small</gloss></item>
+        <item><term>lèggiu</term><gloss xml:lang="it">leggero</gloss><gloss xml:lang="en">light</gloss></item>
+        <item><term>accattamu</term><gloss xml:lang="it">compriamo</gloss><gloss xml:lang="en">we buy</gloss></item>
+        <item><term>binidizioni</term><gloss xml:lang="it">benedizione</gloss><gloss xml:lang="en">blessing</gloss></item>
+        <item><term>pitrudda</term><gloss xml:lang="it">sassolino</gloss><gloss xml:lang="en">pebble</gloss></item>
+        <item><term>manciu</term><gloss xml:lang="it">mangio</gloss><gloss xml:lang="en">I eat</gloss></item>
+        <item><term>gravusi</term><gloss xml:lang="it">carichi</gloss><gloss xml:lang="en">heavy-laden</gloss></item>
+        <item><term>mariuolu</term><gloss xml:lang="it">furbo, birbante</gloss><gloss xml:lang="en">rascal</gloss></item>
+        <item><term>picciotti</term><gloss xml:lang="it">ragazzi</gloss><gloss xml:lang="en">lads</gloss></item>
+        <item><term>tanticchia</term><gloss xml:lang="it">un pochino</gloss><gloss xml:lang="en">a little</gloss></item>
+        <item><term>balatuni</term><gloss xml:lang="it">lastrone</gloss><gloss xml:lang="en">great slab</gloss></item>
+        <item><term>currivatu</term><gloss xml:lang="it">indispettito</gloss><gloss xml:lang="en">vexed</gloss></item>
+        <item><term>vicchiaja</term><gloss xml:lang="it">vecchiaia</gloss><gloss xml:lang="en">old age</gloss></item>
+        <item><term>furnu</term><gloss xml:lang="it">forno</gloss><gloss xml:lang="en">oven</gloss></item>
+        <item><term>picciriddu</term><gloss xml:lang="it">bambino</gloss><gloss xml:lang="en">little child</gloss></item>
+        <item><term>matri</term><gloss xml:lang="it">madre</gloss><gloss xml:lang="en">mother</gloss></item>
+        <item><term>carvuni</term><gloss xml:lang="it">carbone</gloss><gloss xml:lang="en">charcoal</gloss></item>
+        <item><term>tignusu</term><gloss xml:lang="it">tignoso, pelato</gloss><gloss xml:lang="en">scabby-head</gloss></item>
+        <item><term>vicchiaredda</term><gloss xml:lang="it">vecchietta</gloss><gloss xml:lang="en">little old woman</gloss></item>
+        <item><term>giuvina</term><gloss xml:lang="it">giovane</gloss><gloss xml:lang="en">young woman</gloss></item>
+        <item><term>chiovu</term><gloss xml:lang="it">chiodo</gloss><gloss xml:lang="en">nail</gloss></item>
+      </list>
+    </div>
+    </back>
+  </text>
+</TEI>

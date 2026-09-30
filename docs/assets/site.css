@@ -149,7 +149,7 @@ p { margin: 0 0 1em; }
 .record-card .fields dd { padding-top: 2px; font-size: 0.9375rem; }
 .record-card ol { list-style: none; margin: 0; padding: 0; }
 .record-card ol li { display: grid; grid-template-columns: 2.5em 1fr; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.9375rem; }
-.record-card h4 { font-size: 0.875rem; color: var(--muted); margin: 18px 0 4px; }
+.record-card h4, .record-card .card-sub { font-size: 0.875rem; font-weight: 400; color: var(--muted); margin: 18px 0 4px; }
 
 .controls { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; justify-content: center; margin: 0 0 16px; position: sticky; top: 0; z-index: 3; background: var(--paper); padding: 10px 0; }
 .seg-control { display: inline-flex; border: 1px solid var(--ink); border-radius: 1.3rem; overflow: hidden; }
@@ -332,3 +332,40 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
 }
 @media (forced-colors: active) { .mk, .track .dot, .map-svg .marker { forced-color-adjust: none; } }
 @media print { .site-header, .controls, .site-footer, .skip { display: none; } .seg { break-inside: avoid; } }
+
+/* ---------------------------------------------------------------- 2026: translation switch, glossary, TEI, Pitrè */
+.reader[data-tr="it"] .t-en, .reader[data-tr="en"] .t-it { display: none; }
+.seg .sn-col { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.tei-btn { font: 0.6875rem/1 var(--mono); letter-spacing: 0.04em; color: var(--muted); background: var(--paper); border: 1px solid var(--rule); border-radius: 2px; padding: 4px 5px; min-height: 24px; cursor: pointer; }
+.tei-btn:hover, .tei-btn[aria-expanded="true"] { color: var(--ink); border-color: var(--ink); }
+.tei-src { grid-column: 2 / -1; margin-top: 12px; }
+.tei-src pre { margin: 0; padding: 14px 16px; background: var(--paper-2); border-left: 3px solid var(--ink); font: 0.8125rem/1.55 var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; }
+.tr-note { font-family: var(--mono); font-size: 0.8125rem !important; line-height: 1.5; color: var(--muted); border-left: 2px solid var(--rule); padding-left: 10px; margin-top: 10px !important; hyphens: manual; }
+.gl { border-bottom: 1.5px dotted var(--rule); cursor: help; }
+.gl:hover, .gl:focus { background: var(--peach); border-bottom-color: var(--ink); outline: none; }
+.gl:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.reader.no-gloss .gl { border-bottom: 0; cursor: auto; background: none; }
+.reader.no-gloss .gl-sr { display: none; }
+#gl-tip { position: fixed; z-index: 30; max-width: 300px; background: var(--ink); color: var(--paper); font: 0.8125rem/1.45 var(--mono); padding: 8px 11px; pointer-events: none; }
+#gl-tip[hidden] { display: none; }
+#gl-tip span { display: block; }
+#gl-tip span[lang="it"] { font-family: var(--serif); font-size: 0.9375rem; }
+#gl-tip .src { color: #c9c9c9; font-size: 0.75rem; margin-top: 4px; }
+.gl-switch { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9375rem; cursor: pointer; }
+.gl-switch input { width: 16px; height: 16px; accent-color: var(--ink); margin: 0; }
+.tei-dl { font-size: 0.8125rem; }
+.episode.variant { margin-left: 3.5rem; border-left: 3px solid var(--paper-2); padding-left: 16px; }
+.episode.variant .episode-head { grid-template-columns: 0 minmax(0, 1fr) minmax(0, 1fr); }
+.map-svg .marker.related { fill: var(--sicily); stroke: var(--sicily); fill-opacity: 0.55; stroke-width: 2; }
+.mk.related { border-radius: 2px; border-color: var(--sicily); background: color-mix(in srgb, var(--sicily) 55%, var(--paper)); }
+.record-card .fields.links a { overflow-wrap: anywhere; }
+.results .snip { display: block; font-family: var(--serif); font-size: 0.9375rem; color: var(--muted); margin-top: 2px; }
+@media (max-width: 720px) {
+  .tei-src { grid-column: 1 / -1; }
+  .seg, .reader[data-view] .seg { grid-template-columns: minmax(0, 1fr); }
+  .seg .sn-col { flex-direction: row; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .seg .orig, .seg .trans, .tei-src { grid-column: 1; }
+  .controls { position: static; }
+  .episode.variant { margin-left: 0; }
+}
+@media (forced-colors: active) { .gl { border-bottom-color: CanvasText; } #gl-tip { border: 1px solid CanvasText; } }

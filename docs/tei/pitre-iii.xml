@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>San Pietro in Pitrè, vol. III: altre tre fiabe</title>
+        <title type="sub">Digitalian Folktales: three more Jesus-and-Peter tales from Pitrè’s collection, with Italian and English translations</title>
+      <respStmt xml:id="team2023"><resp>transcription, Italian translation and annotation (2023)</resp><name>Alice Picco</name><name>Nikolai Gorbachev</name></respStmt>
+      <respStmt xml:id="ed2026"><resp>TEI encoding, English working translation, glossary and linked data (2026)</resp><name>Alice Picco</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digitalian Folktales</publisher>
+        <pubPlace>https://alicepicco333.github.io/digitalian-folktales/</pubPlace>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="source"><author ref="https://www.wikidata.org/wiki/Q978237">Giuseppe Pitrè</author>, <title>Fiabe, novelle e racconti popolari siciliani</title>, vol. III, <pubPlace>Palermo</pubPlace>, <date>1875</date> (Biblioteca delle tradizioni popolari siciliane, vol. VI), nn. CXXI, CXXII and CXXVI, with Pitrè’s notes. Transcribed in 2026 from the page images of the copy digitised by Google (Oxford), <ref target="https://archive.org/details/fiabenovelleera01pitrgoog">Internet Archive</ref>.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The dialect text keeps the spelling of the source edition. Passages are the units of alignment: each translation passage points to its original with <att>corresp</att>. The Italian translation of the 2023 edition is kept as it was; where the English working translation reads the dialect differently, a note says so.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="scn">Sicilian</language><language ident="it">Italian</language><language ident="en">English</language>
+      </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="salomone"><persName ref="https://www.wikidata.org/wiki/Q21484594">Salvatore Salomone-Marino</persName><note>collector of n. CXXI</note></person>
+          <person xml:id="deodato"><persName>Francesca Deodato</persName><note>narrator of n. CXXII (Pitrè’s housekeeper)</note></person>
+          <person xml:id="messia"><persName>Agatuzza Messia</persName><note>narrator of n. CXXVI</note></person>
+          <person xml:id="pitre"><persName ref="https://www.wikidata.org/wiki/Q978237">Giuseppe Pitrè</persName><note>collector and editor</note></person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="borgetto"><placeName ref="https://www.wikidata.org/wiki/Q496869">Borgetto (PA)</placeName><location><geo>38.05 13.15</geo></location></place>
+          <place xml:id="palermo"><placeName ref="https://www.wikidata.org/wiki/Q2656">Palermo</placeName><location><geo>38.1157 13.3613</geo></location></place>
+          <place xml:id="bagheria"><placeName ref="https://www.wikidata.org/wiki/Q27000">Bagheria (PA)</placeName><location><geo>38.0833 13.5</geo></location></place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="tale" n="CXXI" xml:id="pitre-latri" corresp="#salomone #borgetto">
+        <head type="original" xml:lang="scn">San Petru e li latri</head>
+        <head xml:lang="it">San Pietro e i ladri</head>
+        <head xml:lang="en">St Peter and the thieves</head>
+        <note type="record"><bibl>Pitrè, vol. III, n. CXXI, pp. <biblScope unit="page">48–49</biblScope></bibl>; ATU <term type="atu" n="774">Jests about Christ and Peter (group)</term> (assigned 2026).</note>
+        <div type="original" xml:lang="scn">
+          <div type="passage" xml:id="pitre-latri-1" n="CXXI.1" rend="p-start">
+            <p>Una vota si cunta e s’arricunta ca a tempi chi lu Maistru caminava cu l’Apostuli, si cci fici notti pri via ’ntra ’na campagna. — « Petru, e comu facemu stasira? » dissi lu Maistru. — « Nenti Maistru; ddà jùsu viju un pagghiaru, e cci sàcciu ’na mànnira; caminati cu mia. »</p>
+          </div>
+          <div type="passage" xml:id="pitre-latri-2" n="CXXI.2">
+            <p>Tirri tirri, unu appressu di l’àutru su’ arrivati a la mànnira: — « Doràzia e Viva Maria; nni putiti dari risettu stanotti, ca semu poviri pillirini stanchi e morti di fami? » — « Doràzia e Viva Maria! » dissiru lu curàtulu e li picurara: e senza mancu smòvisi, cci ’nsignaru lu pagghiaru pri jirisi a curcari; pirchì avìanu la pasta ’ntra lu scanaturi, e dari a manciari a tridici, nun si la sintìanu, pri arristari dijuni iddi. Lu poviru Maistru e l’Apostuli si ficiru torti torti, e si jeru a risittari zittu tu e zittu eu.</p>
+          </div>
+          <div type="passage" xml:id="pitre-latri-3" n="CXXI.3">
+            <p>’Ntra stu mentri ’na chidda di latri: — « Atterra atterra, Giorgi! Ca santu di ccà e santu di ddà!... » e timpi-tampi supra li spaddi di lu curàtulu e di li picurara. Chi vulìstivu vidiri! Chiddi, santi pedi, ajutatimi! e si la cugghieru ìllichi-ìllichi. Li latri, dèttiru ’na bona pulizziata a la mànnira, e dipò’ di chistu jeru a lu pagghiaru. — « Altu tutti! cu’ è ddocu? » — « Nui semu, dici San Petru, tridici poviri pillirini stanchi e dijuni, ca chiddi di la mànnira nni trattaru peju di cani, senza mancu diri « Ccà cc’è sèggia. » » — « E mentri è chissu, viniti: la pasta è ancora sana sana, saziàtivi a la facci d’iddi, ca nui ni nni jemu pri nostra via. »</p>
+          </div>
+          <div type="passage" xml:id="pitre-latri-4" n="CXXI.4">
+            <p>Mischini! allupatizzi com’eranu, nun lu vòsiru dittu du’ voti, e si làssanu jiri pri lu scanaturi. — « Biniditti li latri! dici San Petru, ca penzanu a li poviri affamati megghiu di li ricchi. » — « Biniditti li latri! » dissiru l’Apostuli; e accussì s’attiparu li panzi boni boni.</p>
+          </div>
+          <div type="passage" xml:id="pitre-latri-5" n="CXXI.5" rend="p-start">
+            <p>E ristaru filici e cuntenti, / E nui ccà senza nenti.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pitre-latri-1">
+            <p>Si racconta e si riracconta che ai tempi in cui il Maestro camminava con gli Apostoli, si fece loro notte per via, in campagna. «Pietro, e come facciamo stasera?» disse il Maestro. «Niente, Maestro; laggiù vedo un pagliaio, e lì conosco una mandria; camminate con me.»</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-2">
+            <p>A passi brevi e svelti, uno dietro l’altro arrivarono alla mandria: «Deo gratias e viva Maria; ci potete dare riparo stanotte, che siamo poveri pellegrini stanchi e morti di fame?» «Deo gratias e viva Maria!» dissero il curatolo e i pecorai, e senza nemmeno muoversi indicarono loro il pagliaio per andarsi a coricare: perché avevano la pasta sulla spianatoia, e dar da mangiare a tredici non se la sentivano, per poi restare digiuni loro. Il povero Maestro e gli Apostoli si fecero piccoli piccoli, e andarono a sistemarsi zitto tu e zitto io.</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-3">
+            <p>In quel mentre, una gran quantità di ladri: «A terra, a terra, Giorgio! Santo di qua e santo di là!...» e botte sulle spalle del curatolo e dei pecorai. Aveste visto! Quelli, piedi santi aiutatemi!, se la diedero a gambe all’istante. I ladri fecero una bella ripulita della mandria, e dopo andarono al pagliaio. «Alto tutti! Chi c’è là?» «Siamo noi, dice San Pietro, tredici poveri pellegrini stanchi e digiuni, che quelli della mandria ci hanno trattato peggio dei cani, senza nemmeno dire “Qui c’è una sedia”.» «E se è così, venite: la pasta è ancora intatta, saziatevi alla faccia loro, che noi ce ne andiamo per la nostra strada.»</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-4">
+            <p>Poveretti! Affamati come lupi com’erano, non se lo fecero dire due volte, e si buttarono sulla spianatoia. «Benedetti i ladri! dice San Pietro, che pensano ai poveri affamati meglio dei ricchi.» «Benedetti i ladri!» dissero gli Apostoli; e così si riempirono la pancia ben bene.</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-5">
+            <p>E restarono felici e contenti, / e noi qui senza niente.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pitre-latri-1">
+            <p>They tell and tell again that in the days when the Master walked with the Apostles, night fell on them on their way through the countryside. “Peter, and what shall we do tonight?” said the Master. “Never mind, Master; down there I can see a straw hut, and I know a sheepfold there; walk with me.”</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-2">
+            <p>Pattering along one behind the other, they reached the sheepfold. “Deo gratias and hail Mary; can you give us shelter tonight, for we are poor pilgrims, tired and dying of hunger?” “Deo gratias and hail Mary!” said the head shepherd and the shepherds, and without so much as stirring they pointed them to the straw hut to go to bed; for they had the pasta on the kneading board, and they had no mind to feed thirteen and go hungry themselves. The poor Master and the Apostles made themselves small and went off to settle down, not a word from anyone.</p>
+            <note type="translation">“Doràzia” is Deo gratias, the greeting of pilgrims at a door.</note>
+          </div>
+          <div type="passage" corresp="#pitre-latri-3">
+            <p>Just then, a whole band of thieves: “Down, down, Giorgio! Saints of here and saints of there!…” and thump, thump on the backs of the head shepherd and the shepherds. You should have seen it! Those fellows, holy feet, help me!, were off in a flash. The thieves made a clean sweep of the sheepfold, and after that they went to the straw hut. “Everybody up! Who’s in there?” “It’s us,” says St Peter, “thirteen poor pilgrims, tired and hungry, whom the people at the sheepfold treated worse than dogs, without so much as saying ‘Here’s a chair.’” “Well, if that’s how it is, come along: the pasta is still untouched; fill yourselves up to spite them, for we’re going on our way.”</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-4">
+            <p>Poor things! Ravenous as wolves as they were, they did not need telling twice, and they fell on the kneading board. “Blessed be the thieves!” says St Peter, “who think of the poor and hungry better than the rich do.” “Blessed be the thieves!” said the Apostles; and so they filled their bellies good and full.</p>
+          </div>
+          <div type="passage" corresp="#pitre-latri-5">
+            <p>And they lived happy and content, / and here are we with nothing.</p>
+            <note type="translation">The closing rhyme is the teller’s formula.</note>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="CXXII" xml:id="pitre-tavirnaru" corresp="#deodato #palermo">
+        <head type="original" xml:lang="scn">S. Petru e lu tavirnaru</head>
+        <head xml:lang="it">San Pietro e l’oste</head>
+        <head xml:lang="en">St Peter and the innkeeper</head>
+        <note type="record"><bibl>Pitrè, vol. III, n. CXXII, pp. <biblScope unit="page">52–53</biblScope></bibl>; ATU <term type="atu" n="774">Jests about Christ and Peter (group)</term> (assigned 2026).</note>
+        <div type="original" xml:lang="scn">
+          <div type="passage" xml:id="pitre-tavirnaru-1" n="CXXII.1" rend="p-start">
+            <p>’Na vota s’arriccunta ca Gesu Cristu java caminannu cu l’Apostuli soi pi cummèrtiri li genti, e jennu ’nta li citati si firmava e poi sicutava lu sò caminu. A ddi tempi lu vinu si vinnía a varrili, e a l’Apostuli tanticchiedda di sciroppu di Viola cci piacía. Adunca Gesu Cristu urdinau a San Petru di jiri a vinu: e chiddu senza farisillu diri du’ voti cci iju.</p>
+          </div>
+          <div type="passage" xml:id="pitre-tavirnaru-2" n="CXXII.2">
+            <p>Li tavirnara sunnu fàusi tutti: e comu l’Apostulu trasíu pi lu vinu, lu tavirnaru si lu misi a’mmusciunari dicènnucci: — « Cumpari Petru, tastati di chistu; viditi com’è; manciativi stu pizzuddu di finocchiu, e accussì vi piaci megghiu. » Pigghiau S. Petru e si manciau lu finocchiu, e poi tastau lu vinu. — « Eh!! di chistu m’aviti a dari, cumpari, ca mi piaci. » Lu tavirnaru, ca nun vulía àutru, spinòccia e cci jinchi lu varrili di ddu vinu.</p>
+          </div>
+          <div type="passage" xml:id="pitre-tavirnaru-3" n="CXXII.3">
+            <p>San Petru si lu carricò ’n coddu, e si nni iju nni lu sò Maistru. Camina camina: — « Chi vinu, Maistru! ’un n’avemu vivutu mai, cu prisunzioni. » Scàrrica, e lu Maistru lu tasta: — « Eh! Petru, Petru! ti facisti ’nfinucchiari. » — « Chi diciti veru, Maistru? vegna ccà quantu lu tastu arreri. » Iju pi tastari, e vitti ca era vinu spuntu ’un avennu cchiù la vucca cu lu finocchiu.</p>
+          </div>
+          <div type="passage" xml:id="pitre-tavirnaru-4" n="CXXII.4" rend="p-start">
+            <p>E lu Maistru cci mannau a n’àutru Apostulu, pi accussì aviri vinu bonu. E di ddocu nni veni ca quannu s’havi a tastari lu vinu pi vìdiri s’è bonu, nun s’havi a manciari finocchiu.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pitre-tavirnaru-1">
+            <p>Si racconta che una volta Gesù Cristo andava camminando con i suoi Apostoli per convertire la gente, e passando per le città si fermava e poi proseguiva il suo cammino. A quei tempi il vino si vendeva a barili, e agli Apostoli un pochino di sciroppo di Viola piaceva. Dunque Gesù Cristo ordinò a San Pietro di andare a prendere il vino: e quello, senza farselo dire due volte, ci andò.</p>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-2">
+            <p>Gli osti sono tutti falsi: appena l’Apostolo entrò per il vino, l’oste si mise a raggirarlo dicendogli: «Compare Pietro, assaggiate questo; vedete com’è; mangiatevi questo pezzetto di finocchio, e così vi piace di più.» San Pietro prese e si mangiò il finocchio, e poi assaggiò il vino. «Eh! Di questo mi dovete dare, compare, che mi piace.» L’oste, che non voleva altro, spilla la botte e gli riempie il barile di quel vino.</p>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-3">
+            <p>San Pietro se lo caricò in spalla, e se ne andò dal suo Maestro. Cammina cammina: «Che vino, Maestro! Non ne abbiamo mai bevuto uno così, senza presunzione.» Scarica, e il Maestro lo assaggia: «Eh! Pietro, Pietro! Ti sei fatto infinocchiare.» «Dite davvero, Maestro? Date qua, che lo riassaggio.» Andò ad assaggiarlo, e vide che era vino spunto, non avendo più la bocca col finocchio.</p>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-4">
+            <p>E il Maestro ci mandò un altro Apostolo, per avere così vino buono. E da qui viene che quando si deve assaggiare il vino per vedere se è buono, non si deve mangiare finocchio.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pitre-tavirnaru-1">
+            <p>Once, so they tell, Jesus Christ was walking with his Apostles to convert the people, and passing through the towns he would stop and then go on his way. In those days wine was sold by the barrel, and the Apostles were fond of a drop of Viola’s syrup. So Jesus Christ told St Peter to go and fetch wine, and Peter, without needing to be told twice, went.</p>
+            <note type="translation">“Sciroppu di Viola”: wine, after Viola, a wine merchant in Palermo (Pitrè’s note).</note>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-2">
+            <p>Innkeepers are all cheats: as soon as the Apostle came in for the wine, the innkeeper set about taking him in, saying: “Friend Peter, taste this; see what it’s like; eat this little piece of fennel, and you’ll like it better.” St Peter took the fennel and ate it, and then tasted the wine. “Eh! That’s the one you must give me, friend, I like it.” The innkeeper, who wanted nothing better, taps the cask and fills his barrel with that wine.</p>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-3">
+            <p>St Peter hoisted it onto his shoulder and went off to his Master. On and on he walked: “What wine, Master! We’ve never drunk the like, if I may say so.” He sets it down, and the Master tastes it: “Eh! Peter, Peter! You’ve been fennelled.” “Is that true, Master? Let me have another taste.” He went to taste it, and found it was wine turned sour, now that his mouth no longer had the fennel in it.</p>
+            <note type="translation">’Nfinucchiari (Italian infinocchiare, to take someone in) is literally “to fennel”; the tale explains how the word came about.</note>
+          </div>
+          <div type="passage" corresp="#pitre-tavirnaru-4">
+            <p>And the Master sent another Apostle, so as to have good wine. And that is why, when you have to taste wine to see whether it is good, you must not eat fennel.</p>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="CXXVI" xml:id="pitre-porru" corresp="#messia #palermo">
+        <head type="original" xml:lang="scn">Lu porru di S. Petru</head>
+        <head xml:lang="it">Il porro di San Pietro</head>
+        <head xml:lang="en">St Peter’s leek</head>
+        <note type="record"><bibl>Pitrè, vol. III, n. CXXVI, pp. <biblScope unit="page">65–66</biblScope></bibl>; ATU <term type="atu" n="804">Peter’s Mother Falls from Heaven</term> (assigned 2026).</note>
+        <div type="original" xml:lang="scn">
+          <div type="passage" xml:id="pitre-porru-1" n="CXXVI.1" rend="p-start">
+            <p>S’arriccunta ca la Mamma di S. Petru era avara abbramata, ’un facía limosina mai, ’un dava mai un granu. Ora ’na jurnata stava munnannu li porri; ’ncugna ’na puviredda: — « Mi la fa la caritati, divuledda! » — « Tutti ccà hannu a vèniri!... — Pigghiàti ccà! » e cci detti ’na sfogghia di porru.</p>
+          </div>
+          <div type="passage" xml:id="pitre-porru-2" n="CXXVI.2" rend="p-start">
+            <p>Lu Signuri si la chiamò all’âtra vita, e la mannò a lu ’Nfernu. San Petru era capu di lu Paraddisu; ’na jurnata era davanti la porta; quantu senti ’na vuci: — « Ah! Petru figghiu mio! e vidi comu m’arrustu! E va nni lu Maistru, e pàrracci pi fàrimi nèsciri di sti guai! » San Petru va nni lu Signuri e cci dici: — « Maistru, haju a mè matri ca è ’nta lu ’Nfernu e voli grazia pi nèsciri. » Si vôta lu Signuri: — « Te’! tò matri ’un fici mai un ugnu di beni; tuttu lu sò piattu di forti è ’na sfogghia di porru chi detti a ’na puviredda. — La fai affirrari ccà a sta sfogghia (e cci pruìju ’na sfogghia di porru), e ti la porti ’n Paraddisu. »</p>
+          </div>
+          <div type="passage" xml:id="pitre-porru-3" n="CXXVI.3" rend="p-start">
+            <p>Calò un Ancilu cu dda sfogghia: — « Affirràtivi ccà! » La Matri di S. Petru si cci affirrò. A lu nèsciri di lu ’Nfernu tutti l’armuzzi ch’eranu cu idda si cci affirraru a la pudía di la vesta. Chi nn’avía a fari idda? tantu pirtantu l’Ancilu si li tirava a tutti. Mai! l’abbramata e chi era cci metti a dari caùci, e a scutulàrisi la vesta pi falli càdiri. Comu fa accussì, si rumpi la sfogghia di lu porru e iju cchiù a lu funnu di lu ’Nfernu.</p>
+          </div>
+          <div type="passage" xml:id="pitre-porru-4" n="CXXVI.4" rend="p-start">
+            <p>E chistu è lu cuntu di la Mamma di S. Petru.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pitre-porru-1">
+            <p>Si racconta che la mamma di San Pietro era avara e avida, non faceva mai l’elemosina, non dava mai un soldo. Ora un giorno stava mondando i porri; si avvicina una poveretta: «Mi fate la carità, devota!» «Tutte qua devono venire!... Pigliate qua!» e le diede una foglia di porro.</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-2">
+            <p>Il Signore la chiamò all’altra vita, e la mandò all’Inferno. San Pietro era a capo del Paradiso; un giorno stava davanti alla porta, quand’ecco sente una voce: «Ah! Pietro, figlio mio! Vedi come brucio! Va’ dal Maestro, e parlagli per farmi uscire da questi guai!» San Pietro va dal Signore e gli dice: «Maestro, mia madre è all’Inferno e chiede la grazia di uscirne.» Si volta il Signore: «Ecco: tua madre non ha mai fatto un briciolo di bene; tutto il bene che ha fatto è una foglia di porro che diede a una poveretta. Falla aggrappare qui, a questa foglia (e gli porse una foglia di porro), e portatela in Paradiso.»</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-3">
+            <p>Scese un Angelo con quella foglia: «Aggrappatevi qui!» La madre di San Pietro vi si aggrappò. Mentre usciva dall’Inferno, tutte le animucce che erano con lei si aggrapparono all’orlo della sua veste. Che ci poteva fare lei? Nonostante tutto, l’Angelo le tirava su tutte. Macché! L’avara, quella che era, si mette a dare calci e a scuotersi la veste per farle cadere. Come fa così, si rompe la foglia di porro, e lei andò più in fondo all’Inferno.</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-4">
+            <p>E questo è il racconto della mamma di San Pietro.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pitre-porru-1">
+            <p>They tell that St Peter’s mother was a greedy miser: she never gave alms, never gave away a penny. Now one day she was trimming leeks; a poor woman comes up: “Give me charity, good soul!” “They all have to come here!… Here, take this!” and she gave her a leek leaf.</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-2">
+            <p>The Lord called her to the other life and sent her to Hell. St Peter was the head of Paradise; one day he was at the gate when he hears a voice: “Ah! Peter, my son! See how I’m roasting! Go to the Master and speak to him, to get me out of this misery!” St Peter goes to the Lord and says to him: “Master, my mother is in Hell and asks for grace to get out.” The Lord turns: “Look: your mother never did a scrap of good; all the good she ever did is a leek leaf she gave to a poor woman. Have her hold on to this leaf (and he held out a leek leaf), and take her to Paradise.”</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-3">
+            <p>An Angel came down with that leaf: “Hold on here!” St Peter’s mother held on to it. As she came out of Hell, all the little souls who were with her caught hold of the hem of her dress. What could she do about it? Even so, the Angel was pulling them all up. Not a bit of it! The miser, being what she was, starts kicking out and shaking her dress to make them fall. As she does so, the leek leaf breaks, and down she went to the very bottom of Hell.</p>
+          </div>
+          <div type="passage" corresp="#pitre-porru-4">
+            <p>And this is the tale of St Peter’s mother.</p>
+          </div>
+        </div>
+        <div type="variant" xml:id="pitre-porru-v" corresp="#bagheria">
+          <head type="original" xml:lang="scn">La Mamma di S. Petru</head>
+          <head xml:lang="it">La mamma di San Pietro</head>
+          <head xml:lang="en">St Peter’s mother</head>
+        <div type="original" xml:lang="scn">
+            <div type="passage" xml:id="pitre-porru-v-1" n="CXXVI var..1" rend="p-start">
+              <p>Quannu la Mamma di S. Petru era ’nta lu Prïatoriu, cu li prijeri di sò figghiu nisciu pi jiri nna lu Paradisu. L’armi santi di lu Prïatoriu si cci affirravanu a li pudii di la vesta pi jirisìnni, a sènziu sò, cu idda. Idda misi a dari càuci e a trantuliàrisi tutta pi scutularisilli: — « Sciù! vativìnni! avissivu’ fattu figghi santi comu mia! » Lu Signuri vitti chistu e la fici jiri cchiù a funnu. E la Mamma di San Petru arristau pi muttu, e si dici: Comu la Mamma di San Petru.</p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="it" resp="#ed2026">
+            <div type="passage" corresp="#pitre-porru-v-1">
+              <p>Quando la mamma di San Pietro era in Purgatorio, per le preghiere di suo figlio ne uscì per andare in Paradiso. Le anime sante del Purgatorio le si aggrappavano all’orlo della veste per andarsene anche loro con lei. Lei si mise a dare calci e a scuotersi tutta per scrollarsele di dosso: «Sciò! Andatevene! Aveste fatto figli santi come me!» Il Signore vide questo e la fece andare più in fondo. E la mamma di San Pietro è rimasta in proverbio, e si dice: Come la mamma di San Pietro.</p>
+            </div>
+          </div>
+          <div type="translation" xml:lang="en" resp="#ed2026">
+            <div type="passage" corresp="#pitre-porru-v-1">
+              <p>When St Peter’s mother was in Purgatory, through her son’s prayers she came out to go to Paradise. The holy souls of Purgatory caught hold of the hem of her dress to go along with her. She began kicking and shaking herself all over to shake them off: “Shoo! Get away! You should have had saintly sons like me!” The Lord saw this and sent her further down. And St Peter’s mother has stayed in a saying: “Like St Peter’s mother.”</p>
+              <note type="translation">“A sènziu sò” is left out of both translations: its sense here is uncertain.</note>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <back>
+    <div type="glossary" xml:lang="scn">
+      <list type="gloss">
+        <item><term>tirri tirri</term><gloss xml:lang="it">camminare frettoloso e a passi brevi</gloss><gloss xml:lang="en">hurrying along with short steps</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>curàtulu</term><gloss xml:lang="it">il capo della mandra, che ha cura di far i caci e le ricotte</gloss><gloss xml:lang="en">the head shepherd, who makes the cheese and ricotta</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>scanaturi</term><gloss xml:lang="it">tavola da spianare la pasta</gloss><gloss xml:lang="en">kneading board</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>'na chidda</term><gloss xml:lang="it">una gran quantità</gloss><gloss xml:lang="en">a great many</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>Atterra atterra, Giorgi</term><gloss xml:lang="it">il grido abituale di chi ruba; i ladri si chiamano scambievolmente Giorgio</gloss><gloss xml:lang="en">the thieves’ usual cry; thieves call each other, and their victims, Giorgio</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>santu di ccà e santu di ddà</term><gloss xml:lang="it">la più fiera bestemmia de’ Siciliani</gloss><gloss xml:lang="en">the fiercest Sicilian oath</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>timpi-tampi</term><gloss xml:lang="it">suono imitativo delle busse</gloss><gloss xml:lang="en">the sound of blows</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>ìllichi-ìllichi</term><gloss xml:lang="it">subitamente (l’illico de’ Latini)</gloss><gloss xml:lang="en">at once (Latin illico)</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>si la cugghieru</term><gloss xml:lang="it">fuggirono</gloss><gloss xml:lang="en">they ran off</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>pulizziata</term><gloss xml:lang="it">una bella ripulita: rubarono di netto tutto quello che c’era</gloss><gloss xml:lang="en">a clean sweep: they took everything there was</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>allupatizzi</term><gloss xml:lang="it">affamati come lupi</gloss><gloss xml:lang="en">ravenous as wolves</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>s'attiparu li panzi</term><gloss xml:lang="it">si riempirono zeppe le pance</gloss><gloss xml:lang="en">they stuffed their bellies</gloss><bibl>Pitrè, n. CXXI</bibl></item>
+        <item><term>Viola</term><gloss xml:lang="it">nome di un negoziante di vino, presso S. Niccolò Tolentino in Palermo</gloss><gloss xml:lang="en">a wine merchant near San Nicolò da Tolentino in Palermo</gloss><bibl>Pitrè, n. CXXII</bibl></item>
+        <item><term>a'mmusciunari</term><term>ammusciunari</term><gloss xml:lang="it">corbellare, cogliere in inganno negoziando</gloss><gloss xml:lang="en">to take someone in while striking a bargain</gloss><bibl>Pitrè, n. CXXII</bibl></item>
+        <item><term>spinòccia</term><gloss xml:lang="it">spillare (le botti, i barili)</gloss><gloss xml:lang="en">to tap (a cask)</gloss><bibl>Pitrè, n. CXXII</bibl></item>
+        <item><term>'nfinucchiari</term><gloss xml:lang="it">infinocchiare, ingannare</gloss><gloss xml:lang="en">to fennel, to fool</gloss><bibl>Pitrè, n. CXXII</bibl></item>
+        <item><term>spuntu</term><gloss xml:lang="it">spunto, infortito</gloss><gloss xml:lang="en">turned sour</gloss><bibl>Pitrè, n. CXXII</bibl></item>
+        <item><term>abbramata</term><gloss xml:lang="it">avara avida, quasi famelica</gloss><gloss xml:lang="en">greedy, almost ravenous</gloss><bibl>Pitrè, n. CXXVI</bibl></item>
+        <item><term>piattu di forti</term><gloss xml:lang="it">tutto quanto di buono avesse ella fatto</gloss><gloss xml:lang="en">all the good she had ever done</gloss><bibl>Pitrè, n. CXXVI</bibl></item>
+        <item><term>pudía</term><term>pudii</term><gloss xml:lang="it">la pedana, l’orlo della veste</gloss><gloss xml:lang="en">the hem of the dress</gloss><bibl>Pitrè, n. CXXVI</bibl></item>
+        <item><term>porru</term><term>porri</term><gloss xml:lang="it">porro</gloss><gloss xml:lang="en">leek</gloss></item>
+        <item><term>sfogghia</term><gloss xml:lang="it">foglia</gloss><gloss xml:lang="en">leaf</gloss></item>
+        <item><term>'Nfernu</term><gloss xml:lang="it">Inferno</gloss><gloss xml:lang="en">Hell</gloss></item>
+        <item><term>Paraddisu</term><term>Paradisu</term><gloss xml:lang="it">Paradiso</gloss><gloss xml:lang="en">Paradise</gloss></item>
+        <item><term>Ancilu</term><gloss xml:lang="it">Angelo</gloss><gloss xml:lang="en">Angel</gloss></item>
+        <item><term>armuzzi</term><gloss xml:lang="it">animucce, anime</gloss><gloss xml:lang="en">little souls</gloss></item>
+        <item><term>tavirnaru</term><gloss xml:lang="it">oste</gloss><gloss xml:lang="en">innkeeper</gloss></item>
+        <item><term>varrili</term><gloss xml:lang="it">barile</gloss><gloss xml:lang="en">barrel</gloss></item>
+        <item><term>finocchiu</term><gloss xml:lang="it">finocchio</gloss><gloss xml:lang="en">fennel</gloss></item>
+        <item><term>mànnira</term><gloss xml:lang="it">mandria, ovile</gloss><gloss xml:lang="en">sheepfold</gloss></item>
+        <item><term>pagghiaru</term><gloss xml:lang="it">pagliaio</gloss><gloss xml:lang="en">straw hut</gloss></item>
+        <item><term>picurara</term><gloss xml:lang="it">pecorai</gloss><gloss xml:lang="en">shepherds</gloss></item>
+        <item><term>latri</term><gloss xml:lang="it">ladri</gloss><gloss xml:lang="en">thieves</gloss></item>
+        <item><term>pillirini</term><gloss xml:lang="it">pellegrini</gloss><gloss xml:lang="en">pilgrims</gloss></item>
+        <item><term>dijuni</term><gloss xml:lang="it">digiuni</gloss><gloss xml:lang="en">hungry, fasting</gloss></item>
+        <item><term>Prïatoriu</term><gloss xml:lang="it">Purgatorio</gloss><gloss xml:lang="en">Purgatory</gloss></item>
+        <item><term>Maistru</term><gloss xml:lang="it">Maestro</gloss><gloss xml:lang="en">Master</gloss></item>
+        <item><term>tridici</term><gloss xml:lang="it">tredici</gloss><gloss xml:lang="en">thirteen</gloss></item>
+        <item><term>paisi</term><gloss xml:lang="it">paese</gloss><gloss xml:lang="en">village</gloss></item>
+        <item><term>pani</term><gloss xml:lang="it">pane</gloss><gloss xml:lang="en">bread</gloss></item>
+        <item><term>petra</term><term>petri</term><gloss xml:lang="it">pietra, pietre</gloss><gloss xml:lang="en">stone(s)</gloss></item>
+        <item><term>nica</term><gloss xml:lang="it">piccola</gloss><gloss xml:lang="en">small</gloss></item>
+        <item><term>lèggiu</term><gloss xml:lang="it">leggero</gloss><gloss xml:lang="en">light</gloss></item>
+        <item><term>accattamu</term><gloss xml:lang="it">compriamo</gloss><gloss xml:lang="en">we buy</gloss></item>
+        <item><term>binidizioni</term><gloss xml:lang="it">benedizione</gloss><gloss xml:lang="en">blessing</gloss></item>
+        <item><term>pitrudda</term><gloss xml:lang="it">sassolino</gloss><gloss xml:lang="en">pebble</gloss></item>
+        <item><term>manciu</term><gloss xml:lang="it">mangio</gloss><gloss xml:lang="en">I eat</gloss></item>
+        <item><term>gravusi</term><gloss xml:lang="it">carichi</gloss><gloss xml:lang="en">heavy-laden</gloss></item>
+        <item><term>mariuolu</term><gloss xml:lang="it">furbo, birbante</gloss><gloss xml:lang="en">rascal</gloss></item>
+        <item><term>picciotti</term><gloss xml:lang="it">ragazzi</gloss><gloss xml:lang="en">lads</gloss></item>
+        <item><term>tanticchia</term><gloss xml:lang="it">un pochino</gloss><gloss xml:lang="en">a little</gloss></item>
+        <item><term>balatuni</term><gloss xml:lang="it">lastrone</gloss><gloss xml:lang="en">great slab</gloss></item>
+        <item><term>currivatu</term><gloss xml:lang="it">indispettito</gloss><gloss xml:lang="en">vexed</gloss></item>
+        <item><term>vicchiaja</term><gloss xml:lang="it">vecchiaia</gloss><gloss xml:lang="en">old age</gloss></item>
+        <item><term>furnu</term><gloss xml:lang="it">forno</gloss><gloss xml:lang="en">oven</gloss></item>
+        <item><term>picciriddu</term><gloss xml:lang="it">bambino</gloss><gloss xml:lang="en">little child</gloss></item>
+        <item><term>matri</term><gloss xml:lang="it">madre</gloss><gloss xml:lang="en">mother</gloss></item>
+        <item><term>carvuni</term><gloss xml:lang="it">carbone</gloss><gloss xml:lang="en">charcoal</gloss></item>
+        <item><term>tignusu</term><gloss xml:lang="it">tignoso, pelato</gloss><gloss xml:lang="en">scabby-head</gloss></item>
+        <item><term>vicchiaredda</term><gloss xml:lang="it">vecchietta</gloss><gloss xml:lang="en">little old woman</gloss></item>
+        <item><term>giuvina</term><gloss xml:lang="it">giovane</gloss><gloss xml:lang="en">young woman</gloss></item>
+        <item><term>chiovu</term><gloss xml:lang="it">chiodo</gloss><gloss xml:lang="en">nail</gloss></item>
+      </list>
+    </div>
+    </back>
+  </text>
+</TEI>

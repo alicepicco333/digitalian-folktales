@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Gesù e San Pietro in Friuli</title>
+        <title type="sub">Digitalian Folktales: Friulian text, Italian and English translations</title>
+      <respStmt xml:id="team2023"><resp>transcription, Italian translation and annotation (2023)</resp><name>Alice Picco</name><name>Nikolai Gorbachev</name></respStmt>
+      <respStmt xml:id="ed2026"><resp>TEI encoding, English working translation, glossary and linked data (2026)</resp><name>Alice Picco</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digitalian Folktales</publisher>
+        <pubPlace>https://alicepicco333.github.io/digitalian-folktales/</pubPlace>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="source"><author ref="https://www.wikidata.org/wiki/Q11917551">Dolfo Zorzùt</author>, <title>Sot la nape… (I racconti del popolo friulano)</title>, 3 voll., <pubPlace>Udine</pubPlace>, <date>1924–1927</date>; episode I at <biblScope unit="page">22–24</biblScope>.</bibl>
+        <bibl type="catalogue"><title>Catalogo di Racconti Popolari Friulani</title>, <publisher ref="https://www.wikidata.org/wiki/Q659695">Società Filologica Friulana</publisher>, <ref target="http://raccontipopolari.filologicafriulana.it/">raccontipopolari.filologicafriulana.it</ref>.</bibl>
+        <bibl type="retelling"><author ref="https://www.wikidata.org/wiki/Q154756">Italo Calvino</author>, <title ref="https://www.wikidata.org/wiki/Q3744324">Fiabe italiane</title>, <pubPlace>Torino</pubPlace>, <publisher>Einaudi</publisher>, <date>1956</date>: “Gesù e San Pietro in Friuli”.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The dialect text keeps the spelling of the source edition. Passages are the units of alignment: each translation passage points to its original with <att>corresp</att>. The Italian translation of the 2023 edition is kept as it was; where the English working translation reads the dialect differently, a note says so.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fur">Friulian</language><language ident="it">Italian</language><language ident="en">English</language>
+      </langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="braida"><persName>Caterina Braida (Minèn)</persName><note>narrator, episode I</note></person>
+          <person xml:id="mines"><persName>Giovanni Minèn</persName><note>narrator, episode II</note></person>
+          <person xml:id="taddio"><persName>Iole Taddio (Iole di Mini)</persName><note>narrator, episode III</note></person>
+          <person xml:id="zorzut"><persName ref="https://www.wikidata.org/wiki/Q11917551">Dolfo Zorzùt</persName><note>collector</note></person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="cormons"><placeName ref="https://www.wikidata.org/wiki/Q53124">Cormòns</placeName><location><geo>45.95 13.4667</geo></location></place>
+          <place xml:id="enemonzo"><placeName ref="https://www.wikidata.org/wiki/Q53255 https://www.wikidata.org/wiki/Q53319">Enemonzo e Preone</placeName><location><geo>46.4055 12.8727</geo></location></place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="editorial" xml:lang="it" resp="#team2023">
+        <p>Gesù e San Pietro in Friuli è un ciclo di quattro racconti nelle Fiabe italiane di Calvino.<lb/>Ogni racconto si basa su una variante friulana.</p>
+        <list><item n="1">Come fu che San Pietro è andato col Signore</item><item n="2">La coratella di lepre</item><item n="3">L'ospitalità</item><item n="4">Il grano saraceno</item></list>
+        <p><lb/>Le traduzioni si basano sulle raccolte contenute nel Catalogo di Racconti Popolari Friulani della Società Filologica Friulana (https://raccontipopolari.filologicafriulana.it/).</p>
+      </div>
+    </front>
+    <body>
+      <div type="episode" n="I" xml:id="friuli-I" corresp="#braida #cormons">
+        <head type="original" xml:lang="fur">Zimût che san Pieri al è lât cul Signôr</head>
+        <head xml:lang="it">Come fu che San Pietro è andato col Signore</head>
+        <head xml:lang="en">How St Peter came to go with the Lord</head>
+        <note type="record" xml:lang="it"><p>Informatore: Caterina Braida ved. Minèn</p><p>Racconto presente nella Raccolta “Sot la Nape”</p><p>pp. 22-24</p><p>Luogo di rilevamento: Cormòns (GO)</p><p>Classificazione ATU: 774 Cristo e San Pietro</p></note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="friuli-I-1" n="I.1" rend="p-start">
+            <p>“Cio, Tine” - al dîs Pieri a la so fèmine - “z'e' vino di mangiâ usgnöt?”</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-2" n="I.2">
+            <p>- “Po, Pieri, sôi stade dut el dl a zirî alc e no âi ciatât propi nuje. Ze ûstu fâi mo, zunìn.”</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-3" n="I.3">
+            <p>- “A ! sacre da vanzete, dopo jessi stât dut el dü a sbordonâ pès, dopo di vê strussiât como un danât 'ta chÊ sflamiadis di soreli, lâ a durmî senze.... Anìn, sìt. svelte, tire fur alc di mangiâ !” -</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-4" n="I.4">
+            <p>“ Mâ, Pieri, jo no âi propi nance tant di nreti in t'un voli. Sâstu ze, anin tál ciamp di chel sior.... là sôn' cussì biei tors di vetze, a sôn.” - “A ! jo no vuei jessi un lari.”- “Ze, lari, ti prei, tal ciamp dal Signòr..'. .- “E se nus ciatin mo?.... Cussì duc'i doi insieme?” - “Po, sâstu ze: par no dâ tal voli, larìn un di 'ne bancle e chel altri di chê altre.” - “Va ben, va ben. Zà, pitòst cussi che stâ cu la panze sclàgne.”</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-5" n="I.5" rend="p-start">
+            <p>E un di 'ne bande e chel altri di chê altre ti van lor tal ciamp. Ciaminànt di lunc da strade Pieri al incuintre un on biont cutt doi biei voi gris, che 'l pâr un agnul in ciar e vues, sintât sun t'un paraciàr.</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-6" n="I.6">
+            <p>" Spiète, a vuei provâ di ze savòr che 'l sa chìst furistîr  - âl pense e al dîs fra di sè Pieri. “Giò galantòn!” - gi dîs lant donge - “ze fasêso culi di biel ?” - “Sôi culi par insegnâi ai umins a no fâ dal mal.... “- “.. Chiste jè par me dal sigùr " - al pense Pieri. - “....e se ân zà lat dal mal, fâgi fâ pinitinze” - al rispuint chel forèst. - “Si. .. sì.... scusait, savêso, la me curiositât.. . A scugni lâ indenànt par un aiàr....” E Pieri mastïànt ches peraulis al rive tal ciamp. - “Diu, ze ise laju che si mof ?.... Ai ! jè la parone; s'ciampìn, s'ciampitr mai vie!”</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-7" n="I.7" rend="p-start">
+            <p>E cor che ti cor, vie pa plagnis, pai agàrs traviàrs da fuessis e ciarandis e po vie pa strade. E là al ti lu cuche Pieri indaûr chel on di prime, fer sul paraciàr. Ti lu olme e vie lui dret senze voltâsi. Ma ta vuarelis gi sbusinin ches peraulis. “E se àn lat dal mal, fâgi fâ pinitinze.... ".</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-8" n="I.8">
+            <p>Al ti càpite a ciase, e senze dî nè tre nè quatri al dà di man al mani da scove e.... ju par denànt e par daûr cuais di vueli sant a la so fèmine. - “A ! brute sporce, lari tu vuarevis che doventi! Ah, cìzze dal bambÌrc !” - E jir cuais e pessis come a un bacalå. - “A Diu ! A Diu ! Perdònimi, Pieri; no âi podût cioli nuje; al è vignût fur el paròn e âi scugnût sciampâ vie !.... .” - “E me mi à lat cori la parone !.... A t cizze, canae, no vuei vivi plui cun te. Vuarê che jo doventi un lari !.... Ma par chist peciàt vuei fâ pinitinze, e fâle ance tu che tu 'nd'âs di purgâ.”</p>
+          </div>
+          <div type="passage" xml:id="friuli-I-9" n="I.9" rend="p-start">
+            <p>E vie lui Pieri di chê bande che'l ja viudût chel galantòn 'sintat e lu ciate in pîs cui voi viars el zîl como che 'l preàs e lu viôt che 'l ti binidîs i ciamps di formènt, che  ti fâs cros sui àrbuii e su li plantis e sui uzzilÌtz. Quant che chel on al ti viôt a capitâ 'l puer Pieri gi slarge i braz e Pieri gi conte dut quant. - “ Si, Pieri, tu âs fat ben a vignî cà - gi dls chel on. El Signòr al ja vuartt cussì; tu no tu âs viudtt la parone e nance la to fèmine 'l paròn. Ches dos personis jeris vualtris doi, ma la male cussienze us ja ingianât. Pal to ben ven cun me; tu tu saràs el miö prin amì; el miò bostön, ven cun me; jo sôi el Signör!.... “</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#team2023">
+          <div type="passage" corresp="#friuli-I-1">
+            <p>“Dimmi Tina...” - disse Pietro a sua moglie - “cosa mangiamo stasera?”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-2">
+            <p>- “Eh, Pietro...ho passato tutto il giorno a cercare qualcosa da mangiare ma non ho trovato nulla. Che vuoi fare...digiuneremo.”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-3">
+            <p>- “Ah! Diamine! Dopo aver passato tutta la giornata ad infilzare pesci... dopo aver lavorato così faticosamente sotto il sole cocente... dovrei andare a dormire senza cena? Andiamo, veloce, tira furoi qualcosa da mangiare!”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-4">
+            <p>“Ma Pietro... io non ho proprio niente di niente. Sai cosa? Andiamo nel campo di quel signore...là ci sono dei cavoli così belli.” - “Ah! Io non voglio essere un ladro!” - “Ma che ladro! Ma che dici! Sarebbe solo nel campo del signore...” - “E se ci scoprono? Così, tutti e due insieme?” - “Allora, sai cosa possiamo fare? Andiamo uno da una parte e uno dall'altra.” - “Va bene, va bene... meglio così che stare a stomaco vuoto!”.</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-5">
+            <p>E così, uno da una parte e uno dall'altra, vanno nel campo. Camminando lungo la strada Pietro incontra un uomo biondo con due begli occhi grigi, così tanto che gli pareva un angelo in carne ed ossa, seduto su un paracarro.</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-6">
+            <p>“Aspetta...voglio capire di che pasta è fatto questo forestiero...” pensò e disse Pietro tra sé e sé.</p>
+            <p>“Galantuomo!” - gli disse andandogli vicino - “che fate di bello qui?” - “Sono qui per insegnare agli uomini a non fare del male...” - “Questo è venuto per me di sicuro!” pensò Pietro. - “...e se hanno già fatto del male, far fare loro penitenza.” rispose il forestiero.</p>
+            <p>“Sì...sì...scusate la mia curiosità...non volevo fare ipotesi campate per aria...”</p>
+            <p>E Pietro, masticando quelle parole, arriva al campo. - “Oddio! Cos'è che si muove là?...Ai! É la padrona! Scappiamo, scappiamo via!”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-7">
+            <p>E corri e corri lungo la pianura, per i solchi dei fossi e i cespugli, e poi lungo la strada. E là lo rivede Pietro, l’uomo di prima. Lo guarda e poi va dritto senza voltarsi. Nelle orecchie, però, gli risuonano le parole di prima: “...e se hanno già fatto del male, fargli fare penitenza...”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-8">
+            <p>Arrivato a casa, senza dire ne tre nè quattro prende in mano il manico di scopa e, per dritto e per rovescio, castiga la moglie. - “Ah! Brutta sporca! Ladro volevi che io diventassi! Razza di deficiente!” E continuò a colpirla come con un baccalà. “Oddio! Oddio! Perdonami Pietro; non ho potuto prendere niente; è venuto il padrone e sono dovuta scappare via!...”</p>
+            <p>-“E a me ha rincorso la padrona! Ah! Canaglia! Non voglio più vivere con te…Volevi diventassi un ladro! Ma di questo peccato ne farò penitenza…e fallo anche tu che ne hai da purgare.”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-9">
+            <p>Se ne va Pietro dalla parte in cui aveva visto il galantuomo seduto e lo trova in piedi, con gli occhi aperti al cielo come se stesse pregando e lo vede benedire i campi di frumento e fare il segno della croce sugli alberi, sulle piante e sugli uccelli. Quando quello vede arrivare il povero Pietro gli allarga le braccia e Pietro gli racconta tutto quanto. - “Sì, Pietro…hai fatto bene a venire qua”.” gli disse. Il Signore ha voluto così. Tu non hai visto la padrona del campo e neanche tua moglie il padrone. Quelle due persone eravate voi due, ma la malafede vi ha ingannati. Per il tuo bene, vieni con me, sarai il mio primo amico, il mio braccio destro, vieni con me, Io sono il Signore….</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#friuli-I-1">
+            <p>“Listen, Tina,” says Peter to his wife, “what have we got to eat tonight?”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-2">
+            <p>“Oh, Peter, I’ve spent the whole day looking for something and found nothing at all. What can you do… we’ll go hungry.”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-3">
+            <p>“Ah! Blast it! After a whole day spearing fish, after toiling like one of the damned in that blazing sun, I’m to go to bed without supper? Come on, quick, bring out something to eat!”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-4">
+            <p>“But Peter, I haven’t got so much as a crumb. You know what? Let’s go to that gentleman’s field… there are such fine cabbages there.” “Ah! I don’t want to be a thief!” “Thief, go on! It’s only the gentleman’s field…” “And what if they catch us, the two of us together?” “Well then, you know what: so as not to be seen, we’ll go in one from one side and one from the other.” “All right, all right. Better that than an empty belly.”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-5">
+            <p>And so, one from one side and one from the other, off they go to the field. Walking along the road, Peter meets a fair-haired man with two lovely grey eyes, like an angel in flesh and blood, sitting on a kerbstone.</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-6">
+            <p>“Wait, I want to see what this stranger is made of,” Peter thinks, and says to himself.</p>
+            <p>“Good sir!” he says, coming close, “what brings you here?” “I am here to teach men not to do wrong…” “This one has come for me, for sure!” thinks Peter. “…and if they have already done wrong, to make them do penance,” the stranger answers.</p>
+            <p>“Yes… yes… excuse my curiosity, you know… I must be getting on, I have some business…”</p>
+            <p>And Peter, chewing over those words, reaches the field. “Lord, what’s that moving over there?… Ah! It’s the mistress! Run, run for it!”</p>
+            <note type="translation">The Friulian reads “A scugni lâ indenànt par un aiàr”, most likely “I have to go on about some business” (aiàr, afâr); the 2023 Italian translation has “I didn’t mean to speculate”.</note>
+          </div>
+          <div type="passage" corresp="#friuli-I-7">
+            <p>And run and run, over the flat land, across the ditches and hedgerows, and then off down the road. And there Peter spots the man from before, still sitting on the kerbstone. He looks at him and goes straight on without turning round. But those words are buzzing in his ears: “And if they have already done wrong, make them do penance…”</p>
+          </div>
+          <div type="passage" corresp="#friuli-I-8">
+            <p>He gets home and, without a word, grabs the broom handle and… front and back, he gives his wife a dose of “holy oil”. “Ah! You filthy wretch, you wanted me to become a thief!” And blows and beatings, as if she were a stockfish. “Oh God! Oh God! Forgive me, Peter; I couldn’t take anything; the master came out and I had to run away!…”</p>
+            <p>“And the mistress chased me! Ah, you rascal, I don’t want to live with you any more. You wanted me to become a thief!… But for this sin I will do penance, and you do it too, for you have plenty to purge.”</p>
+            <note type="translation">“Cuais di vueli sant”, blows of holy oil, is a joking name for a beating.</note>
+          </div>
+          <div type="passage" corresp="#friuli-I-9">
+            <p>And off goes Peter the way he had seen that gentleman sitting, and he finds him standing, his eyes open to the sky as if he were praying, and sees him bless the fields of wheat and make the sign of the cross over the trees, the plants and the little birds. When the man sees poor Peter coming he opens his arms, and Peter tells him everything. “Yes, Peter, you did well to come here,” the man says. “The Lord willed it so: you did not see the mistress, nor your wife the master. Those two people were the two of you, but a bad conscience deceived you. For your own good, come with me; you will be my first friend, my staff; come with me: I am the Lord!…”</p>
+            <note type="translation">“El miò bostön”, my staff; the 2023 Italian translation has “braccio destro”, right hand.</note>
+          </div>
+        </div>
+      </div>
+      <div type="episode" n="II" xml:id="friuli-II" corresp="#mines #cormons">
+        <head type="original" xml:lang="fur">La corodele tradîs San Pieri</head>
+        <head xml:lang="it">La coratella di lepre</head>
+        <head xml:lang="en">The hare’s pluck</head>
+        <note type="record" xml:lang="it"><p>Informatore: Giovanni Minèn</p><p>Presente nella Raccolta Sot la Nape</p><p>pp. 105-110</p><p>Luogo di rilevamento: Cormòns</p><p>Classificazione ATU: 785 Il cuore dell'agnello</p></note>
+        <gap reason="copyright"><desc>Dolfo Zorzùt died in 1960: his collection Sot la nape… stays in copyright in Italy until 2031. The record is given; the text is not.</desc></gap>
+      </div>
+      <div type="episode" n="III" xml:id="friuli-III" corresp="#taddio #enemonzo">
+        <head xml:lang="it">L’ospitalità</head>
+        <head xml:lang="en">Hospitality</head>
+        <gap reason="notTranscribed"><desc>Catalogued from the Società Filologica Friulana record; not transcribed in the edition.</desc></gap>
+      </div>
+    </body>
+    <back>
+    <div type="glossary" xml:lang="fur">
+      <list type="gloss">
+        <item><term>fèmine</term><gloss xml:lang="it">moglie</gloss><gloss xml:lang="en">wife</gloss></item>
+        <item><term>usgnöt</term><gloss xml:lang="it">stasera, stanotte</gloss><gloss xml:lang="en">tonight</gloss></item>
+        <item><term>zirî</term><gloss xml:lang="it">cercare</gloss><gloss xml:lang="en">to look for</gloss></item>
+        <item><term>nuje</term><gloss xml:lang="it">niente</gloss><gloss xml:lang="en">nothing</gloss></item>
+        <item><term>zunìn</term><gloss xml:lang="it">digiuniamo</gloss><gloss xml:lang="en">we’ll go hungry</gloss></item>
+        <item><term>sbordonâ</term><gloss xml:lang="it">infilzare</gloss><gloss xml:lang="en">to spear</gloss></item>
+        <item><term>strussiât</term><gloss xml:lang="it">faticato, sgobbato</gloss><gloss xml:lang="en">toiled</gloss></item>
+        <item><term>sflamiadis</term><gloss xml:lang="it">vampate</gloss><gloss xml:lang="en">blazing heat</gloss></item>
+        <item><term>ciamp</term><gloss xml:lang="it">campo</gloss><gloss xml:lang="en">field</gloss></item>
+        <item><term>lari</term><gloss xml:lang="it">ladro</gloss><gloss xml:lang="en">thief</gloss></item>
+        <item><term>panze</term><gloss xml:lang="it">pancia</gloss><gloss xml:lang="en">belly</gloss></item>
+        <item><term>ciaminànt</term><gloss xml:lang="it">camminando</gloss><gloss xml:lang="en">walking</gloss></item>
+        <item><term>incuintre</term><gloss xml:lang="it">incontra</gloss><gloss xml:lang="en">meets</gloss></item>
+        <item><term>biont</term><gloss xml:lang="it">biondo</gloss><gloss xml:lang="en">fair-haired</gloss></item>
+        <item><term>gris</term><gloss xml:lang="it">grigi</gloss><gloss xml:lang="en">grey</gloss></item>
+        <item><term>agnul</term><gloss xml:lang="it">angelo</gloss><gloss xml:lang="en">angel</gloss></item>
+        <item><term>ciar e vues</term><gloss xml:lang="it">carne e ossa</gloss><gloss xml:lang="en">flesh and bone</gloss></item>
+        <item><term>paraciàr</term><gloss xml:lang="it">paracarro</gloss><gloss xml:lang="en">kerbstone</gloss></item>
+        <item><term>furistîr</term><term>forèst</term><gloss xml:lang="it">forestiero</gloss><gloss xml:lang="en">stranger</gloss></item>
+        <item><term>umins</term><gloss xml:lang="it">uomini</gloss><gloss xml:lang="en">men</gloss></item>
+        <item><term>pinitinze</term><gloss xml:lang="it">penitenza</gloss><gloss xml:lang="en">penance</gloss></item>
+        <item><term>parone</term><gloss xml:lang="it">padrona</gloss><gloss xml:lang="en">mistress (of the land)</gloss></item>
+        <item><term>paròn</term><gloss xml:lang="it">padrone</gloss><gloss xml:lang="en">master (of the land)</gloss></item>
+        <item><term>s'ciampìn</term><gloss xml:lang="it">scappiamo</gloss><gloss xml:lang="en">let’s run</gloss></item>
+        <item><term>plagnis</term><gloss xml:lang="it">pianure</gloss><gloss xml:lang="en">flat land</gloss></item>
+        <item><term>fuessis</term><gloss xml:lang="it">fossi</gloss><gloss xml:lang="en">ditches</gloss></item>
+        <item><term>ciase</term><gloss xml:lang="it">casa</gloss><gloss xml:lang="en">home</gloss></item>
+        <item><term>scove</term><gloss xml:lang="it">scopa</gloss><gloss xml:lang="en">broom</gloss></item>
+        <item><term>vueli sant</term><gloss xml:lang="it">olio santo (qui: botte)</gloss><gloss xml:lang="en">holy oil (here: a beating)</gloss></item>
+        <item><term>bacalå</term><gloss xml:lang="it">baccalà</gloss><gloss xml:lang="en">stockfish</gloss></item>
+        <item><term>peciàt</term><gloss xml:lang="it">peccato</gloss><gloss xml:lang="en">sin</gloss></item>
+        <item><term>zîl</term><gloss xml:lang="it">cielo</gloss><gloss xml:lang="en">sky</gloss></item>
+        <item><term>formènt</term><gloss xml:lang="it">frumento</gloss><gloss xml:lang="en">wheat</gloss></item>
+        <item><term>braz</term><gloss xml:lang="it">braccia</gloss><gloss xml:lang="en">arms</gloss></item>
+        <item><term>amì</term><gloss xml:lang="it">amico</gloss><gloss xml:lang="en">friend</gloss></item>
+        <item><term>bostön</term><gloss xml:lang="it">bastone</gloss><gloss xml:lang="en">staff</gloss></item>
+        <item><term>Signôr</term><term>Signòr</term><term>Signör</term><gloss xml:lang="it">Signore</gloss><gloss xml:lang="en">Lord</gloss></item>
+        <item><term>Pieri</term><gloss xml:lang="it">Pietro</gloss><gloss xml:lang="en">Peter</gloss></item>
+      </list>
+    </div>
+    </back>
+  </text>
+</TEI>

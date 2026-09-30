@@ -3,8 +3,9 @@
  * Every value below is transcribed from the project's original tale pages
  * (docs/analysis/*.html, "document's features", "Propp's ontology" and
  * "story's measurements" tables) and from the text files in docs/texts/.
- * Nothing is added except approximate map coordinates for the places of
- * collection named in the record (marked `approx`), used only to place dots.
+ * Map coordinates of the places of collection are those of their Wikidata items
+ * (the same identifiers as in the TEI headers, docs/tei/*.xml). The texts
+ * themselves are in the TEI files and reach the site through assets/corpus.js.
  * Honorifics (Mr./Mrs.) from the original tables are omitted.
  */
 window.EDITION = {
@@ -22,8 +23,8 @@ window.EDITION = {
       sourceShort: 'Zorzùt, Sot la nape…',
       documentationTime: 'Not specified',
       places: [
-        { name: 'Cormòns', episodes: ['I', 'II'], lon: 13.467, lat: 45.957, approx: true },
-        { name: 'Enemonzo e Preone', episodes: ['III'], lon: 12.868, lat: 46.402, approx: true }
+        { name: 'Cormòns', episodes: ['I', 'II'], lon: 13.4667, lat: 45.95, wikidata: ['Q53124'] },
+        { name: 'Enemonzo e Preone', episodes: ['III'], lon: 12.8727, lat: 46.4055, wikidata: ['Q53255', 'Q53319'] }
       ],
       /* Calvino's cycle, as listed in docs/texts/friuli-original.txt */
       cycle: [
@@ -98,7 +99,7 @@ window.EDITION = {
       sourceShort: 'Pitrè, Fiabe, novelle e racconti popolari siciliani',
       documentationTime: 'Not specified',
       places: [
-        { name: 'Bagheria (PA)', episodes: ['I', 'II'], lon: 13.512, lat: 38.081, approx: true }
+        { name: 'Bagheria (PA)', episodes: ['I', 'II'], lon: 13.5, lat: 38.0833, wikidata: ['Q27000'] }
       ],
       cycle: null,
       episodes: [
@@ -141,6 +142,14 @@ window.EDITION = {
     }
   ],
 
+  /* Further tales from the source volume of the Sicilian cycle (2026), on the map as squares. */
+  related: [
+    { id: 'pitre-iii', title: 'San Pietro in Pitrè, vol. III', url: 'pitre.html', places: [
+      { name: 'Borgetto (PA)', lon: 13.15, lat: 38.05, wikidata: ['Q496869'] },
+      { name: 'Palermo', lon: 13.3613, lat: 38.1157, wikidata: ['Q2656'] }
+    ] }
+  ],
+
   /* Metric definitions: labels and links as in the original measurement tables. */
   metricGroups: [
     { key: 'basic', en: 'Basic metrics', it: 'Metriche di base', metrics: [
@@ -165,38 +174,10 @@ window.EDITION = {
     { key: 'sentiment', en: 'Sentiment (MilaNLProc model)', it: 'Sentiment (modello MilaNLProc)', metrics: [
       { key: 'positivity', en: 'Average sentence positivity', it: 'Positività media delle frasi', dec: 4, max: 1 },
       { key: 'positivityStd', en: 'Sentence positivity, std. dev.', it: 'Positività delle frasi, dev. std.', dec: 4, max: 0.1 }
+    ]},
+    /* 2026: computed by tools/build_corpus.py on the Italian translation */
+    { key: 'readIt', en: 'Italian readability (2026)', it: 'Leggibilità in italiano (2026)', metrics: [
+      { key: 'gulpease', en: 'Gulpease index, Italian translation (0–100, higher is easier)', it: 'Indice Gulpease, traduzione italiana (0–100, più alto è più facile)', dec: 1, max: 100, href: 'https://it.wikipedia.org/wiki/Indice_Gulpease' }
     ]}
-  ],
-
-  /*
-   * Alignment of dialect and translation, by line number in docs/texts/*.txt
-   * (0-based, after splitting on newlines). Each pair is [dialect lines, Italian lines].
-   * `p` marks a segment that opens a new paragraph in the source file.
-   */
-  alignment: {
-    friuli: {
-      original: 'friuli-original.txt',
-      translation: 'friuli-translation.txt',
-      preface: [2, 11],               /* editorial note, Italian, lines 2–11 */
-      episodes: [
-        { n: 'I', titleLine: [13, 0], metaLines: [15, 19], pairs: [
-          [[21], [2], 1], [[22], [3]], [[23], [4]], [[24], [5]],
-          [[26], [7], 1], [[27], [8, 9, 10, 11]],
-          [[29], [13], 1], [[30], [14, 15]],
-          [[32], [17], 1]
-        ]},
-        { n: 'II', titleLine: [35, null], metaLines: [37, 41], pairs: [] }
-      ]
-    },
-    sicily: {
-      original: 'sicily-original.txt',
-      translation: 'sicily-translation.txt',
-      titleLine: [0, 0],
-      colophonLine: [null, 9],        /* "Bagheria", closing line of the translation */
-      episodes: [
-        { n: 'I', pairs: [[[2], [2], 1], [[3], [3]], [[4], [4]], [[5], [5]]] },
-        { n: 'II', pairs: [[[7], [7], 1], [[8], [8]]] }
-      ]
-    }
-  }
+  ]
 };

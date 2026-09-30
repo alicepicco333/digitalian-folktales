@@ -21,6 +21,7 @@
       <nav class="site-nav" aria-label="Main">
         <a href="index.html" data-i18n="nav.tales">tales</a>
         <a href="analysis/comparison.html" data-i18n="nav.compare">compare stories</a>
+        <a href="analysis/pitre.html" data-i18n="nav.pitre">more from Pitrè</a>
         <a href="guide.html" aria-current="page" data-i18n="nav.guide">user guide</a>
         <a href="guide.html#who" data-i18n="nav.who">who we are</a>
         <button class="lang-switch" type="button" lang="it" aria-label="Leggi in italiano">IT</button>
@@ -79,13 +80,23 @@
               <h3>What the edition contains</h3>
               <p>Calvino’s Friulian cycle has four tales. The record describes three Friulian episodes; the first, <span lang="fur">Zimût che san Pieri al è lât cul Signôr</span> (Cormòns), is transcribed and translated in full. The second, <span lang="fur">La corodele tradîs San Pieri</span>, has its source record but no text yet; the third is described in the record only. As the edition’s own note explains, the Friulian catalogue holds no testimony for the fourth tale, <span lang="it">Il grano saraceno</span>.</p>
               <p>The Sicilian tale, <span lang="scn">Lu Signuri, S. Petru e li Apostuli</span>, told in Bagheria, is transcribed and translated in both its stories.</p>
-              <p>Places on the maps are approximate positions of the towns named in the record, added for orientation only.</p>
+              <p>Places on the maps are placed at the coordinates of their Wikidata items; the same identifiers are in the TEI headers.</p>
+              <h3>The 2026 edition</h3>
+              <p>The texts are now encoded in TEI XML (<a href="tei/friuli.xml">friuli.xml</a>, <a href="tei/sicily.xml">sicily.xml</a>, <a href="tei/pitre-iii.xml">pitre-iii.xml</a>): dialect text, Italian translation and English translation, aligned passage by passage, with the narrators, collectors and places linked to Wikidata. Every passage has a “TEI” button that shows its encoding.</p>
+              <p>An English working translation sits beside each passage; switch between it and the Italian translation above the text. Where the English reads the dialect differently from the 2023 Italian translation, a note under the passage says so. Dotted words in the dialect text have a gloss in Italian and English: for the Pitrè tales these are Pitrè’s own footnotes of 1875.</p>
+              <p><a href="analysis/pitre.html">Three more Jesus-and-Peter tales</a> come from the same volume of Pitrè as the Sicilian source (vol. III, nn. CXXI, CXXII, CXXVI), transcribed from the page images of the 1875 edition. The text of the second and third Friulian episodes is not given: Dolfo Zorzùt died in 1960, so <i lang="fur">Sot la nape…</i> stays in copyright in Italy until 2031, as does Calvino’s own text until 2055.</p>
+              <p>The readability formulas of the original measurements were designed for English; the Gulpease index, designed for Italian, is added and computed on the Italian translation.</p>
             </div>
             <div data-lang-block="it" hidden>
               <h3>Che cosa contiene l’edizione</h3>
               <p>Il ciclo friulano di Calvino comprende quattro racconti. La scheda descrive tre episodi friulani; il primo, <span lang="fur">Zimût che san Pieri al è lât cul Signôr</span> (Cormòns), è trascritto e tradotto per intero. Il secondo, <span lang="fur">La corodele tradîs San Pieri</span>, ha la sua scheda di fonte ma non ancora il testo; il terzo è descritto solo nella scheda. Come spiega la nota dell’edizione, il catalogo friulano non contiene testimonianze del quarto racconto, <span lang="it">Il grano saraceno</span>.</p>
               <p>La fiaba siciliana, <span lang="scn">Lu Signuri, S. Petru e li Apostuli</span>, raccontata a Bagheria, è trascritta e tradotta in entrambe le sue storie.</p>
-              <p>I luoghi sulle mappe sono posizioni approssimative dei paesi indicati nella scheda, aggiunte solo per orientarsi.</p>
+              <p>I luoghi sulle mappe sono collocati alle coordinate dei rispettivi elementi di Wikidata; gli stessi identificativi sono nelle intestazioni TEI.</p>
+              <h3>L’edizione 2026</h3>
+              <p>I testi sono ora codificati in TEI XML (<a href="tei/friuli.xml">friuli.xml</a>, <a href="tei/sicily.xml">sicily.xml</a>, <a href="tei/pitre-iii.xml">pitre-iii.xml</a>): testo dialettale, traduzione italiana e traduzione inglese, allineati passo per passo, con narratori, raccoglitori e luoghi collegati a Wikidata. Ogni passo ha un pulsante “TEI” che ne mostra la codifica.</p>
+              <p>Accanto a ogni passo c’è una traduzione inglese di lavoro; si passa da questa alla traduzione italiana sopra il testo. Dove l’inglese legge il dialetto diversamente dalla traduzione italiana del 2023, una nota sotto il passo lo segnala. Le parole sottolineate a puntini nel testo dialettale hanno una glossa in italiano e in inglese: per le fiabe di Pitrè sono le sue note del 1875.</p>
+              <p><a href="analysis/pitre.html">Altre tre fiabe di Gesù e San Pietro</a> provengono dallo stesso volume di Pitrè che contiene la fonte siciliana (vol. III, nn. CXXI, CXXII, CXXVI), trascritte dalle immagini delle pagine dell’edizione del 1875. Il testo del secondo e del terzo episodio friulano non è riportato: Dolfo Zorzùt è morto nel 1960, quindi <i lang="fur">Sot la nape…</i> è protetto in Italia fino al 2031, come il testo di Calvino fino al 2055.</p>
+              <p>Le formule di leggibilità delle misure originali sono state pensate per l’inglese; è aggiunto l’indice Gulpease, pensato per l’italiano e calcolato sulla traduzione italiana.</p>
             </div>
           </div>
         </div>
@@ -113,6 +124,7 @@
     </div>
   </footer>
   <script src="assets/data.js"></script>
+  <script src="assets/corpus.js"></script>
   <script src="assets/site.js"></script>
 </body>
 </html>
