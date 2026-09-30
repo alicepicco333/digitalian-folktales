@@ -46,7 +46,7 @@ p { margin: 0 0 1em; }
 .site-header .wrap { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 16px; min-height: 80px; }
 .logo-small { display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; font-size: 1.2rem; line-height: 1.02; justify-self: start; }
 .logo-small:hover { background: none; color: var(--friuli); }
-.page-title { font-size: clamp(1.4rem, 2.3vw, 2.2rem); text-align: center; letter-spacing: 0.03em; }
+.page-title { font-size: clamp(1.4rem, 2.3vw, 2.2rem); text-align: center; letter-spacing: 0.03em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 .site-nav { display: flex; align-items: center; gap: 4px 16px; flex-wrap: wrap; justify-content: flex-end; justify-self: end; }
 .site-nav a { color: var(--muted); font-size: 0.9375rem; padding: 4px 0; }
 .site-nav a[aria-current="page"] { color: var(--ink); text-decoration-thickness: 2px; }
@@ -290,7 +290,7 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
   .site-header .wrap { grid-template-columns: minmax(0, 1fr); min-height: 64px; padding-top: 12px; padding-bottom: 8px; row-gap: 10px; }
   .site-header .logo-small { grid-row: 1; }
   .site-header .site-nav { grid-row: 2; justify-self: stretch; justify-content: flex-start; gap: 2px 14px; border-top: 1px dotted var(--rule); padding-top: 6px; }
-  .site-header .page-title { grid-row: 3; font-size: 1.4rem; }
+  .site-header .page-title { grid-row: 3; font-size: 1.4rem; white-space: normal; }
   .home .site-header .site-nav { grid-row: 1; border-top: 0; justify-content: flex-end; }
   .site-nav a, .lang-switch { font-size: 0.875rem; }
   .home .site-header .wrap { grid-template-columns: 1fr; }
@@ -400,3 +400,7 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
 .src-meta .scans a { color: inherit; }
 .resolution.negative { font-style: italic; }
 .sub-rule { font-size: 1.2rem; font-weight: 400; text-align: center; margin: 56px 0 8px; }
+@media (min-width: 721px) and (max-width: 1280px) {
+  .site-header .wrap { grid-template-columns: auto minmax(0, 1fr); row-gap: 4px; padding-top: 12px; padding-bottom: 8px; }
+  .site-header .page-title { grid-column: 1 / -1; grid-row: 2; }
+}

@@ -980,10 +980,23 @@
     document.querySelectorAll('[data-corpus-sidebar]').forEach(renderCorpusSidebar);
     document.querySelectorAll('[data-parallels]').forEach(renderParallels);
   }
+  /* page title on one line: shrink it until it fits beside the logo and the menu (on phones it has its own row) */
+  function fitTitle() {
+    document.querySelectorAll('.site-header .page-title').forEach(function (el) {
+      el.style.fontSize = '';
+      if (getComputedStyle(el).whiteSpace !== 'nowrap') return;
+      var fs = parseFloat(getComputedStyle(el).fontSize);
+      while (el.scrollWidth > el.clientWidth + 1 && fs > 15) { fs -= 1; el.style.fontSize = fs + 'px'; }
+    });
+  }
+  window.addEventListener('resize', fitTitle);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitTitle);
   applyLang();
+  fitTitle();
   renderDynamic();
   document.querySelectorAll('[data-reader]').forEach(renderReader);
   document.addEventListener('df:lang', function () {
+    fitTitle();
     renderDynamic();
     document.querySelectorAll('[data-reader]').forEach(renderReader);
   });
