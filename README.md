@@ -21,6 +21,9 @@ Site: https://alicepicco333.github.io/digitalian-folktales/
 - A table of the tale types told both in Friuli and in Sicily (ATU 753, 774, 804…), linking the passages.
 - On each tale page the map shows only that tale’s places; the home map shows them all.
 
+Translations made in 2026 are working translations; the guide lists the dialect readings a Friulian or Sicilian
+reader could settle (docs/guide.html, “Readings to check”).
+
 The second and third Friulian episodes are catalogued but their text is not given: Zorzùt died in 1960, so
 *Sot la nape…* is in copyright in Italy until 2031 (Calvino’s own text until 2055).
 

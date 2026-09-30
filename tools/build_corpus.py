@@ -74,6 +74,8 @@ def unit(div, tid, kind):
         atu = rec.find('.//' + T + "term[@type='atu']")
         if atu is not None:
             u['atu'] = {'code': atu.get('n'), 'label': txt(atu)}
+    sc = div.find(T + "note[@type='scans']")
+    u['scans'] = [{'label': txt(r), 'url': r.get('target')} for r in sc.findall(T + 'ref')] if sc is not None else []
     gap = div.find(T + 'gap')
     if gap is not None:
         u['gap'] = {'reason': gap.get('reason'), 'desc': txt(gap.find(T + 'desc'))}

@@ -396,3 +396,7 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
 .map-svg .marker.related.sicily { fill: var(--sicily); stroke: none; }
 .mk.related { width: 9px; height: 9px; border-radius: 50%; border: 0; background: var(--sicily); vertical-align: 1px; }
 .mk.related.friuli { background: var(--friuli); }
+
+.src-meta .scans a { color: inherit; }
+.resolution.negative { font-style: italic; }
+.sub-rule { font-size: 1.2rem; font-weight: 400; text-align: center; margin: 56px 0 8px; }

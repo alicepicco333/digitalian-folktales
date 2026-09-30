@@ -112,6 +112,13 @@
     'f.shared': { en: 'shared type', it: 'tipo condiviso' },
     'res.Positive': { en: 'Positive', it: 'Positivo' },
     'res.Mixed': { en: 'Mixed', it: 'Misto' },
+    'res.Negative': { en: 'Negative', it: 'Negativo' },
+    'tale.tale': { en: 'Tale {n}', it: 'Fiaba {n}' },
+    'tale.scans': { en: 'Page images', it: 'Immagini delle pagine' },
+    'more.reading': { en: 'reading the tales', it: 'lettura delle fiabe' },
+    'more.reading.p': { en: 'Tale type, itinerary and cast of each tale, annotated in 2026 on the model of the 2023 records.', it: 'Tipo, itinerario e personaggi di ogni fiaba, annotati nel 2026 sul modello delle schede del 2023.' },
+    'cmp.s1b': { en: 'the further tales', it: 'le altre fiabe' },
+    'cmp.s1b.p': { en: 'The Friulian legends from Pagine friulane and the Sicilian tales from Pitrè, annotated in the same way (2026).', it: 'Le leggende friulane dalle Pagine friulane e le fiabe siciliane da Pitrè, annotate allo stesso modo (2026).' },
 
     'cmp.kicker': { en: 'Comparison', it: 'Confronto' },
     'cmp.title': { en: 'Two cycles of Jesus and St. Peter, north and south', it: 'Due cicli di Gesù e San Pietro, a nord e a sud' },
@@ -234,9 +241,10 @@
     return el;
   }
   function tale(id) { return E.tales.filter(function (x) { return x.id === id; })[0]; }
+  function coll(id) { return (E.collections || []).filter(function (x) { return x.id === id; })[0]; }
   function sharedAtu() {
     var seen = {}, shared = {};
-    E.tales.forEach(function (tl) {
+    E.tales.concat(E.collections || []).forEach(function (tl) {
       var codes = {};
       tl.episodes.forEach(function (ep) { codes[ep.atu.code] = 1; });
       Object.keys(codes).forEach(function (c) { if (seen[c]) shared[c] = 1; seen[c] = 1; });
@@ -424,9 +432,10 @@
       facet(t('f.narrator'), h('dd', { text: ep.narrator + ', ' + ep.geography }))
     ].forEach(function (pair) { dl.appendChild(h('div', { 'class': 'facet' }, pair)); });
     var isShared = !!shared[ep.atu.code];
-    return h('article', { 'class': 'ep-card', 'aria-label': t('tale.episode', { n: ep.n }) + ' — ' + ep.title }, [
+    var unitName = t(coll(tl.id) ? 'tale.tale' : 'tale.episode', { n: ep.n });
+    return h('article', { 'class': 'ep-card', 'aria-label': unitName + ' — ' + ep.title }, [
       h('div', { 'class': 'card-head' }, [
-        h('span', { text: t('tale.episode', { n: ep.n }) }),
+        h('span', { text: unitName }),
         h('span', null, ['ATU ', h('span', { 'class': 'atu' + (isShared ? ' shared' : ''), text: ep.atu.code }), isShared ? h('span', { 'class': 'muted', text: ' · ' + t('f.shared') }) : null])
       ]),
       h('div', { 'class': 'card-body' }, [
@@ -443,9 +452,9 @@
     el.innerHTML = '';
     el.className = 'structure' + (ids.length > 1 ? ' cols-2' : '');
     ids.forEach(function (id) {
-      var tl = tale(id);
+      var tl = tale(id) || coll(id);
       var col = h('div', { 'class': 'col' });
-      if (ids.length > 1) col.appendChild(h('h3', { 'class': 'colhead', lang: 'it' }, [marker(id), h('a', { href: tl.url, text: tl.title })]));
+      if (ids.length > 1) col.appendChild(h('h3', { 'class': 'colhead', lang: 'it' }, [tl.marker ? h('span', { 'class': 'mk related ' + tl.marker, 'aria-hidden': 'true' }) : marker(id), h('a', { href: tl.url, text: tl.title })]));
       tl.episodes.forEach(function (ep) { col.appendChild(epCard(tl, ep, shared, ids.length > 1 ? 'h4' : 'h3')); });
       el.appendChild(col);
     });
@@ -761,6 +770,11 @@
           if (pl) meta.appendChild(h('span', { text: t('rec.place') + ': ' + pl.name }));
         });
         if (u.record.length) meta.appendChild(h('span', { lang: 'it', text: u.record[0].replace(/; ATU.*$/, '') }));
+      }
+      if (u.scans && u.scans.length) {
+        var sc = h('span', { 'class': 'scans' }, [t('tale.scans') + ': ']);
+        u.scans.forEach(function (x, i) { if (i) sc.appendChild(document.createTextNode(' · ')); sc.appendChild(h('a', { href: x.url, text: x.label })); });
+        meta.appendChild(sc);
       }
       head.appendChild(meta);
       sec.appendChild(head);

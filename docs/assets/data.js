@@ -142,6 +142,55 @@ window.EDITION = {
     }
   ],
 
+  /*
+   * 2026: the further tales, annotated on the model of the 2023 records (type, places in order, actions,
+   * people, supernatural figures, animals, resolution). The annotation is the 2026 editor's.
+   */
+  collections: [
+    {
+      id: 'friuli-pf', title: 'San Pieri nelle Pagine friulane', url: 'pagine-friulane.html', region: 'Friuli-Venezia Giulia', regionCode: '06', marker: 'friuli',
+      episodes: [
+        { n: 'I', title: 'L’origine del grano saraceno', originalTitle: 'L’orìgin de ’l sarasìn', geography: 'Alto Friuli orientale (signed at Gorizia)',
+          atu: { code: '752A', label: 'Christ and Peter in the Barn' }, narrator: 'Giobi (author)', resolution: 'Positive', animals: [],
+          places: ['The woman’s house', 'The bed', 'Threshing floor', 'The neighbour’s yard'], actions: ['Beating', 'Threshing by fire', 'Imitation', 'Transformation'],
+          people: ['The Lord', 'St Peter', 'St James', 'The mistress of the house', 'A neighbour'], supernatural: ['The Lord — separates the grain with fire and turns burnt wheat into buckwheat'], transcribed: true },
+        { n: 'II', title: 'Un’altra leggenda sul lago di Cavazzo', originalTitle: 'Un’altre leggende sul làd di Chavazz', geography: 'Cavazzo Carnico',
+          atu: { code: '750B', label: 'Hospitality Rewarded' }, narrator: 'unsigned', resolution: 'Mixed', animals: [],
+          places: ['Road from Tolmezzo', 'Village under Mount San Simeone', 'The old woman’s house', 'Heaven', 'Lake of Cavazzo'], actions: ['Hospitality refused', 'Hospitality', 'Flood', 'Reward'],
+          people: ['The Lord', 'St Peter', 'The villagers', 'A poor old woman', 'Angels'], supernatural: ['The Lord — makes the lake', 'Angels — carry the house up the mountain', 'Souls of the dead — a yearly procession'], transcribed: true },
+        { n: 'III', title: 'Invidioso come la madre di San Pietro', originalTitle: 'Invidiôs tanche la mâri di San Pieri', geography: 'not stated',
+          atu: { code: '804', label: 'Peter’s Mother Falls from Heaven' }, narrator: 'Valentino Ostermann (author)', resolution: 'Negative', animals: [],
+          places: ['Paradise', 'The storehouse of paradise', 'Hell'], actions: ['Intercession', 'Rescue', 'Fall', 'Earthquake'],
+          people: ['The Lord', 'St Peter', 'St Peter’s mother', 'The souls in hell'], supernatural: ['The Lord — grants one rescue by a braid of garlic'], transcribed: true },
+        { n: 'IV', title: 'Il maestro sopra tutti i maestri', originalTitle: 'Il mestri sore duch i mestris', geography: 'Carnia (Clavais, Avosacco, Cedarchis, Incaroio, Racolana)',
+          atu: { code: '753', label: 'Christ and the Smith' }, narrator: 'Luigi Gortani (author)', resolution: 'Mixed', animals: [],
+          places: ['The smithy', 'The forge', 'The room upstairs', 'The road'], actions: ['Rejuvenation', 'Imitation', 'Death', 'Resurrection'],
+          people: ['The smith', 'The Lord', 'St Peter', 'The smith’s father'], supernatural: ['The Lord — makes St Peter young in the fire and brings the father back to life'], transcribed: true },
+        { n: 'V', title: 'L’ostinato', originalTitle: 'L’ustinàd', geography: 'Orgnano',
+          atu: { code: '830C', label: 'If God Wills' }, narrator: 'V. Great (author)', resolution: 'Mixed', animals: ['Toad'],
+          places: ['Road', 'Ditch', 'Road'], actions: ['Transformation', 'Forgiveness'],
+          people: ['The Lord', 'St Peter', 'A stubborn man'], supernatural: ['St Peter — turns the man into a toad and back'], transcribed: true }
+      ]
+    },
+    {
+      id: 'pitre-iii', title: 'San Pietro in Pitrè, vol. III', url: 'pitre.html', region: 'Sicilia', regionCode: '19', marker: 'sicily',
+      episodes: [
+        { n: 'CXXI', title: 'San Pietro e i ladri', originalTitle: 'San Petru e li latri', geography: 'Borgetto (PA)',
+          atu: { code: '774', label: 'Jests about Christ and Peter' }, narrator: 'collected by Salvatore Salomone-Marino', resolution: 'Positive', animals: [],
+          places: ['Countryside', 'Sheepfold', 'Straw hut'], actions: ['Hospitality refused', 'Robbery', 'Feast'],
+          people: ['The Master', 'St Peter', 'The Apostles', 'The head shepherd', 'The shepherds', 'Thieves'], supernatural: [], transcribed: true },
+        { n: 'CXXII', title: 'San Pietro e l’oste', originalTitle: 'S. Petru e lu tavirnaru', geography: 'Palermo',
+          atu: { code: '774', label: 'Jests about Christ and Peter' }, narrator: 'Francesca Deodato', resolution: 'Negative', animals: [],
+          places: ['The towns', 'The tavern', 'The road'], actions: ['Deception', 'Explanation of a word (’nfinucchiari)'],
+          people: ['Jesus Christ', 'St Peter', 'The Apostles', 'The innkeeper'], supernatural: [], transcribed: true },
+        { n: 'CXXVI', title: 'Il porro di San Pietro', originalTitle: 'Lu porru di S. Petru', geography: 'Palermo; variant from Bagheria',
+          atu: { code: '804', label: 'Peter’s Mother Falls from Heaven' }, narrator: 'Agatuzza Messia', resolution: 'Negative', animals: [],
+          places: ['The mother’s house', 'Hell', 'The gate of Paradise'], actions: ['Alms refused', 'Intercession', 'Rescue', 'Fall'],
+          people: ['St Peter’s mother', 'A poor woman', 'The Lord', 'St Peter', 'An Angel', 'The souls in hell'], supernatural: ['An Angel — lowers the leek leaf'], transcribed: true }
+      ]
+    }
+  ],
+
   /* Further tales from the source volume of the Sicilian cycle (2026), on the map as squares. */
   related: [
     { id: 'friuli-pf', title: 'San Pieri nelle Pagine friulane', url: 'pagine-friulane.html', short: 'Pagine friulane', regionCode: '06', marker: 'friuli', places: [
