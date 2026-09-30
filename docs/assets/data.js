@@ -144,10 +144,68 @@ window.EDITION = {
 
   /* Further tales from the source volume of the Sicilian cycle (2026), on the map as squares. */
   related: [
-    { id: 'pitre-iii', title: 'San Pietro in Pitrè, vol. III', url: 'pitre.html', places: [
+    { id: 'friuli-pf', title: 'San Pieri nelle Pagine friulane', url: 'pagine-friulane.html', short: 'Pagine friulane', regionCode: '06', marker: 'friuli', places: [
+      { name: 'Gorizia', lon: 13.6193, lat: 45.9352, wikidata: ['Q6596'] },
+      { name: 'Cavazzo Carnico', lon: 13.0333, lat: 46.3667, wikidata: ['Q53239'] },
+      { name: 'Carnia', lon: 13.0267, lat: 46.4724, wikidata: ['Q369765'] },
+      { name: 'Orgnano', lon: 13.1421, lat: 46.0073, wikidata: ['Q3885756'] }
+    ] },
+    { id: 'pitre-iii', title: 'San Pietro in Pitrè, vol. III', url: 'pitre.html', short: 'Pitrè, vol. III', regionCode: '19', marker: 'sicily', places: [
       { name: 'Borgetto (PA)', lon: 13.15, lat: 38.05, wikidata: ['Q496869'] },
       { name: 'Palermo', lon: 13.3613, lat: 38.1157, wikidata: ['Q2656'] }
     ] }
+  ],
+
+  /* 2026: the same tale types told in Friuli and in Sicily, across the five files of the edition (href: page#anchor). */
+  parallels: [
+    { atu: '774', label: { en: 'Jests about Christ and Peter', it: 'Facezie su Cristo e Pietro' },
+      friuli: [['Zimût che san Pieri al è lât cul Signôr', 'gesù-e-san-pietro-in-friuli.html#ep-I']],
+      sicily: [['Lu Signuri, S. Petru e li Apostuli (I)', 'gesù-e-san-pietro-in-sicilia.html#ep-I'], ['San Petru e li latri', 'pitre.html#pitre-latri'], ['S. Petru e lu tavirnaru', 'pitre.html#pitre-tavirnaru']] },
+    { atu: '753', label: { en: 'Christ and the Smith: made young by fire', it: 'Cristo e il fabbro: ringiovanito col fuoco' },
+      note: { en: 'In Friuli the Lord makes St Peter young in the forge and the proud smith kills his father copying him; in Sicily it is St Peter who copies the Lord’s oven and burns an old woman.', it: 'In Friuli il Signore ringiovanisce San Pietro nella fucina e il fabbro superbo, imitandolo, uccide il padre; in Sicilia è San Pietro a imitare il forno del Signore e a bruciare una vecchia.' },
+      friuli: [['Il mestri sore duch i mestris', 'pagine-friulane.html#pf-mestri']],
+      sicily: [['Lu Signuri, S. Petru e li Apostuli (II)', 'gesù-e-san-pietro-in-sicilia.html#ep-II']] },
+    { atu: '804', label: { en: 'St Peter’s mother falls from heaven', it: 'La madre di San Pietro cade dal cielo' },
+      note: { en: 'Her one good deed is a braid of garlic in Friuli, a leek leaf in Sicily; both versions end in a proverb.', it: 'La sua unica buona azione è una treccia d’aglio in Friuli, una foglia di porro in Sicilia; entrambe le versioni finiscono in un proverbio.' },
+      friuli: [['Invidiôs tanche la mâri di San Pieri', 'pagine-friulane.html#pf-mari']],
+      sicily: [['Lu porru di S. Petru', 'pitre.html#pitre-porru'], ['La Mamma di S. Petru (Bagheria)', 'pitre.html#pitre-porru-v']] },
+    { atu: '750B', label: { en: 'Hospitality rewarded', it: 'L’ospitalità premiata' },
+      friuli: [['L’ospitalità (record only)', 'gesù-e-san-pietro-in-friuli.html#ep-III'], ['Un’altre leggende sul làd di Chavazz', 'pagine-friulane.html#pf-chavazz']],
+      sicily: [] },
+    { atu: '752A', label: { en: 'Christ and Peter in the barn: the origin of buckwheat', it: 'Cristo e Pietro nel fienile: l’origine del grano saraceno' },
+      note: { en: 'The subject of Calvino’s fourth Friulian tale, Il grano saraceno, for which the 2023 edition had found no source.', it: 'L’argomento del quarto racconto friulano di Calvino, Il grano saraceno, di cui l’edizione del 2023 non aveva trovato la fonte.' },
+      friuli: [['L’orìgin de ’l sarasìn', 'pagine-friulane.html#pf-sarasin']],
+      sicily: [] },
+    { atu: '785', label: { en: 'Lamb’s heart', it: 'Il cuore dell’agnello' },
+      friuli: [['La corodele tradîs San Pieri (record only)', 'gesù-e-san-pietro-in-friuli.html#ep-II']], sicily: [] },
+    { atu: '830C', label: { en: 'If God wills', it: 'Se Dio vuole' },
+      friuli: [['L’ustinàd', 'pagine-friulane.html#pf-ustinad']], sicily: [] }
+  ],
+
+  /* 2026: the same tale types told in Friuli and in Sicily, across the five files of the edition (href: page#anchor). */
+  parallels: [
+    { atu: '774', label: { en: 'Jests about Christ and Peter', it: 'Facezie su Cristo e Pietro' },
+      friuli: [['Zimût che san Pieri al è lât cul Signôr', 'gesù-e-san-pietro-in-friuli.html#ep-I']],
+      sicily: [['Lu Signuri, S. Petru e li Apostuli (I)', 'gesù-e-san-pietro-in-sicilia.html#ep-I'], ['San Petru e li latri', 'pitre.html#pitre-latri'], ['S. Petru e lu tavirnaru', 'pitre.html#pitre-tavirnaru']] },
+    { atu: '753', label: { en: 'Christ and the Smith: made young by fire', it: 'Cristo e il fabbro: ringiovanito col fuoco' },
+      note: { en: 'In Friuli the Lord makes St Peter young in the forge and the proud smith kills his father copying him; in Sicily it is St Peter who copies the Lord’s oven and burns an old woman.', it: 'In Friuli il Signore ringiovanisce San Pietro nella fucina e il fabbro superbo, imitandolo, uccide il padre; in Sicilia è San Pietro a imitare il forno del Signore e a bruciare una vecchia.' },
+      friuli: [['Il mestri sore duch i mestris', 'pagine-friulane.html#pf-mestri']],
+      sicily: [['Lu Signuri, S. Petru e li Apostuli (II)', 'gesù-e-san-pietro-in-sicilia.html#ep-II']] },
+    { atu: '804', label: { en: 'St Peter’s mother falls from heaven', it: 'La madre di San Pietro cade dal cielo' },
+      note: { en: 'Her one good deed is a braid of garlic in Friuli, a leek leaf in Sicily; both versions end in a proverb.', it: 'La sua unica buona azione è una treccia d’aglio in Friuli, una foglia di porro in Sicilia; entrambe le versioni finiscono in un proverbio.' },
+      friuli: [['Invidiôs tanche la mâri di San Pieri', 'pagine-friulane.html#pf-mari']],
+      sicily: [['Lu porru di S. Petru', 'pitre.html#pitre-porru'], ['La Mamma di S. Petru (Bagheria)', 'pitre.html#pitre-porru-v']] },
+    { atu: '750B', label: { en: 'Hospitality rewarded', it: 'L’ospitalità premiata' },
+      friuli: [['L’ospitalità (record only)', 'gesù-e-san-pietro-in-friuli.html#ep-III'], ['Un’altre leggende sul làd di Chavazz', 'pagine-friulane.html#pf-chavazz']],
+      sicily: [] },
+    { atu: '752A', label: { en: 'Christ and Peter in the barn: the origin of buckwheat', it: 'Cristo e Pietro nel fienile: l’origine del grano saraceno' },
+      note: { en: 'The subject of Calvino’s fourth Friulian tale, Il grano saraceno, for which the 2023 edition had found no source.', it: 'L’argomento del quarto racconto friulano di Calvino, Il grano saraceno, di cui l’edizione del 2023 non aveva trovato la fonte.' },
+      friuli: [['L’orìgin de ’l sarasìn', 'pagine-friulane.html#pf-sarasin']],
+      sicily: [] },
+    { atu: '785', label: { en: 'Lamb’s heart', it: 'Il cuore dell’agnello' },
+      friuli: [['La corodele tradîs San Pieri (record only)', 'gesù-e-san-pietro-in-friuli.html#ep-II']], sicily: [] },
+    { atu: '830C', label: { en: 'If God wills', it: 'Se Dio vuole' },
+      friuli: [['L’ustinàd', 'pagine-friulane.html#pf-ustinad']], sicily: [] }
   ],
 
   /* Metric definitions: labels and links as in the original measurement tables. */

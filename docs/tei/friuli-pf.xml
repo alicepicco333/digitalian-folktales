@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>San Pieri nelle Pagine friulane: cinque leggende</title>
+        <title type="sub">Digitalian Folktales: five Friulian Jesus-and-Peter legends from Pagine friulane (1890–1894), with Italian and English translations</title>
+        <respStmt xml:id="ed2026"><resp>transcription from the page images, TEI encoding, Italian and English translations, glossary and linked data (2026)</resp><name>Alice Picco</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Digitalian Folktales</publisher>
+        <pubPlace>https://alicepicco333.github.io/digitalian-folktales/</pubPlace>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="source"><title level="j">Pagine friulane. Periodico mensile</title>, <pubPlace>Udine</pubPlace>, <publisher>Domenico Del Bianco</publisher>, <date from="1888" to="1907">1888–1907</date>; the five legends appeared in 1890, 1892, 1893 and 1894. Transcribed from the page images of the copies digitised by Google, <ref target="https://archive.org/search?query=title%3A%28pagine+friulane%29">Internet Archive</ref>.</bibl>
+        <bibl type="retelling"><author ref="https://www.wikidata.org/wiki/Q154756">Italo Calvino</author>, <title ref="https://www.wikidata.org/wiki/Q3744324">Fiabe italiane</title>, <pubPlace>Torino</pubPlace>, <publisher>Einaudi</publisher>, <date>1956</date>: “Gesù e San Pietro in Friuli”, whose fourth tale, “Il grano saraceno”, is on the origin of buckwheat told in n. I.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The Friulian text keeps the spelling of Pagine friulane, including its <mentioned>ç</mentioned> and <mentioned>ch</mentioned> for the palatal sounds. Passages are the units of alignment: each translation passage points to its original with <att>corresp</att>. The Italian and English translations are working translations made in 2026.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage><language ident="fur">Friulian</language><language ident="it">Italian</language><language ident="en">English</language></langUsage>
+      <particDesc>
+        <listPerson>
+          <person xml:id="giobi"><persName>Giobi</persName><note>author of n. I (a pseudonym)</note></person>
+          <person xml:id="ostermann"><persName ref="https://www.wikidata.org/wiki/Q15689538">Valentino Ostermann</persName><note>author of n. III, signed “V. O.”</note></person>
+          <person xml:id="gortani"><persName ref="https://www.wikidata.org/wiki/Q21514145">Luigi Gortani</persName><note>author of n. IV, signed “L. Gortani”</note></person>
+          <person xml:id="great"><persName>V. Great</persName><note>author of n. V</note></person>
+        </listPerson>
+      </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place xml:id="gorizia"><placeName ref="https://www.wikidata.org/wiki/Q6596">Gorizia</placeName><location><geo>45.9352 13.6193</geo></location><note>n. I is signed at Gorizia; the tale is given as from the Alto Friuli orientale</note></place>
+          <place xml:id="cavazzo"><placeName ref="https://www.wikidata.org/wiki/Q53239 https://www.wikidata.org/wiki/Q1051808">Cavazzo Carnico</placeName><location><geo>46.3667 13.0333</geo></location></place>
+          <place xml:id="carnia"><placeName ref="https://www.wikidata.org/wiki/Q369765 https://www.wikidata.org/wiki/Q53217">Carnia (Clavais, Avosacco, Cedarchis, Incaroio, Racolana)</placeName><location><geo>46.4724 13.0267</geo></location></place>
+          <place xml:id="orgnano"><placeName ref="https://www.wikidata.org/wiki/Q3885756">Orgnano (Basiliano)</placeName><location><geo>46.0073 13.1421</geo></location></place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="tale" n="I" xml:id="pf-sarasin" corresp="#giobi #gorizia">
+        <head type="original" xml:lang="fur">L’orìgin de ’l sarasìn</head>
+        <head xml:lang="it">L’origine del grano saraceno</head>
+        <head xml:lang="en">The origin of buckwheat</head>
+        <note type="record"><bibl><title level="j">Pagine friulane</title>, a. III (1890), n. 8, pp. 131–132, <ref target="https://archive.org/details/Pagine_friulane_n_8_1890">Internet Archive</ref></bibl>; ATU <term type="atu" n="752A">Christ and Peter in the Barn</term> (assigned 2026). Alto Friuli orientale; signed “Gorizia, 24 agosto. Giobi”.</note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="pf-sarasin-1" n="I.1" rend="p-start">
+            <p>Il Signor, San Pieri e Sant Iacun entràrin une sere in-t’une chase e domandàrin di durmî. Ere ’l timp de ’l bati-forment; e la parone ur rispuindè, che jê ju alozàve par che’ gnott, se lor si obleàvin di bàtigi te ’l doman di matine une ariade di forment. Lor gi imprometèrin di bàtilu, e dopo di vê cenàd fòrin menàds a durmî duch tre t’un jett.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-2" n="I.2">
+            <p>In-t’al doman mai e’ no jevàvin. La parone di chase vedùd, che no capitàvin mai dabass, ju clame. Ma lor anchimò miezz indurmidìds e’ no si mòvin. Po ur torne a sberlâ, che jere ben ore di saltâ fûr da ’l nid, une volte. Ma lor no la abàdin: e’ àn chatàd un jett masse musulitt. Jê spiete un pôc e dopo stufàde chape sù un bastòn, và disore e j’ mole cuatri a San Pieri, che lu chate ’l prin di che’ bande, disind, che cussì si dev tratâ cu-i poltrons; e va jù. Torne a spietâ par vedê, se la vèssin capide. Ma ’l jett l’è une calamite, che ju tire a sè masse fuart, e lor rèstin salds. Alore e’ torne sù cu ’l so len.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-3" n="I.3" rend="p-start">
+            <p>Apene che ’l Signor la sint vignî pe’ schale, al dis a San Pieri:</p>
+            <p>— Pieri, ven cà t’al miezz, che no ti torni dâ a ti.</p>
+            <p>L’è juste comedàd in-t’al miezz San Pieri, che càpite la parone donge ’l jett e ur dis:</p>
+            <p>— Prime ài petàd j’ al prin; cumò i spacarai el polvar a chell in-te ’l miezz.</p>
+            <p>E cussì San Pieri lis chapà pe’ seconde volte.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-4" n="I.4">
+            <p>Tornàde jù la parone di chase, lor no si scomponèvin frègul, come se no foss sucedùd nuie. Ma il Signor, che ’l saveve, che la femine veve di tornâ in chamare, al si rivolzè a San Pieri:</p>
+            <p>— Sas-tu ce fâ, Pieri, par che no ti torni a cuziâ? Tu dèvis lâ di che’ altre bande; cussì cuand-che jê rivarà sù dute invelegnàde, la rabie no j’ lassarà timp di distiràssi su pa ’l jett, par tochâ il tiarz, ma petarà jù par di-lung e par traviars a cui che j’ càpite, càpite.</p>
+            <p>Ma lafè sì che San Pieri al fo fortunàd a mètisi di là; parcè-che la parone curìde disore dute imbilàde, ur sberlà:</p>
+            <p>— Ce us parie’ anchimò, svergonzòs, che no sei ore di finìle? ’O vês ulùd spietâ propri di provâ il baston duch tre! Spietàit, spietàit, us serviss ben jò. La prime volte ai unzùd chell di cà; dopo chell di miezz; e cumò ’o batarài il tiarz.</p>
+            <p>In cheste maniere chell pùar San Pieri al fo cuinzad pe ’s fiestis tre voltis.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-5" n="I.5" rend="p-start">
+            <p>Restàds sôi po, lui al scomenzà a lamentàsi cu ’l Signor:</p>
+            <p>— La veso viodùde, Signor, che’ brute strie, che si è sfogàde indaùr cun me’. Mi pareve, che vevi di jessi simpri jò chell de ’s pàchis. Vo mi mandàvis a pueste di cà par che lis becass jò; cumò po jò mi alzi, e se olès jevâ anche vo’ altris, jevàit, se no, stàit lì, sin cuand che si stufàis, e magari fin che us macoe anche a vo’ altris i uess come a mi.</p>
+            <p>— No stâ schaldàti tant, Pieri, — lu cholève atòr anchemò ’l Signor — zà no ti à fatt tant mal, che tu fas vedê. Cumò ve’ ti à copàd! Sì, sì: jevarìn anche no’ par contentàti.</p>
+            <p>San Pieri no ’l rispuindè nuie; ma rugnand in jenfre ai ding al si alzà cun lor e vignìrin jù duch tre.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-6" n="I.6" rend="p-start">
+            <p>La femine, che ju spietave abass de’ schale, ur mostrà il forment in-t’une chamare e cun male grazie ur disè:</p>
+            <p>— Là l’è. Paràilu fûr, tindìlu e cà son i batài!</p>
+            <p>Lor scomencin senze dî nuie a puartàlu tal miezz de ’l bearz e a mètilu t’un grum. Jê ur mostre, che bisugnave slargiàlu par dute l’arie; ma e’ à un biell insegnàur; chei altris tre e’ continuavin a lavorâ a lor mùd, senze contàle come chell de ’s côts.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-7" n="I.7" rend="p-start">
+            <p>Finìd di puartâ fûr dutt il forment, il Signor al va in cusine e su ’l fogolar al choll un stizz. La parone di chase lu chale cu’ la boche viarte par viodi ce che ’l à di fâ; ma co’ lu viod vicinàsi al forment, e’ ûl fermàlu sberlangi, ce che ’l pensass di fâ cun chell stizz, se ’l foss matt di bacilâ cu ’l fûg. Lui al prove cuietàle: che no stass vê paùre, che lu lassass, che lui zà ’l savève ce che ’l veve di fâ; e po se la ingianass, che ’l saress in-te ’s sos mans e podaress chastiàlu. E tant al fas, che j’ riess di butâ ’l stizz in-te ’l forment.</p>
+            <p>T’un moment al va dutt in flamis.</p>
+            <p>Alore po jê nissun la ten e scomence a sberlâ, fûr di sè de’ rabie e da ’l spavent, che son sassins, che òlin brusàigi dutt.... Ma ’l Signor gi mostre ’l grùm de ’l forment.</p>
+            <p>— Chalàit, mo — j dìs — se no vin fatt ben il nestri lavor!</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-8" n="I.8" rend="p-start">
+            <p>E infats il forment e’ no ’l si bruse fross; ma la bule e’ svole dute di une bande, il forment nett di che’ altre e ’l stran al reste dutt biell daùr. Alore jê reste cun tant di nas, svergonzàde e spaurìde, di vê tratàd in che’ maniere un om, che l’ere bon di fâ chei miràcui e j’ domande tremand perdòn.</p>
+            <p>— Va ben, va ben, — j’ rispuind il Signor — nome imparàit par un’altre volte a no jessi cussì svelte di maltratâ un om, che no cognossês, se anche lui al lavore in-t’une maniere che vo no podès capî.</p>
+            <p>Dopo al si chape su e ’l va vie cu i sièi doi compagns.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-9" n="I.9" rend="p-start">
+            <p>Un vicin al veve viodùd la maniere smaravèose, che ’l Signor al veve batùd il forment; e svelt lui al côr a chase, al puarte fûr plen di furie dutt il forment in-t’un grum e senze pensâ plui di tant i dâ fûg. Ma lui no l’ere il Signor; il forment al si brusave propri par da bòn. A vedê piàrdisi cussì miseramenti li sos speranzis, chel pùar contadìn al si metè a còri daùr di chei tre oms misteriòs, e chatàds, ur contà la part stupide che ’l veve fatt e ju preà che pa’ l’amor di Dio lu judàssin.</p>
+          </div>
+          <div type="passage" xml:id="pf-sarasin-10" n="I.10" rend="p-start">
+            <p>— Va là, — j’ disè il Signor a San Pieri, che ’l veve za sbassàd il nas — e fas deventâ il forment brusàd in sarasìn. E vo, fradi miò, un’altre volte sèit plui furbo, e no olê come une scimie fâ daùr di ches robis, che se anche lis fas un altri, e’ passin lis nestris fuarzis: no dutt ce che ’l fas un, l’è bon di fâ un altri.</p>
+            <p>San Pieri al lè cun chell om, e da ’l forment, che l’ere làd za miezz in charbon e miezz in cinise, par virtùd de ’l Signor al fasè vignî fûr tant sarasìn.</p>
+            <p>Cussì al vè orìgin il sarasìn. I oms alore àn scomenzàd a cognòscilu e dopo di che volte àn continuàd a coltivàlu fin cumò.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pf-sarasin-1">
+            <p>Il Signore, San Pietro e San Giacomo entrarono una sera in una casa e chiesero di dormire. Era il tempo della trebbiatura del frumento; e la padrona rispose che li avrebbe alloggiati per quella notte, se si fossero impegnati a batterle il mattino dopo un’aia di frumento. Promisero di batterlo, e dopo cena furono condotti a dormire tutti e tre in un letto.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-2">
+            <p>L’indomani non si alzavano mai. La padrona di casa, visto che non scendevano, li chiama. Ma loro, ancora mezzo addormentati, non si muovono. Poi torna a gridare che era ben ora, una buona volta, di saltar fuori dal nido. Ma loro non le badano: hanno trovato un letto troppo morbido. Lei aspetta un poco e poi, stufa, prende un bastone, va di sopra e ne molla quattro a San Pietro, che trova per primo da quella parte, dicendo che così si trattano i poltroni; e torna giù. Aspetta di nuovo per vedere se l’avessero capita. Ma il letto è una calamita che li tira a sé troppo forte, e loro restano fermi. Allora lei torna su col suo legno.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-3">
+            <p>Appena il Signore la sente venire per le scale, dice a San Pietro:</p>
+            <p>«Pietro, vieni qui in mezzo, che non tocchi di nuovo a te.»</p>
+            <p>San Pietro si è appena sistemato in mezzo, che arriva la padrona vicino al letto e dice:</p>
+            <p>«Prima ho picchiato il primo; adesso spolvero quello in mezzo.»</p>
+            <p>E così San Pietro le prese per la seconda volta.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-4">
+            <p>Tornata giù la padrona di casa, loro non si scomponevano per niente, come se non fosse successo nulla. Ma il Signore, che sapeva che la donna sarebbe tornata in camera, si rivolse a San Pietro:</p>
+            <p>«Sai che cosa fare, Pietro, perché non tocchi ancora a te? Devi andare dall’altra parte; così, quando lei arriverà su tutta inviperita, la rabbia non le lascerà il tempo di allungarsi sul letto per toccare il terzo, ma picchierà per lungo e per traverso chi le capita, capita.»</p>
+            <p>Ma, in fede mia, San Pietro fu fortunato a mettersi di là; perché la padrona, corsa di sopra tutta infuriata, gridò loro:</p>
+            <p>«Che vi pare ancora, svergognati, che non sia ora di finirla? Avete voluto aspettare di provare il bastone tutti e tre! Aspettate, aspettate, vi servo ben io. La prima volta ho unto quello di qua; poi quello di mezzo; e adesso batterò il terzo.»</p>
+            <p>In questa maniera quel povero San Pietro fu conciato per le feste tre volte.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-5">
+            <p>Rimasti soli, lui cominciò a lamentarsi col Signore:</p>
+            <p>«L’avete vista, Signore, quella brutta strega, che si è sfogata di nuovo con me? Mi pareva di dover essere sempre io quello delle botte. Voi mi mandavate apposta di qua perché le prendessi io; adesso io mi alzo, e se volete alzarvi anche voi, alzatevi, se no state lì finché vi stufate, e magari finché vi ammacca le ossa anche a voi come a me.»</p>
+            <p>«Non scaldarti tanto, Pietro,» lo canzonava ancora il Signore, «non ti ha fatto poi tanto male come vuoi far vedere. Adesso, vedi, ti ha ucciso! Sì, sì: ci alzeremo anche noi per accontentarti.»</p>
+            <p>San Pietro non rispose nulla; ma brontolando tra i denti si alzò con loro e scesero tutti e tre.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-6">
+            <p>La donna, che li aspettava ai piedi della scala, mostrò loro il frumento in una camera e con malagrazia disse:</p>
+            <p>«Eccolo lì. Portatelo fuori, stendetelo, e qui ci sono i correggiati!»</p>
+            <p>Senza dire nulla cominciano a portarlo in mezzo al cortile e a metterlo in un mucchio. Lei mostra loro che bisognava allargarlo per tutta l’aia; ma ha un bell’insegnare: quegli altri tre continuavano a lavorare a modo loro, senza darle retta.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-7">
+            <p>Finito di portar fuori tutto il frumento, il Signore va in cucina e dal focolare prende un tizzone. La padrona di casa lo guarda a bocca aperta per vedere che cosa ha da fare; ma quando lo vede avvicinarsi al frumento vuole fermarlo, gridandogli che cosa pensasse di fare con quel tizzone, se fosse matto a giocare col fuoco. Lui prova a calmarla: che non avesse paura, che lo lasciasse fare, che lui sapeva già quel che doveva fare; e che se la ingannava sarebbe stato nelle sue mani e lei avrebbe potuto castigarlo. E tanto fa, che riesce a buttare il tizzone nel frumento.</p>
+            <p>In un momento va tutto in fiamme.</p>
+            <p>Allora nessuno la tiene più, e comincia a gridare, fuori di sé dalla rabbia e dallo spavento, che sono assassini, che vogliono bruciarle tutto... Ma il Signore le mostra il mucchio del frumento.</p>
+            <p>«Guardate, dunque,» le dice, «se non abbiamo fatto bene il nostro lavoro!»</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-8">
+            <p>E infatti il frumento non brucia affatto; ma la pula vola tutta da una parte, il frumento pulito dall’altra e la paglia resta tutta bella dietro. Allora lei resta con tanto di naso, svergognata e spaventata di aver trattato in quel modo un uomo capace di fare simili miracoli, e tremando gli chiede perdono.</p>
+            <p>«Va bene, va bene,» le risponde il Signore, «soltanto imparate per un’altra volta a non essere così svelta a maltrattare un uomo che non conoscete, anche se lavora in una maniera che voi non potete capire.»</p>
+            <p>Poi si alza e se ne va con i suoi due compagni.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-9">
+            <p>Un vicino aveva visto la maniera meravigliosa in cui il Signore aveva battuto il frumento; e svelto corre a casa, porta fuori pieno di furia tutto il suo frumento in un mucchio e senza pensarci più di tanto gli dà fuoco. Ma lui non era il Signore: il frumento bruciava proprio per davvero. A vedere perdersi così miseramente le sue speranze, quel povero contadino si mise a correre dietro a quei tre uomini misteriosi e, trovatili, raccontò loro la sciocchezza che aveva fatto e li pregò che per l’amor di Dio lo aiutassero.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-10">
+            <p>«Va’ là,» disse il Signore a San Pietro, che aveva già abbassato il naso, «e fa’ diventare grano saraceno il frumento bruciato. E voi, fratello mio, un’altra volta siate più furbo, e non vogliate fare come una scimmia dietro a cose che, anche se le fa un altro, passano le nostre forze: non tutto quel che fa uno è capace di farlo un altro.»</p>
+            <p>San Pietro andò con quell’uomo, e dal frumento, che era già andato mezzo in carbone e mezzo in cenere, per virtù del Signore fece venir fuori tanto grano saraceno.</p>
+            <p>Così ebbe origine il grano saraceno. Gli uomini allora cominciarono a conoscerlo, e da quella volta hanno continuato a coltivarlo fino ad oggi.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pf-sarasin-1">
+            <p>The Lord, St Peter and St James came into a house one evening and asked for a bed. It was threshing time; and the mistress of the house answered that she would put them up for the night if they undertook to thresh her a floorful of wheat the next morning. They promised to thresh it, and after supper all three were taken to sleep in one bed.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-2">
+            <p>Next morning they never got up. The mistress of the house, seeing that they never came down, calls them. But they, still half asleep, do not stir. Then she shouts again that it was high time, for once, to jump out of the nest. But they pay her no heed: they have found too soft a bed. She waits a little and then, fed up, picks up a stick, goes upstairs and lets fly four blows at St Peter, whom she finds first on that side, saying that this is how lazybones should be treated; and down she goes. She waits again to see whether they had understood. But the bed is a magnet that pulls them too hard, and they stay put. So up she comes again with her stick.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-3">
+            <p>As soon as the Lord hears her on the stairs, he says to St Peter:</p>
+            <p>“Peter, come here into the middle, so it won’t be your turn again.”</p>
+            <p>St Peter has only just settled in the middle when the mistress comes up to the bed and tells them:</p>
+            <p>“First I beat the first one; now I’ll dust down the one in the middle.”</p>
+            <p>And so St Peter got it a second time.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-4">
+            <p>Once the mistress had gone back down, they were not a whit put out, as if nothing had happened. But the Lord, who knew the woman would come back to the room, turned to St Peter:</p>
+            <p>“Do you know what to do, Peter, so it won’t be your turn again? You must go to the other side; then when she comes up in a fury, her rage won’t leave her time to reach across the bed to the third, and she’ll lay about her lengthways and crossways at whoever comes to hand.”</p>
+            <p>But my word, St Peter was lucky to move over; for the mistress, running upstairs in a rage, yelled at them:</p>
+            <p>“What do you think now, you shameless lot, isn’t it time to stop? You wanted to wait until all three of you had tasted the stick! Wait, wait, I’ll see to you. The first time I greased the one on this side; then the one in the middle; and now I’ll beat the third.”</p>
+            <p>And that is how poor St Peter was given a good dressing-down three times over.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-5">
+            <p>Left alone at last, he began to complain to the Lord:</p>
+            <p>“Did you see her, Lord, that ugly witch, taking it out on me again? It seemed I always had to be the one for the blows. You sent me over here on purpose so that I’d be the one to get them; now I’m getting up, and if you want to get up too, get up; if not, stay there until you’re tired of it, and maybe until she bruises your bones too, like mine.”</p>
+            <p>“Don’t get so heated, Peter,” the Lord teased him still, “she hasn’t hurt you as much as you make out. Look, now she’s killed you! Yes, yes: we’ll get up too, to please you.”</p>
+            <p>St Peter said nothing; but grumbling under his breath he got up with them, and all three came downstairs.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-6">
+            <p>The woman, who was waiting for them at the foot of the stairs, showed them the wheat in a room and said ungraciously:</p>
+            <p>“There it is. Carry it out, spread it, and here are the flails!”</p>
+            <p>Without a word they begin to carry it into the middle of the yard and pile it in a heap. She shows them that it had to be spread over the whole threshing floor; but she can teach all she likes: the other three went on working their own way, paying her not the slightest heed.</p>
+            <note type="translation">“Senze contàle come chell de ’s côts”, literally “counting her like the man of the whetstones”, is an idiom for paying someone no heed.</note>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-7">
+            <p>When all the wheat had been carried out, the Lord goes into the kitchen and takes a burning brand from the hearth. The mistress of the house watches him open-mouthed to see what he means to do; but when she sees him go near the wheat she tries to stop him, shouting at him what he thought he was doing with that brand, whether he was mad enough to play with fire. He tries to calm her: she was not to be afraid, she was to let him be, he knew what he had to do; and if he deceived her, he would be in her hands and she could punish him. And he keeps at it until he manages to throw the brand into the wheat.</p>
+            <p>In a moment it all goes up in flames.</p>
+            <p>Then there is no holding her, and she starts to scream, beside herself with rage and fright, that they are murderers, that they want to burn her out of everything… But the Lord shows her the heap of wheat.</p>
+            <p>“Look now,” he tells her, “and see whether we haven’t done our work well!”</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-8">
+            <p>And indeed the wheat does not burn at all; but the chaff flies off to one side, the clean wheat to the other, and the straw is left all neat behind. Then she is left looking foolish, ashamed and frightened at having treated in that way a man who could work such miracles, and trembling she asks his pardon.</p>
+            <p>“All right, all right,” the Lord answers her, “only learn for another time not to be so quick to ill-treat a man you don’t know, even if he works in a way you cannot understand.”</p>
+            <p>Then he gets up and goes off with his two companions.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-9">
+            <p>A neighbour had seen the wonderful way in which the Lord had threshed the wheat; and off he runs home in a hurry, carries all his wheat out in a heap in a frenzy, and without a second thought sets fire to it. But he was not the Lord: his wheat burnt for real. Seeing his hopes lost so miserably, the poor farmer ran after those three mysterious men and, when he found them, told them the foolish thing he had done and begged them for the love of God to help him.</p>
+          </div>
+          <div type="passage" corresp="#pf-sarasin-10">
+            <p>“Go along,” the Lord said to St Peter, who had already hung his head, “and turn the burnt wheat into buckwheat. And you, my brother, be wiser another time, and don’t go aping, like a monkey, things that are beyond our strength even when another man does them: not everything one man does, another can do.”</p>
+            <p>St Peter went with that man, and out of the wheat, which had already gone half to charcoal and half to ash, by the Lord’s power he brought forth a great deal of buckwheat.</p>
+            <p>That is how buckwheat came to be. Then people began to know it, and from that time they have gone on growing it to this day.</p>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="II" xml:id="pf-chavazz" corresp="#cavazzo">
+        <head type="original" xml:lang="fur">Un’altre leggende sul làd di Chavazz</head>
+        <head xml:lang="it">Un’altra leggenda sul lago di Cavazzo</head>
+        <head xml:lang="en">Another legend of the lake of Cavazzo</head>
+        <note type="record"><bibl><title level="j">Pagine friulane</title>, a. III (1890), n. 4, p. 65, <ref target="https://archive.org/details/Pagine_friulane_n_4_1890">Internet Archive</ref></bibl>; ATU <term type="atu" n="750B">Hospitality Rewarded</term> (assigned 2026). unsigned.</note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="pf-chavazz-1" n="II.1" rend="p-start">
+            <p>Une volte che il Signor e San Pieri a fòrin chenci vie pal Friul, vignind jù da la Chargne, dopo di jessi stàds a Tulmiezz, passàrin par Chavazz. Anchemò no l’ère il làd, e lor a’ chaminàvin in miezz chês cretàis in-t’une zornàde dal mês di Lui, ch’al fasève un gran schafojazz.</p>
+            <p>Chamìne e chamìne, traviàrsin par un païs da-bass de montagne di San Simeon, bislung, cun chasis neris e sporcis e la int salvadie. I ùmin a vévin tante di barbe.</p>
+          </div>
+          <div type="passage" xml:id="pf-chavazz-2" n="II.2" rend="p-start">
+            <p>— O hai sèd, vadè Signor — disè San Pieri. — Lassàit ch’ ’o jentri ta cheste chase a domandâ un flàt di aghe.</p>
+            <p>Al va, e pôc dopo al torne fûr brunduland e invelegnàd.</p>
+            <p>— Ce astu? — i domande el Signor.</p>
+            <p>— E han viùd cûr di nèami un flàd di aghe!</p>
+            <p>— Ben, ben: va là prove ta ches altris chasis.</p>
+            <p>San Pieri al lè, une par une: ma da-par-dutt a no i volèrin dâ nuje, cun-t’une scuse o cun che altre; e la plui part i rispuindévin che lor a vevin l’aghe masse lontàne di làle a choli, par strassàle cun chei che passavin.</p>
+          </div>
+          <div type="passage" xml:id="pf-chavazz-3" n="II.3">
+            <p>Restàve nome une chasùte, in fonz de vile. Al batt, San Pieri, anche ta cheste. Ven fûr une pùare vechùte, striscinand lis zavatis.</p>
+            <p>— Ce olèso, galantom?</p>
+            <p>— Dàimi di bevi.</p>
+            <p>— Vulintiròn, po. Jentrait, jentrait.</p>
+            <p>Ju fasè entrâ duch i doi, e ur dè tante aghe fresche che volèrin.</p>
+          </div>
+          <div type="passage" xml:id="pf-chavazz-4" n="II.4" rend="p-start">
+            <p>Tornàd ch’al fo il Signor in Cîl, San Pieri lu visà di ce ch’ur jere capitàd in chell païs.</p>
+            <p>— Brào — i disè il Signor. — Tu has fatt ben a visàmi. Cumò mo lafè olin dàigi aghe avonde, a chei tangàrs.</p>
+            <p>Al mandà sùbit i siei àgnui par che portassin di gnott la chasùte di che pùare veche su pe’ mont di San Simeon; e cuand-ch’al vedè la chase là sù in-somp, al chapà un gran copp di aghe e lu struchà parsore di chell païs.</p>
+          </div>
+          <div type="passage" xml:id="pf-chavazz-5" n="II.5" rend="p-start">
+            <p>Cussì l’è deventàd el làd di Chavazz, e anchemò cualchi volte, se l’aghe e’ jè clare clare, si cìche in-sott in-sott el champanìli di chell païs e lis chasis: ma di omps a no s’in viod nanche un. Par un pôche di aghe, che ur han dite di no al nestri Signor e al so Sant Apuèstul, le han duch finìde cussì malamentri là sott.</p>
+            <p>Che pùare vechute, invenzit, e ha vivùd anchemò un pôs di agns, in pâs e in caritât su pe’ montagne, dute maravèàde di chatàsi lassù be-sole; e cuand che murì, e plantàrin tal puest de so’ chase une glesiùte che anchimò si la viòd, e dulà che, si conte, la gnott dai muarz a viodin a lâ in procession dutis lis animis puartand une chandelute impiàde su la ponte dal dèd, e cui che no l’è stàd di vîv a visitâ la glesie, al dèvi lâ di muart.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pf-chavazz-1">
+            <p>Una volta che il Signore e San Pietro erano in giro per il Friuli, scendendo dalla Carnia dopo essere stati a Tolmezzo, passarono per Cavazzo. Il lago non c’era ancora, e loro camminavano in mezzo a quelle pietraie in una giornata del mese di luglio, con un caldo soffocante.</p>
+            <p>Cammina e cammina, attraversarono un paese ai piedi del monte San Simeone, lungo e stretto, con case nere e sporche e la gente selvatica. Gli uomini avevano tanto di barba.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-2">
+            <p>«Ho sete, vedete, Signore,» disse San Pietro. «Lasciate che entri in questa casa a chiedere un sorso d’acqua.»</p>
+            <p>Va, e poco dopo torna fuori brontolando e inviperito.</p>
+            <p>«Che hai?» gli domanda il Signore.</p>
+            <p>«Hanno avuto il cuore di negarmi un sorso d’acqua!»</p>
+            <p>«Bene, bene: va’, prova in quelle altre case.»</p>
+            <p>San Pietro andò, una per una: ma dappertutto non vollero dargli niente, con una scusa o con l’altra; e i più rispondevano che avevano l’acqua troppo lontana da andare a prendere, per sprecarla con chi passava.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-3">
+            <p>Restava soltanto una casetta, in fondo al paese. Bussa, San Pietro, anche a questa. Esce una povera vecchietta, strascicando le ciabatte.</p>
+            <p>«Che volete, galantuomo?»</p>
+            <p>«Datemi da bere.»</p>
+            <p>«Volentieri, via. Entrate, entrate.»</p>
+            <p>Li fece entrare tutti e due, e diede loro tutta l’acqua fresca che vollero.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-4">
+            <p>Quando il Signore fu tornato in Cielo, San Pietro gli ricordò ciò che era capitato loro in quel paese.</p>
+            <p>«Bravo,» gli disse il Signore. «Hai fatto bene a ricordarmelo. Adesso, in fede mia, vogliamo dargliene abbastanza, di acqua, a quei tangheri.»</p>
+            <p>Mandò subito i suoi angeli a portare di notte la casetta di quella povera vecchia su per il monte San Simeone; e quando vide la casa lassù in cima, prese un gran mestolo d’acqua e lo rovesciò sopra quel paese.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-5">
+            <p>Così è nato il lago di Cavazzo, e ancora qualche volta, se l’acqua è chiara chiara, si intravedono laggiù in fondo il campanile di quel paese e le case: ma di uomini non se ne vede nemmeno uno. Per un po’ d’acqua, che negarono al nostro Signore e al suo santo Apostolo, l’hanno finita tutti così malamente là sotto.</p>
+            <p>Quella povera vecchietta, invece, visse ancora qualche anno, in pace e in carità su per la montagna, tutta meravigliata di trovarsi lassù da sola; e quando morì, al posto della sua casa costruirono una chiesetta che si vede ancora, e dove, si racconta, nella notte dei morti si vedono andare in processione tutte le anime, ciascuna con una candelina accesa sulla punta del dito; e chi non è stato a visitare la chiesa da vivo deve andarci da morto.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pf-chavazz-1">
+            <p>Once, when the Lord and St Peter were travelling about Friuli, coming down from Carnia after being at Tolmezzo, they passed through Cavazzo. The lake was not there yet, and they were walking among those stony wastes on a July day of stifling heat.</p>
+            <p>On and on they walked, and crossed a village at the foot of Mount San Simeone, long and narrow, with black, dirty houses and wild people. The men had beards down to here.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-2">
+            <p>“I’m thirsty, you see, Lord,” said St Peter. “Let me go into this house and ask for a drop of water.”</p>
+            <p>He goes, and soon after comes out again grumbling and seething.</p>
+            <p>“What’s the matter?” the Lord asks him.</p>
+            <p>“They had the heart to refuse me a drop of water!”</p>
+            <p>“Well, well: go and try those other houses.”</p>
+            <p>St Peter went, one after another: but everywhere they would give him nothing, with one excuse or another; and most of them answered that their water was too far away to fetch, to waste it on passers-by.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-3">
+            <p>There remained only one little house, at the far end of the village. St Peter knocks at this one too. Out comes a poor little old woman, shuffling in her slippers.</p>
+            <p>“What would you like, good sir?”</p>
+            <p>“Give me something to drink.”</p>
+            <p>“Gladly, of course. Come in, come in.”</p>
+            <p>She let them both in and gave them all the fresh water they wanted.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-4">
+            <p>When the Lord was back in Heaven, St Peter reminded him of what had happened to them in that village.</p>
+            <p>“Well done,” the Lord told him. “You did well to remind me. Now, upon my word, we’ll give those louts water enough.”</p>
+            <p>At once he sent his angels to carry the little house of that poor old woman up Mount San Simeone by night; and when he saw the house up there at the top, he took a great dipper of water and emptied it over that village.</p>
+          </div>
+          <div type="passage" corresp="#pf-chavazz-5">
+            <p>That is how the lake of Cavazzo came to be; and still, sometimes, when the water is very clear, you can glimpse far down the bell tower of that village and its houses: but of the people not one is to be seen. For a little water, which they refused our Lord and his holy Apostle, they all came to that bad end down there.</p>
+            <p>That poor little old woman, on the other hand, lived a few years more, in peace and charity up on the mountain, marvelling to find herself up there all alone; and when she died they built a little church on the spot where her house stood, which can still be seen, and where, so they say, on the night of the dead all the souls are seen going in procession, each with a little lit candle on the tip of a finger; and whoever did not visit the church in life must go there after death.</p>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="III" xml:id="pf-mari" corresp="#ostermann">
+        <head type="original" xml:lang="fur">Invidiôs tanche la mâri di San Pieri</head>
+        <head xml:lang="it">Invidioso come la madre di San Pietro</head>
+        <head xml:lang="en">Envious as St Peter’s mother</head>
+        <note type="record"><bibl><title level="j">Pagine friulane</title>, a. VI (1893), n. 1, pp. 9–10, in “Fiabe che illustrano proverbi o modi di dire”, <ref target="https://archive.org/details/pagine-friulane-n.-1-1893">Internet Archive</ref></bibl>; ATU <term type="atu" n="804">Peter’s Mother Falls from Heaven</term> (assigned 2026). signed “V. O.”.</note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="pf-mari-1" n="III.1" rend="p-start">
+            <p>Dopo muàrt, San Pieri al lè in paradìs, e il signôr disìngi: Ego dabo tibi claves regni coelorum, lu creà portîr e uardiàn dal cîl, par cui cence il so permès lassù nissùn po’ entrâ.</p>
+            <p>Cuànd che il Signôr al s’incontrave nel capo dei siei apuestui, lu viodeve simpri avilìt e une dì i domandà:</p>
+            <p>— Ma Pieri, ce mai astu ch’ i tu sês simpri di male voe? No ti chàtistu forsi ben, ca sù?</p>
+            <p>E San Pieri i rispuindè:</p>
+            <p>— Viòdiso, Signôr, jò soi cà a gioldi lis uestris glòriis, e puare mê mâri inveze jè fra lis plui duris penis a fons di cha-dal-diàul; si uèlis viòdimi lègri, acordàimi la grazie ch’a vegni ca sù anche jê.</p>
+          </div>
+          <div type="passage" xml:id="pf-mari-2" n="III.2" rend="p-start">
+            <p>— Ben — disè il Signor — va sù sul chast dal paradìs, e s’ i tu chatis une sole buine aziòn fate da tô mâri, vàliti di chê par liberâle e tirâle sù.</p>
+            <p>San Pieri beât e contènt corè sul chast a cirî, e al chatà nome une pizzule rieste di ai che sô mâri une volte veve dade di caritât. Cun chê al lè jù subit tal infièr e je slungià a sô mâri par che si piàs intôr e vegnìs sù in paradìs cun lui. So mâri si tacà a chel debul sostegno, e San Pieri la tirave sù; ma lis altris ànimis ch’a erin intôr di jè comenzàrin a tacâgisi intôr, speràndi di podê saltâ fûr das penis anche lôr. La mâri di San Pieri no oleve che nissùn altri si salvàs cun jè; a dè quindi une gran sgurlade par fâ colâ lis ànimis, ma la pizzule rieste di ai si rompè, e jè cun dutis lis altris ànimis ch’a veve intôr a plombâ a fons di cha-dal-diàul, d’in dulà che so fì nol podè plui tirâle sù.</p>
+          </div>
+          <div type="passage" xml:id="pf-mari-3" n="III.3" rend="p-start">
+            <p>E cuànd che un l’ha invidie dal ben dei altris, cumò i disin: Invidiôs come la mâri di San Pieri.</p>
+            <p>Come agiunte a la flabe cualchedùn al dìs che l’Apuestul al preà tant il Signôr che chèl i prometè di liberâ das penis la mâri almancul une volte all’àn, tal dì da sô sagre, al 29 di Jugn, ma i disè:</p>
+            <p>— Tu viodarâs, Pieri, se tô mâri no farà malàns in compèns!</p>
+            <p>E di fât cuànd che la danade a jès dal infièr o cuànd ch’a torne dentri, cuàsi ogn’àn a fâs sintî il teremòt, parcè che ûl che anche i altris a vêbin di sofrî.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pf-mari-1">
+            <p>Dopo morto, San Pietro andò in paradiso, e il Signore, dicendogli: Ego dabo tibi claves regni coelorum, lo fece portinaio e guardiano del cielo, per cui senza il suo permesso lassù nessuno può entrare.</p>
+            <p>Quando il Signore s’incontrava con il capo dei suoi apostoli, lo vedeva sempre avvilito, e un giorno gli domandò:</p>
+            <p>«Ma Pietro, che cos’hai mai che sei sempre di cattivo umore? Non ti trovi forse bene, quassù?»</p>
+            <p>E San Pietro gli rispose:</p>
+            <p>«Vedete, Signore, io sono qui a godere le vostre glorie, e la mia povera madre invece è tra le pene più dure in fondo all’inferno; se volete vedermi allegro, concedetemi la grazia che venga quassù anche lei.»</p>
+          </div>
+          <div type="passage" corresp="#pf-mari-2">
+            <p>«Bene,» disse il Signore, «va’ su nell’archivio del paradiso, e se trovi una sola buona azione fatta da tua madre, servitene per liberarla e tirarla su.»</p>
+            <p>San Pietro, beato e contento, corse nell’archivio a cercare, e trovò soltanto una piccola treccia d’aglio che sua madre una volta aveva dato in carità. Con quella scese subito all’inferno e la porse a sua madre perché vi si aggrappasse e venisse su in paradiso con lui. Sua madre si attaccò a quel debole sostegno, e San Pietro la tirava su; ma le altre anime che le stavano intorno cominciarono ad attaccarsi a lei, sperando di poter uscire anche loro dalle pene. La madre di San Pietro non voleva che nessun altro si salvasse con lei; diede quindi una gran scrollata per far cadere le anime, ma la piccola treccia d’aglio si ruppe, e lei con tutte le altre anime che aveva intorno piombò in fondo all’inferno, da dove suo figlio non poté più tirarla su.</p>
+          </div>
+          <div type="passage" corresp="#pf-mari-3">
+            <p>E quando uno ha invidia del bene degli altri, adesso gli dicono: Invidioso come la madre di San Pietro.</p>
+            <p>Come aggiunta alla fiaba, qualcuno dice che l’Apostolo pregò tanto il Signore che questi gli promise di liberare dalle pene sua madre almeno una volta all’anno, nel giorno della sua festa, il 29 di giugno; ma gli disse:</p>
+            <p>«Vedrai, Pietro, se tua madre non combinerà malanni in cambio!»</p>
+            <p>E difatti, quando la dannata esce dall’inferno o quando vi rientra, quasi ogni anno fa sentire il terremoto, perché vuole che anche gli altri abbiano da soffrire.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pf-mari-1">
+            <p>After his death St Peter went to paradise, and the Lord, saying to him Ego dabo tibi claves regni coelorum, made him doorkeeper and warden of heaven, so that without his leave nobody may enter up there.</p>
+            <p>Whenever the Lord met the chief of his apostles, he always found him downcast, and one day he asked him:</p>
+            <p>“But Peter, whatever is the matter, that you are always in a bad mood? Are you not happy up here?”</p>
+            <p>And St Peter answered him:</p>
+            <p>“You see, Lord, I am here enjoying your glories, and my poor mother instead is among the hardest pains at the bottom of hell; if you want to see me happy, grant me the grace that she may come up here too.”</p>
+          </div>
+          <div type="passage" corresp="#pf-mari-2">
+            <p>“Very well,” said the Lord, “go up to the storehouse of paradise, and if you find a single good deed done by your mother, use it to free her and pull her up.”</p>
+            <p>St Peter, happy and content, ran to the storehouse to look, and found only a small braid of garlic that his mother had once given in charity. With it he went straight down to hell and held it out to his mother, so that she could catch hold of it and come up to paradise with him. His mother clung to that feeble support, and St Peter was pulling her up; but the other souls around her began to cling to her, hoping they too could get out of their pains. St Peter’s mother did not want anyone else saved with her; so she gave a great shake to make the souls fall, but the little braid of garlic broke, and she, with all the other souls around her, plunged to the bottom of hell, from where her son could never pull her up again.</p>
+            <note type="translation">In the Sicilian tale (Pitrè, n. CXXVI) the one good deed is a leek leaf; here it is a braid of garlic.</note>
+          </div>
+          <div type="passage" corresp="#pf-mari-3">
+            <p>And when someone envies the good of others, people now say: Envious as St Peter’s mother.</p>
+            <p>As an addition to the tale, some say that the Apostle begged the Lord so hard that he promised to free his mother from her pains at least once a year, on his feast day, the 29th of June; but he told him:</p>
+            <p>“You’ll see, Peter, whether your mother doesn’t do some mischief in return!”</p>
+            <p>And indeed, when the damned woman comes out of hell or goes back in, almost every year she sets off an earthquake, because she wants the others to suffer too.</p>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="IV" xml:id="pf-mestri" corresp="#gortani #carnia">
+        <head type="original" xml:lang="fur">Il mestri sore duch i mestris</head>
+        <head xml:lang="it">Il maestro sopra tutti i maestri</head>
+        <head xml:lang="en">The master above all masters</head>
+        <note type="record"><bibl><title level="j">Pagine friulane</title>, a. VII (1894), p. 24, <ref target="https://archive.org/details/pagine-friulane-v.-7-8-1894-1895">Internet Archive</ref></bibl>; ATU <term type="atu" n="753">Christ and the Smith</term> (assigned 2026). “Sintude a contâ a Clavais, ad Avosâs, a Cedarchis, ad Incharoj e a Racolane” (Gortani’s note).</note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="pf-mestri-1" n="IV.1" rend="p-start">
+            <p>Al ere une volte un fari brâv del so mistîr, ma cussì plen di pretese, che, a sintîlu lui, al mangiave la fave sul châv a duch i artisch ch’a’ erin sòt la cape dal cîl. Par dâssi ton, al veve scrìt in grand sore la puarte del so’ lavoratori: il mestri sore duch i mestris.</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-2" n="IV.2" rend="p-start">
+            <p>Une dì al càpite di che’ bande il Signôr, che in chèl timp al lave atòr pal mond in compagnie di San Pieri, e stànd su la puarte lu salude:</p>
+            <p>— Bon dì, mestri.</p>
+            <p>Il fari, ch’al ere daùr a dâ l’ultime man a un fièr di talpe di mùs, no j’ torne nissune rispueste.</p>
+            <p>— Bon dì mestri — ai repliche il Signôr.</p>
+            <p>— Se no savês fevelâ, imparait — al rugne il fari cun t’un estro di pofarbìo.</p>
+            <p>— E parcè mo’?</p>
+            <p>— Chalàit ce ch’al è scrìt là parsore e lu savarês.</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-3" n="IV.3">
+            <p>Il Signôr al alze il châv, al lèi, e cun dute cerimonie lu torne a saludâ:</p>
+            <p>— Bon dì, mestri sore duch i mestris.</p>
+            <p>— Oh cumò si vin capìd! — al rispuìnd il fari. — Ce voleviso?</p>
+            <p>— Eri vignùd a preàus di lasçâmi lavorâ cualchi minût in ta vuestre farie, che varès voë di dâ une buine soferade a un cert capo vecho e frujàd che hai culì di fûr.</p>
+            <p>— Po dàimel cà a mi, che se in t’un bati di voli no us el fâs tornâ come un pipìn, uèi disbatiâmi.</p>
+            <p>— Graziis, — al torne a dî il Signôr, — ma vês di savê ch’al è un lavorùt di un gener gnûv, e no crôd che vô saressis bon di chatâi il drèt tant facilmenti.</p>
+            <p>— No sarès bon? Par vuestre regule, chest nâs no l’ha bisugne di imparâ il mistîr di nissùn. No sarès bon! Ha, ha! Uèi propri viodi ce che savês vô fâ di bièl; aprofitàisi pur da’ fusine, dai impresch, di dute la farie. Animo: sù, ch’al è dì!</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-4" n="IV.4" rend="p-start">
+            <p>Il Signôr al prepare un bièl boreâr in ta fusine e al emple di aghe il làip grand. Dopo al sbrisse fûr un momènt, e al torne a comparî menànd pe’ man San Pieri; ma un San Pieri cussì vechòn e cadènt, ch’al ere nome peleatis di lui. A’ lu chazze tal fûg, lu fâs deventâ ròs menànd il sfuèi a dùt flàd, j’ bute aduès cualchi zumiele di saldàn; e cuan’ che al è ben ben infogâd, cu lis tanàis lu giave fûr, j’ dà cul màj su l’incuin cuatri sunadis di chês del numer un, e par ultim lu sclope dentri ta l’aghe del làip grànd aciò ch’al chapi la tèmpere. E lì, in mièz al fum di chèl bulimènt, ècoti che al salte fûr ridìnd San Pieri benedèt, deventâd zòvin di vinch agn, fresc e bièl come un garoful. Ringraziâd il fari, i doi pelegrins, senze fâ altris peràulis, a’ si chàpin sù e van pe’ lor strade.</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-5" n="IV.5" rend="p-start">
+            <p>A viodi che’ sorte di fature, il mestri sore duch i mestris al restà mièz sberlufìd. Ma no stàit mighe a crodi, vede’, che par chest la vei metude vie! Silafè! Cun che’ ambiziòn ch’al veve!</p>
+            <p>— Ce grandis robis! — al dîs tiransi la barbe, che pareve une code di mùs vèdul. — Cualuncue schapìn al sa fâ chest tant. Anzi, cumò che m’impensi... O’ hai cassù disore gno pari impotènt sul jèt, che nol puès nanche piùlâ, e no sarà màl che senze pierdi tìmp j’ fasi subit la vore.</p>
+            <p>Dìt e fât. Al va sù ad alt, al chape so’ pari, che l’ere ridòt nome un sàc di uès, lu puarte a bàs e lu fiche in ta fusine. Il pùar vecho, dopo vê dâd dôs, tre tiessudis cu lis giambis, al si cujetà di colp: ma invece di deventâ rôs, al scomençà a cisâ come une bore verde.</p>
+            <p>— No tu vûs capile? — j’ dîs il fari. — Spiete cumò tu, bambìn!</p>
+            <p>Ai butà parsore un’altre cosse di charvòn; e po’ jù certis tiradis di fol, ch’a’ emplàrin dute la stanze di lusìgnis. Cuan’ che j’ parè il momènt, lu sborfà di saldàn ben e no mâl e lu giavà fûr cu lis tanàis par bàtilu su l’incùin. Ma ai prins colps di maj, invece di saldàssi, il vecho al cole jù par tiere schavezzâd mièz par bande.</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-6" n="IV.6" rend="p-start">
+            <p>Alore il mestri, che s’inacuarzè di vêlu copâd, al si metè in t’une disperaziòn tâl, ch’al fò su lis tre e tre cuàrz par butàssi vie. Senonchè, visansi di ce ch’al veve viodùd pôc prime, al implantà alì zùs e vergòns, e dùt strassameâd, cui vôi fûr dal châv, al si tacà a cori daur ai doi viandànz. Fât un bocòn di strade ju chapà.</p>
+            <p>— Ou galantòm! galantòm! — ai vosà al Signôr.</p>
+            <p>— Ce us ocòriel, mestri sore duch i mestris?</p>
+            <p>— Ah par l’amôr di Dio — disèl — tornàit là di me, che forsi sarês bon anchemò di comedâ gno pari. Soi lâd par soferâlu, come che vês fât vô, e invece lu hai dùt brusâd e paràd in doi.</p>
+          </div>
+          <div type="passage" xml:id="pf-mestri-7" n="IV.7" rend="p-start">
+            <p>— Ben, vàit là, vàit là a chase, che lu chatarês viv — j’ rispuìnd il Signôr; — nome us visi che al sarà vieli nali come prime. E di cà indavànt no stàit a lasçassi mai plui vignî tal châv che nissùn altri artist nol puedi savê alc plui di vô.</p>
+            <p>Il fari al tornà filâd a chase, dulà che di fât al chatà so’ pari come ch’al veve dìt il Signôr. In che’ dì istesse al parà jù l’iscriziòn sore la puarte da’ farie, e al so’ puèst a’n tacà sù un’altre plui modeste ch’a’ diseve:</p>
+            <p>Ogni mês si fâs la lune,</p>
+            <p>Ogni dì s’impare une.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pf-mestri-1">
+            <p>C’era una volta un fabbro bravo nel suo mestiere, ma così pieno di pretese che, a sentir lui, mangiava la fava in testa a tutti gli artigiani che c’erano sotto la cappa del cielo. Per darsi tono, aveva scritto in grande sopra la porta della sua bottega: il maestro sopra tutti i maestri.</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-2">
+            <p>Un giorno capita da quelle parti il Signore, che a quel tempo andava in giro per il mondo in compagnia di San Pietro, e fermandosi sulla porta lo saluta:</p>
+            <p>«Buon giorno, maestro.»</p>
+            <p>Il fabbro, che stava dando l’ultima mano a un ferro da zoccolo d’asino, non gli rende nessuna risposta.</p>
+            <p>«Buon giorno, maestro,» ripete il Signore.</p>
+            <p>«Se non sapete parlare, imparate,» brontola il fabbro, stizzito.</p>
+            <p>«E perché mai?»</p>
+            <p>«Guardate che cosa è scritto lassù e lo saprete.»</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-3">
+            <p>Il Signore alza il capo, legge, e con tutte le cerimonie torna a salutarlo:</p>
+            <p>«Buon giorno, maestro sopra tutti i maestri.»</p>
+            <p>«Oh, adesso ci siamo capiti!» risponde il fabbro. «Che cosa volevate?»</p>
+            <p>«Ero venuto a pregarvi di lasciarmi lavorare qualche minuto nella vostra bottega, che vorrei dare una buona bollitura a un certo pezzo vecchio e logoro che ho qui fuori.»</p>
+            <p>«Ma datelo qua a me, che se in un batter d’occhio non ve lo faccio tornare nuovo come un bambolotto, voglio sbattezzarmi.»</p>
+            <p>«Grazie,» ripete il Signore, «ma dovete sapere che è un lavoretto di un genere nuovo, e non credo che sareste capace di trovargli il verso tanto facilmente.»</p>
+            <p>«Non sarei capace? A vostra regola, questo naso non ha bisogno di imparare il mestiere da nessuno. Non sarei capace! Ah, ah! Voglio proprio vedere che cosa sapete fare voi di bello; servitevi pure della fucina, degli attrezzi, di tutta la bottega. Animo: su, che è giorno!»</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-4">
+            <p>Il Signore prepara un bel letto di brace nella fucina e riempie d’acqua la vasca grande. Poi scivola fuori un momento, e torna tenendo per mano San Pietro; ma un San Pietro così vecchio e cadente che era soltanto pelle. Lo caccia nel fuoco, lo fa diventare rosso tirando il mantice a tutto fiato, gli butta addosso qualche manciata di sabbia da saldatura; e quando è ben bene infuocato, lo tira fuori con le tenaglie, gli dà col martello sull’incudine quattro colpi di quelli del numero uno, e per ultimo lo tuffa nell’acqua della vasca grande perché prenda la tempera. E lì, in mezzo al fumo di quel ribollire, ecco che salta fuori ridendo San Pietro benedetto, diventato un giovane di vent’anni, fresco e bello come un garofano. Ringraziato il fabbro, i due pellegrini, senza aggiungere parola, si avviano per la loro strada.</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-5">
+            <p>A vedere quella sorta di lavoro, il maestro sopra tutti i maestri rimase mezzo sbalordito. Ma non crediate, vedete, che per questo abbia lasciato perdere! Figurarsi! Con l’ambizione che aveva!</p>
+            <p>«Che grandi cose!» dice tirandosi la barba, che pareva la coda di un asino vecchio. «Qualunque ciabattino sa fare altrettanto. Anzi, adesso che ci penso... Ho lassù di sopra mio padre, impotente a letto, che non può nemmeno lamentarsi, e non sarà male fargli subito il lavoro, senza perdere tempo.»</p>
+            <p>Detto fatto. Va di sopra, prende suo padre, che era ridotto a un sacco d’ossa, lo porta giù e lo ficca nella fucina. Il povero vecchio, dopo due o tre scalciate, si quietò di colpo: ma invece di diventare rosso cominciò a sfrigolare come un ceppo verde.</p>
+            <p>«Non vuoi capirla?» gli dice il fabbro. «Aspetta adesso, tu, bambino!»</p>
+            <p>Gli buttò sopra un’altra cesta di carbone; e poi giù certe tirate di mantice che riempirono tutta la stanza di faville. Quando gli parve il momento, lo spruzzò di sabbia ben bene e lo tirò fuori con le tenaglie per batterlo sull’incudine. Ma ai primi colpi di martello, invece di saldarsi, il vecchio cade a terra spezzato, mezzo per parte.</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-6">
+            <p>Allora il maestro, accortosi di averlo ucciso, si mise in una tale disperazione che fu lì lì per farla finita. Senonché, ricordandosi di ciò che aveva visto poco prima, piantò lì mazze e verghe e, tutto scarmigliato, con gli occhi fuori dalla testa, si mise a correre dietro ai due viandanti. Fatto un pezzo di strada, li raggiunse.</p>
+            <p>«Ehi, galantuomo! galantuomo!» gridò al Signore.</p>
+            <p>«Che cosa vi occorre, maestro sopra tutti i maestri?»</p>
+            <p>«Ah, per l’amor di Dio,» disse, «tornate da me, che forse sarete ancora capace di aggiustare mio padre. Sono andato a bollirlo, come avete fatto voi, e invece l’ho tutto bruciato e spezzato in due.»</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-7">
+            <p>«Bene, andate, andate a casa, che lo troverete vivo,» gli risponde il Signore; «soltanto vi avverto che sarà vecchio come prima. E d’ora in avanti non lasciatevi mai più venire in testa che nessun altro artigiano possa sapere qualcosa più di voi.»</p>
+            <p>Il fabbro tornò a casa di filato, dove difatti trovò suo padre come gli aveva detto il Signore. Quello stesso giorno tolse l’iscrizione da sopra la porta della bottega, e al suo posto ne appese un’altra, più modesta, che diceva:</p>
+            <p>Ogni mese si fa la luna,</p>
+            <p>ogni giorno se ne impara una.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pf-mestri-1">
+            <p>Once upon a time there was a blacksmith who was good at his trade, but so full of himself that, to hear him talk, he could eat beans off the head of every craftsman under the vault of heaven. To give himself airs, he had written in big letters over the door of his workshop: the master above all masters.</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-2">
+            <p>One day the Lord happens by that way (in those days he went about the world in the company of St Peter), and standing at the door he greets him:</p>
+            <p>“Good day, master.”</p>
+            <p>The smith, who was putting the finishing touches to a donkey’s shoe, gives no answer.</p>
+            <p>“Good day, master,” the Lord says again.</p>
+            <p>“If you don’t know how to speak, learn,” the smith growls in a huff.</p>
+            <p>“And why is that?”</p>
+            <p>“Look at what’s written up there and you’ll know.”</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-3">
+            <p>The Lord raises his head, reads, and with all due ceremony greets him again:</p>
+            <p>“Good day, master above all masters.”</p>
+            <p>“Oh, now we understand each other!” answers the smith. “What did you want?”</p>
+            <p>“I had come to ask you to let me work a few minutes in your smithy, for I should like to give a good forge-weld to a certain old, worn-out piece I have outside.”</p>
+            <p>“Then give it here to me, and if I don’t make it as good as new in the blink of an eye, may I be unbaptised.”</p>
+            <p>“Thank you,” says the Lord again, “but you must know it is a new kind of job, and I don’t think you would find the knack of it so easily.”</p>
+            <p>“Wouldn’t I? For your information, this nose needs to learn the trade from nobody. Wouldn’t I! Ha, ha! I really want to see what fine things you can do; help yourself to the forge, the tools, the whole smithy. Come on: up, it’s daylight!”</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-4">
+            <p>The Lord makes a fine bed of embers in the forge and fills the big trough with water. Then he slips out for a moment and comes back leading St Peter by the hand; but a St Peter so old and doddery that he was nothing but skin. He thrusts him into the fire, makes him red-hot working the bellows full blast, throws a few handfuls of welding sand on him; and when he is glowing through and through, he draws him out with the tongs, gives him four first-class blows with the hammer on the anvil, and last of all plunges him into the water of the big trough so that he takes the temper. And there, in the steam of that boiling, out jumps blessed St Peter laughing, turned into a young man of twenty, fresh and handsome as a carnation. Having thanked the smith, the two pilgrims, without another word, set off on their way.</p>
+            <note type="translation">In the Sicilian tale (Storia II) Peter tries the Lord’s trick of the oven himself and fails; here the smith does.</note>
+          </div>
+          <div type="passage" corresp="#pf-mestri-5">
+            <p>Seeing that kind of work, the master above all masters was left half dumbfounded. But don’t go thinking, mind you, that he gave up because of it! Not a bit of it! With the pride he had!</p>
+            <p>“What great things!” he says, tugging at his beard, which looked like the tail of an old donkey. “Any cobbler can do as much. In fact, now that I think of it… I have my father upstairs, helpless in bed, who can’t even whimper, and it won’t be a bad thing to do the job on him straight away, without wasting time.”</p>
+            <p>No sooner said than done. He goes upstairs, takes his father, who was reduced to a mere sack of bones, carries him down and shoves him into the forge. The poor old man, after two or three kicks of his legs, fell still at once: but instead of turning red he began to hiss like a green log.</p>
+            <p>“Won’t you get it?” the smith says to him. “Just you wait now, my little one!”</p>
+            <p>He threw another basket of charcoal on him, and then some great pulls on the bellows that filled the whole room with sparks. When he thought the moment had come, he sprinkled him well with sand and drew him out with the tongs to hammer him on the anvil. But at the first blows of the hammer, instead of welding, the old man falls to the ground broken, half to each side.</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-6">
+            <p>Then the master, realising he had killed him, fell into such despair that he was on the very point of doing away with himself. But then, remembering what he had seen a little earlier, he dropped his hammers and rods there and then and, all dishevelled, his eyes popping out of his head, ran off after the two wayfarers. A little way down the road he caught up with them.</p>
+            <p>“Hey, good sir! good sir!” he shouted to the Lord.</p>
+            <p>“What do you need, master above all masters?”</p>
+            <p>“Oh, for the love of God,” he said, “come back to my house, for perhaps you can still mend my father. I went to weld him, as you did, and instead I’ve burnt him all over and broken him in two.”</p>
+          </div>
+          <div type="passage" corresp="#pf-mestri-7">
+            <p>“Well, go, go home, and you’ll find him alive,” the Lord answers; “only I warn you that he will be just as old as before. And from now on never again let it into your head that no other craftsman can know something more than you.”</p>
+            <p>The smith went straight home, where he found his father just as the Lord had said. That very day he took down the sign over the smithy door, and in its place he hung up another, more modest one, which said:</p>
+            <p>Every month the moon comes new,</p>
+            <p>every day you learn a thing or two.</p>
+            <note type="translation">“Vieli nali come prime”: the sense is “as old as before”; nali is uncertain.</note>
+          </div>
+        </div>
+      </div>
+      <div type="tale" n="V" xml:id="pf-ustinad" corresp="#great #orgnano">
+        <head type="original" xml:lang="fur">L’ustinàd</head>
+        <head xml:lang="it">L’ostinato</head>
+        <head xml:lang="en">The stubborn man</head>
+        <note type="record"><bibl><title level="j">Pagine friulane</title>, a. V (1892), p. 24, <ref target="https://archive.org/details/pagine-friulane-v.-5-6-1892-1893">Internet Archive</ref></bibl>; ATU <term type="atu" n="830C">If God Wills</term> (assigned 2026). “Chapade su a Orgnan”, collected at Orgnano.</note>
+        <div type="original" xml:lang="fur">
+          <div type="passage" xml:id="pf-ustinad-1" n="V.1" rend="p-start">
+            <p>Une dì il Signor e San Pieri a levin vie par une strade, cuand che a vioderin a vignissi incuintri un, chaminand imburìd, mescedand i brazz come ch’al vess vûd di lâ a chapâ il prin.</p>
+            <p>Cuand ch’al fo dongie:</p>
+            <p>— Dulà vaiso? — ’i disè San Pieri.</p>
+            <p>E chell, cun-t’une vosate:</p>
+            <p>— A Rome ài di lâ.</p>
+            <p>— Ben se Dio orà — rispuindè San Pieri.</p>
+            <p>— Orà o non orà, a Rome ài di lâ — dissal lui.</p>
+            <p>E San Pieri in che volte al Signor:</p>
+            <p>— Chastiinlu, Signor, par ch’al crôd di podè fâ ce ch’al ûl cence di vo.</p>
+            <p>E il Signor:</p>
+            <p>— Chastiilu, Pieri.</p>
+            <p>E San Pieri:</p>
+            <p>— Mùditi ’n crot.</p>
+            <p>E chel om al doventà sùbit un crot e viodùde un poche di aghe t’un fossâl, dongie de strade, al petà un salt dentri.</p>
+            <p>Il Signor e San Pieri a continüàrin a lâ vie chacarànd.</p>
+          </div>
+          <div type="passage" xml:id="pf-ustinad-2" n="V.2" rend="p-start">
+            <p>Vot agns dopo, mo, a tornàrin a passâ par lì; San Pieri a si visà dal om cambiàd in crot, e, voltàd al Signor:</p>
+            <p>— Vino di perdonai? — dissal.</p>
+            <p>— Perdonìn, — rispuindè il Signor.</p>
+            <p>E San Pieri, làd dongie l’aghe, al disè al crot:</p>
+            <p>— Torne om.</p>
+            <p>Al tornà subit om, al petà un salt sula strade, e vie plui imburìd di prime.</p>
+            <p>E San Pieri:</p>
+            <p>— Dulà vaiso po’? — dissal.</p>
+            <p>E l’om:</p>
+            <p>— A Rome ài di lâ.</p>
+            <p>E San Peri: — Ben se Dio orà.</p>
+            <p>E l’om:</p>
+            <p>— Orà o non orà, a Rome ài di lâ.</p>
+            <p>— Nòo! — dissal San Pieri.</p>
+            <p>E chell ch’al ere zà lontan, voltansi:</p>
+            <p>— Soi stàd vot angs crot e m’infoti a stâ anche vot; a Rome ài di lâ.</p>
+            <p>San Pieri al tornave a inrabiàsi, ma ’l Signor ridind a-i disè:</p>
+            <p>— Cuïètiti, Pieri; chell là ’l è un ustinàd e nissun plui lu voltarà.</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="it" resp="#ed2026">
+          <div type="passage" corresp="#pf-ustinad-1">
+            <p>Un giorno il Signore e San Pietro andavano per una strada, quando videro venire loro incontro un uomo che camminava di gran fretta, agitando le braccia come se dovesse arrivare per primo.</p>
+            <p>Quando fu vicino:</p>
+            <p>«Dove andate?» gli disse San Pietro.</p>
+            <p>E quello, con un vocione:</p>
+            <p>«A Roma devo andare.»</p>
+            <p>«Bene, se Dio vorrà,» rispose San Pietro.</p>
+            <p>«Voglia o non voglia, a Roma devo andare,» disse lui.</p>
+            <p>E San Pietro allora al Signore:</p>
+            <p>«Castighiamolo, Signore, perché crede di poter fare quel che vuole senza di voi.»</p>
+            <p>E il Signore:</p>
+            <p>«Castigalo, Pietro.»</p>
+            <p>E San Pietro:</p>
+            <p>«Mutati in rospo.»</p>
+            <p>E quell’uomo diventò subito un rospo e, visto un po’ d’acqua in un fosso vicino alla strada, ci saltò dentro.</p>
+            <p>Il Signore e San Pietro continuarono per la loro strada chiacchierando.</p>
+          </div>
+          <div type="passage" corresp="#pf-ustinad-2">
+            <p>Otto anni dopo tornarono a passare di lì; San Pietro si ricordò dell’uomo cambiato in rospo e, voltatosi al Signore:</p>
+            <p>«Dobbiamo perdonarlo?» disse.</p>
+            <p>«Perdoniamolo,» rispose il Signore.</p>
+            <p>E San Pietro, andato vicino all’acqua, disse al rospo:</p>
+            <p>«Torna uomo.»</p>
+            <p>Tornò subito uomo, fece un salto sulla strada, e via più in fretta di prima.</p>
+            <p>E San Pietro:</p>
+            <p>«Dove andate, dunque?» disse.</p>
+            <p>E l’uomo:</p>
+            <p>«A Roma devo andare.»</p>
+            <p>E San Pietro: «Bene, se Dio vorrà.»</p>
+            <p>E l’uomo:</p>
+            <p>«Voglia o non voglia, a Roma devo andare.»</p>
+            <p>«Nooo!» disse San Pietro.</p>
+            <p>E quello, che era già lontano, voltandosi:</p>
+            <p>«Sono stato otto anni rospo e me ne infischio di starci altri otto; a Roma devo andare.»</p>
+            <p>San Pietro tornava ad arrabbiarsi, ma il Signore ridendo gli disse:</p>
+            <p>«Calmati, Pietro; quello là è un ostinato e nessuno lo farà più cambiare.»</p>
+          </div>
+        </div>
+        <div type="translation" xml:lang="en" resp="#ed2026">
+          <div type="passage" corresp="#pf-ustinad-1">
+            <p>One day the Lord and St Peter were going along a road, when they saw a man coming towards them, walking in a great hurry and swinging his arms as if he had to be first to get somewhere.</p>
+            <p>When he was close:</p>
+            <p>“Where are you going?” St Peter asked him.</p>
+            <p>And he, in a big voice:</p>
+            <p>“To Rome I have to go.”</p>
+            <p>“Very well, God willing,” answered St Peter.</p>
+            <p>“God willing or not, to Rome I have to go,” he said.</p>
+            <p>Then St Peter to the Lord:</p>
+            <p>“Let’s punish him, Lord, for he thinks he can do what he likes without you.”</p>
+            <p>And the Lord:</p>
+            <p>“Punish him, Peter.”</p>
+            <p>And St Peter:</p>
+            <p>“Turn into a toad.”</p>
+            <p>And the man at once became a toad and, seeing a little water in a ditch by the road, jumped into it.</p>
+            <p>The Lord and St Peter went on their way, chatting.</p>
+          </div>
+          <div type="passage" corresp="#pf-ustinad-2">
+            <p>Eight years later they passed that way again; St Peter remembered the man changed into a toad and, turning to the Lord:</p>
+            <p>“Shall we forgive him?” he said.</p>
+            <p>“Let’s forgive him,” answered the Lord.</p>
+            <p>And St Peter, going up to the water, said to the toad:</p>
+            <p>“Be a man again.”</p>
+            <p>At once he was a man again, leapt out onto the road, and off he went faster than before.</p>
+            <p>And St Peter:</p>
+            <p>“Where are you going, then?” he said.</p>
+            <p>And the man:</p>
+            <p>“To Rome I have to go.”</p>
+            <p>And St Peter: “Very well, God willing.”</p>
+            <p>And the man:</p>
+            <p>“God willing or not, to Rome I have to go.”</p>
+            <p>“Nooo!” said St Peter.</p>
+            <p>And the man, already far off, turning round:</p>
+            <p>“I’ve been a toad for eight years and I don’t care if I’m one for another eight; to Rome I have to go.”</p>
+            <p>St Peter was getting angry again, but the Lord said to him, laughing:</p>
+            <p>“Calm down, Peter; that man is a stubborn one, and no one will ever turn him round.”</p>
+          </div>
+        </div>
+      </div>
+    </body>
+    <back>
+    <div type="glossary" xml:lang="fur">
+      <list type="gloss">
+        <item><term>chast</term><gloss xml:lang="it">granaio; qui magazzino, serbatoio, archivio</gloss><gloss xml:lang="en">granary; here storehouse, archive</gloss><bibl>Pagine friulane, note to n. III</bibl></item>
+        <item><term>rieste di ai</term><gloss xml:lang="it">treccia di gambi d’aglio intrecciati per lo stelo</gloss><gloss xml:lang="en">braid of garlic, plaited by the stalks</gloss><bibl>Pagine friulane, note to n. III</bibl></item>
+        <item><term>sarasìn</term><gloss xml:lang="it">grano saraceno</gloss><gloss xml:lang="en">buckwheat</gloss></item>
+        <item><term>forment</term><gloss xml:lang="it">frumento</gloss><gloss xml:lang="en">wheat</gloss></item>
+        <item><term>batài</term><gloss xml:lang="it">correggiati</gloss><gloss xml:lang="en">flails</gloss></item>
+        <item><term>bearz</term><gloss xml:lang="it">cortile</gloss><gloss xml:lang="en">yard</gloss></item>
+        <item><term>stizz</term><gloss xml:lang="it">tizzone</gloss><gloss xml:lang="en">burning brand</gloss></item>
+        <item><term>bule</term><gloss xml:lang="it">pula</gloss><gloss xml:lang="en">chaff</gloss></item>
+        <item><term>stran</term><gloss xml:lang="it">paglia</gloss><gloss xml:lang="en">straw</gloss></item>
+        <item><term>strie</term><gloss xml:lang="it">strega</gloss><gloss xml:lang="en">witch</gloss></item>
+        <item><term>jett</term><term>jèt</term><gloss xml:lang="it">letto</gloss><gloss xml:lang="en">bed</gloss></item>
+        <item><term>parone</term><gloss xml:lang="it">padrona</gloss><gloss xml:lang="en">mistress (of the house)</gloss></item>
+        <item><term>làd</term><gloss xml:lang="it">lago</gloss><gloss xml:lang="en">lake</gloss></item>
+        <item><term>aghe</term><gloss xml:lang="it">acqua</gloss><gloss xml:lang="en">water</gloss></item>
+        <item><term>vechute</term><term>vechùte</term><gloss xml:lang="it">vecchietta</gloss><gloss xml:lang="en">little old woman</gloss></item>
+        <item><term>àgnui</term><gloss xml:lang="it">angeli</gloss><gloss xml:lang="en">angels</gloss></item>
+        <item><term>glesiùte</term><gloss xml:lang="it">chiesetta</gloss><gloss xml:lang="en">little church</gloss></item>
+        <item><term>tangàrs</term><gloss xml:lang="it">tangheri</gloss><gloss xml:lang="en">louts</gloss></item>
+        <item><term>fari</term><gloss xml:lang="it">fabbro</gloss><gloss xml:lang="en">blacksmith</gloss></item>
+        <item><term>farie</term><gloss xml:lang="it">bottega del fabbro</gloss><gloss xml:lang="en">smithy</gloss></item>
+        <item><term>fusine</term><gloss xml:lang="it">fucina</gloss><gloss xml:lang="en">forge</gloss></item>
+        <item><term>incùin</term><term>incuin</term><gloss xml:lang="it">incudine</gloss><gloss xml:lang="en">anvil</gloss></item>
+        <item><term>tanàis</term><gloss xml:lang="it">tenaglie</gloss><gloss xml:lang="en">tongs</gloss></item>
+        <item><term>màj</term><term>maj</term><gloss xml:lang="it">martello</gloss><gloss xml:lang="en">hammer</gloss></item>
+        <item><term>làip</term><gloss xml:lang="it">vasca</gloss><gloss xml:lang="en">trough</gloss></item>
+        <item><term>fol</term><gloss xml:lang="it">mantice</gloss><gloss xml:lang="en">bellows</gloss></item>
+        <item><term>sfuèi</term><gloss xml:lang="it">mantice</gloss><gloss xml:lang="en">bellows</gloss></item>
+        <item><term>saldàn</term><gloss xml:lang="it">sabbia da saldatura</gloss><gloss xml:lang="en">welding sand</gloss></item>
+        <item><term>charvòn</term><gloss xml:lang="it">carbone</gloss><gloss xml:lang="en">charcoal</gloss></item>
+        <item><term>lusìgnis</term><gloss xml:lang="it">faville</gloss><gloss xml:lang="en">sparks</gloss></item>
+        <item><term>soferade</term><term>soferâlu</term><gloss xml:lang="it">bollitura, saldatura a fuoco</gloss><gloss xml:lang="en">forge-weld</gloss></item>
+        <item><term>crot</term><gloss xml:lang="it">rospo</gloss><gloss xml:lang="en">toad</gloss></item>
+        <item><term>fossâl</term><gloss xml:lang="it">fosso</gloss><gloss xml:lang="en">ditch</gloss></item>
+        <item><term>ustinàd</term><gloss xml:lang="it">ostinato</gloss><gloss xml:lang="en">stubborn</gloss></item>
+        <item><term>imburìd</term><gloss xml:lang="it">di fretta</gloss><gloss xml:lang="en">in a hurry</gloss></item>
+        <item><term>mâri</term><gloss xml:lang="it">madre</gloss><gloss xml:lang="en">mother</gloss></item>
+        <item><term>infièr</term><gloss xml:lang="it">inferno</gloss><gloss xml:lang="en">hell</gloss></item>
+        <item><term>cha-dal-diàul</term><gloss xml:lang="it">casa del diavolo, inferno</gloss><gloss xml:lang="en">the devil’s house, hell</gloss></item>
+        <item><term>teremòt</term><gloss xml:lang="it">terremoto</gloss><gloss xml:lang="en">earthquake</gloss></item>
+        <item><term>Pieri</term><gloss xml:lang="it">Pietro</gloss><gloss xml:lang="en">Peter</gloss></item>
+        <item><term>Signor</term><term>Signôr</term><term>Signòr</term><gloss xml:lang="it">Signore</gloss><gloss xml:lang="en">Lord</gloss></item>
+      </list>
+    </div>
+    </back>
+  </text>
+</TEI>

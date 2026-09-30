@@ -2,7 +2,7 @@
    The project's original identity, taken further: a lowercase typewriter wordmark,
    Courier for everything typed by the edition (interface, records, dialect transcriptions),
    a book serif for the Italian translations, white paper cards with the original soft shadow,
-   the original blue and red map markers, and the peach of the original footer as the only tint. */
+   the original blue and red map markers, and a pale tint of the marker blue for highlights (2026; it replaces the original peach). */
 
 :root {
   color-scheme: light;
@@ -12,7 +12,7 @@
   --ink-2: #2e2e2e;
   --muted: #595959;
   --rule: #8c8c8c;
-  --peach: #ffdfb9;           /* original footer colour: highlight and selection */
+  --peach: #e6e6fb;           /* highlight and selection: a pale tint of the Friulian blue (the variable keeps its old name) */
   --friuli: #1f1fe0;          /* original marker blue */
   --sicily: #e0201a;          /* original marker red */
   --shadow: 0 0 10px 1px rgba(0, 0, 0, 0.13);
@@ -369,3 +369,30 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
   .episode.variant { margin-left: 0; }
 }
 @media (forced-colors: active) { .gl { border-bottom-color: CanvasText; } #gl-tip { border: 1px solid CanvasText; } }
+
+/* ---------------------------------------------------------------- 2026: Pagine friulane, parallels */
+.map-svg .marker.related.friuli { fill: var(--friuli); stroke: var(--friuli); }
+.mk.related.friuli { border-color: var(--friuli); background: color-mix(in srgb, var(--friuli) 55%, var(--paper)); }
+.edition-note { margin: 12px 0 0; font-size: 0.875rem; }
+.edition-note a { display: block; padding: 10px 14px; border-left: 3px solid var(--friuli); background: var(--paper-2); text-decoration: none; color: var(--ink); }
+.edition-note a:hover { background: var(--peach); }
+.parallels th[scope="row"] { font-weight: 400; min-width: 16em; }
+.parallels .par-note { display: block; margin-top: 6px; font-size: 0.8125rem; color: var(--muted); line-height: 1.45; }
+.par-list { list-style: none; margin: 0; padding: 0; }
+.par-list li { display: flex; gap: 8px; align-items: baseline; padding: 2px 0; }
+.par-list .mk { width: 10px; height: 10px; border-width: 2px; flex: none; transform: translateY(1px); }
+@media (max-width: 720px) {
+  .parallels thead { display: none; }
+  .parallels, .parallels tbody, .parallels tr, .parallels th, .parallels td { display: block; width: auto; }
+  .parallels tr { padding: 12px 0; border-bottom: 1px dotted var(--rule); }
+  .parallels th[scope="row"] { min-width: 0; padding: 0 0 6px; border: 0; }
+  .parallels td { padding: 4px 0; border: 0; }
+  .parallels td::before { content: attr(data-label); display: block; font-size: 0.75rem; color: var(--muted); }
+}
+
+/* the further tales: small solid dots on the maps and in the cards */
+.map-svg .marker.related { fill-opacity: 1; stroke: var(--paper); stroke-width: 1.5; }
+.map-svg .marker.related.friuli { fill: var(--friuli); stroke: var(--paper); }
+.map-svg .marker.related.sicily { fill: var(--sicily); stroke: var(--paper); }
+.mk.related { width: 9px; height: 9px; border-radius: 50%; border: 0; background: var(--sicily); vertical-align: 1px; }
+.mk.related.friuli { background: var(--friuli); }

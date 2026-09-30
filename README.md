@@ -2,8 +2,9 @@
 
 A digital edition of tales from Italo Calvino’s *Fiabe italiane*, read against the dialect versions he drew on:
 **Gesù e San Pietro in Friuli** (Friulian, from Dolfo Zorzùt’s *Sot la nape…*) and **Gesù e San Pietro in Sicilia**
-(Sicilian, from Giuseppe Pitrè’s *Fiabe, novelle e racconti popolari siciliani*, 1875), with three more
-Jesus-and-Peter tales from the same volume of Pitrè.
+(Sicilian, from Giuseppe Pitrè’s *Fiabe, novelle e racconti popolari siciliani*, 1875), with five more Friulian
+Jesus-and-Peter legends from the magazine *Pagine friulane* (1890–1894) and three more Sicilian tales from the same
+volume of Pitrè.
 
 Site: https://alicepicco333.github.io/digitalian-folktales/
 
@@ -17,6 +18,8 @@ Site: https://alicepicco333.github.io/digitalian-folktales/
 - A structured reading of each episode (itinerary, cast, resolution) and the 2023 measurements, with the Gulpease
   readability index for the Italian translations.
 - A search across tales, episodes and the text of every passage, in the three languages.
+- A table of the tale types told both in Friuli and in Sicily (ATU 753, 774, 804…), linking the passages.
+- On each tale page the map shows only that tale’s places; the home map shows them all.
 
 The second and third Friulian episodes are catalogued but their text is not given: Zorzùt died in 1960, so
 *Sot la nape…* is in copyright in Italy until 2031 (Calvino’s own text until 2055).
@@ -34,5 +37,6 @@ The second and third Friulian episodes are catalogued but their text is not give
 
 The first prototype of the site was made by Nikolai Gorbachev ([n1kg0r](https://github.com/n1kg0r)) in 2023; texts,
 translations and annotation by the project team. The 2026 edition (TEI encoding, English translation, glossary,
-the Pitrè tales, linked data and the redesign) is by Alice Picco. The Pitrè tales were transcribed from the page
-images of the 1875 edition on the [Internet Archive](https://archive.org/details/fiabenovelleera01pitrgoog).
+the Pagine friulane and Pitrè tales, linked data and the redesign) is by Alice Picco. Both were transcribed from page
+images on the Internet Archive: [Pagine friulane](https://archive.org/search?query=title%3A%28pagine+friulane%29) and
+[Pitrè, vol. III](https://archive.org/details/fiabenovelleera01pitrgoog).

@@ -44,7 +44,7 @@
     'fig.transcribed': { en: 'episodes transcribed and translated', it: 'episodi trascritti e tradotti' },
     'fig.segments': { en: 'aligned passages', it: 'passi allineati' },
     'home.s1': { en: 'the tales, by place of collection', it: 'le fiabe, per luogo di raccolta' },
-    'home.s1.note': { en: 'Circles mark the places of collection named in each record, squares the further tales from Pitrè; positions from Wikidata. Select a region to open its tale.', it: 'I cerchi indicano i luoghi di rilevamento registrati in ogni scheda, i quadrati le altre fiabe da Pitrè; posizioni da Wikidata. Seleziona una regione per aprire la fiaba.' },
+    'home.s1.note': { en: 'Circles mark the places of collection named in each record of Calvino’s two tales; small dots the further tales from Pagine friulane and from Pitrè. Positions from Wikidata. Select a region to open its tale.', it: 'I cerchi indicano i luoghi di rilevamento registrati nelle schede delle due fiabe di Calvino; i puntini le altre fiabe dalle Pagine friulane e da Pitrè. Posizioni da Wikidata. Seleziona una regione per aprire la fiaba.' },
     'home.s2': { en: 'how to read the edition', it: 'come leggere l’edizione' },
     'home.t1.h': { en: 'the dialect text', it: 'il testo dialettale' },
     'home.t1.p': { en: 'Typed in Courier, like the field record it comes from: the tale as it was told and written down, in Friulian or Sicilian.', it: 'Battuto in Courier, come la scheda di rilevamento da cui proviene: la fiaba come fu narrata e trascritta, in friulano o in siciliano.' },
@@ -162,6 +162,18 @@
     'nav.pitre': { en: 'more from Pitrè', it: 'altre da Pitrè' },
     'tale.sub.pitre': { en: 'Three more Jesus-and-Peter tales from the volume of Giuseppe Pitrè’s collection that holds the Sicilian source, transcribed in 2026 from the 1875 edition, with Italian and English translations and Pitrè’s own glosses.', it: 'Altre tre fiabe di Gesù e San Pietro dal volume della raccolta di Giuseppe Pitrè che contiene la fonte siciliana, trascritte nel 2026 dall’edizione del 1875, con traduzioni italiana e inglese e le glosse dello stesso Pitrè.' },
     'pitre.also': { en: 'More Jesus-and-Peter tales from the same volume of Pitrè', it: 'Altre fiabe di Gesù e San Pietro dallo stesso volume di Pitrè' },
+    'nav.pf': { en: 'more from Friuli', it: 'altre dal Friuli' },
+    'tick.pf': { en: 'Friulian legends from Pagine friulane', it: 'leggende friulane dalle Pagine friulane' },
+    'tale.sub.pf': { en: 'Five Friulian Jesus-and-Peter legends printed in the magazine Pagine friulane between 1890 and 1894, transcribed in 2026 from the page images, with Italian and English translations. The first is the origin of buckwheat, the subject of the fourth tale of Calvino’s Friulian cycle.', it: 'Cinque leggende friulane di Gesù e San Pietro pubblicate nella rivista Pagine friulane tra il 1890 e il 1894, trascritte nel 2026 dalle immagini delle pagine, con traduzioni italiana e inglese. La prima è l’origine del grano saraceno, l’argomento del quarto racconto del ciclo friulano di Calvino.' },
+    'pf.also': { en: 'Five more Friulian Jesus-and-Peter legends, from Pagine friulane (1890–94)', it: 'Altre cinque leggende friulane di Gesù e San Pietro, dalle Pagine friulane (1890–94)' },
+    'note.grano': { en: '2026: a Friulian telling of the origin of buckwheat, the subject of Il grano saraceno, is in Pagine friulane (1890): read it among the Friulian legends.', it: '2026: una versione friulana dell’origine del grano saraceno, l’argomento de Il grano saraceno, si trova nelle Pagine friulane (1890): leggila tra le leggende friulane.' },
+    'rec.authors': { en: 'Authors', it: 'Autori' },
+    'rec.author': { en: 'Author', it: 'Autore' },
+    'kind.pf': { en: 'Pagine friulane', it: 'Pagine friulane' },
+    'cmp.s5': { en: 'the same tales, north and south', it: 'le stesse fiabe, a nord e a sud' },
+    'cmp.s5.p': { en: 'The tale types that recur across the edition’s five collections, with a Friulian and a Sicilian column. Each title opens the passage.', it: 'I tipi di fiaba che ritornano nelle cinque raccolte dell’edizione, con una colonna friulana e una siciliana. Ogni titolo apre il passo.' },
+    'cmp.type': { en: 'Tale type', it: 'Tipo di fiaba' },
+    'cmp.none': { en: 'no version in the edition', it: 'nessuna versione nell’edizione' },
     'tale.sub.sicily': { en: 'Two stories told in Bagheria in Sicilian, from Giuseppe Pitrè’s collection; both are transcribed here beside their Italian translation.', it: 'Due storie raccontate a Bagheria in siciliano, dalla raccolta di Giuseppe Pitrè; entrambe sono trascritte qui accanto alla loro traduzione italiana.' }
   };
 
@@ -261,13 +273,16 @@
       svg.setAttribute('aria-label', mode === 'atlas' ? t('home.s1') : t('map.suggested'));
       var byCode = {};
       E.tales.forEach(function (tl) { byCode[tl.regionCode] = tl; });
+      var rel = (E.related || []).filter(function (x) { return x.id === focus; })[0];
+      var focusRegion = rel ? rel.regionCode : (tale(focus) || {}).regionCode;
+      var mine = function (id) { return mode === 'atlas' || id === focus; };
       var gBase = s('g', { 'aria-hidden': 'true' });
       var gHi = s('g');
       var prefix = mode === 'atlas' ? 'analysis/' : '';
       fc.features.forEach(function (f) {
         var tl = byCode[f.properties.reg_istat_code];
         var p = s('path', { d: path(f), 'class': 'region' + (tl ? ' on' : '') });
-        if (tl && (mode === 'atlas' || tl.id !== focus)) {
+        if (tl && (mode === 'atlas' || tl.regionCode !== focusRegion || rel)) {
           var a = s('a', { href: prefix + tl.url, 'aria-label': tl.title + ' — ' + tl.region });
           a.appendChild(p); gHi.appendChild(a);
         } else gBase.appendChild(p);
@@ -276,7 +291,7 @@
       var gPts = s('g', { 'aria-hidden': 'true' });
       var r = (mode === 'atlas' ? 12 : 9) * (k > 1.3 ? 1.25 : 1);
       E.tales.forEach(function (tl) {
-        tl.places.forEach(function (pl) {
+        if (mine(tl.id)) tl.places.forEach(function (pl) {
           var xy = proj([pl.lon, pl.lat]);
           gPts.appendChild(s('circle', { cx: xy[0], cy: xy[1], r: r, 'class': 'marker ' + tl.id }));
         });
@@ -288,16 +303,16 @@
         gPts.appendChild(s('path', { d: 'M' + ax + ',' + ay + ' L' + (lx - 6) + ',' + (ly - fs * 0.35), 'class': 'leader' }));
         var name = mode === 'atlas' ? (tl.id === 'friuli' && k > 1.3 ? 'Friuli' : tl.region) : (tl.id === 'friuli' ? 'Friuli' : 'Sicilia');
         gPts.appendChild(s('text', { x: lx, y: ly, 'class': 'label', style: 'font-size:' + fs + 'px;stroke-width:' + (4 * k) + 'px', text: name }));
-        var subs = mode === 'atlas' ? (k < 1.3 ? tl.places.map(function (p) { return p.name; }) : []) : (tl.id === focus ? [t('map.here')] : []);
-        if (mode === 'atlas' && k < 1.3 && tl.id === 'sicily') (E.related || []).forEach(function (rl) { subs.push('▪ ' + rl.places.map(function (p) { return p.name.replace(/\s*\(.*\)$/, ''); }).join(', ')); });
+        var subs = mode === 'atlas' ? (k < 1.3 ? tl.places.map(function (p) { return p.name; }) : []) : (tl.regionCode === focusRegion ? [t('map.here')] : []);
+        if (mode === 'atlas' && k < 1.3) (E.related || []).forEach(function (rl) { if (rl.regionCode === tl.regionCode) subs.push('• ' + rl.short); });
         subs.forEach(function (sub, i) {
           gPts.appendChild(s('text', { x: lx, y: ly + fs * (1.15 + i * 1.05), 'class': 'label sub', style: 'font-size:' + (fs * 0.85) + 'px;stroke-width:' + (4 * k) + 'px', text: sub }));
         });
       });
       (E.related || []).forEach(function (rl) {
-        rl.places.forEach(function (pl) {
-          var xy = proj([pl.lon, pl.lat]), q = r * 0.8;
-          gPts.appendChild(s('rect', { x: xy[0] - q, y: xy[1] - q, width: 2 * q, height: 2 * q, 'class': 'marker related' }));
+        if (mine(rl.id)) rl.places.forEach(function (pl) {
+          var xy = proj([pl.lon, pl.lat]);
+          gPts.appendChild(s('circle', { cx: xy[0], cy: xy[1], r: Math.max(3.5, r * 0.38), 'class': 'marker related ' + rl.marker }));
         });
       });
       svg.appendChild(gPts);
@@ -345,23 +360,45 @@
     });
   }
 
-  function renderIndexMore(el) {
-    var C = window.CORPUS && window.CORPUS['pitre-iii'];
+  function renderParallels(el) {
+    el.innerHTML = '';
+    var cell = function (arr, mk) {
+      var td = h('td', { 'data-label': mk === 'friuli' ? 'Friuli' : 'Sicilia' });
+      if (!arr.length) { td.appendChild(h('span', { 'class': 'muted', text: t('cmp.none') })); return td; }
+      var ul = h('ul', { 'class': 'par-list' });
+      arr.forEach(function (x) { ul.appendChild(h('li', null, [h('span', { 'class': 'mk ' + mk, 'aria-hidden': 'true' }), h('a', { href: x[1], lang: mk === 'friuli' ? 'fur' : 'scn', text: x[0] })])); });
+      td.appendChild(ul);
+      return td;
+    };
+    var tb = h('tbody');
+    (E.parallels || []).forEach(function (p) {
+      var th = h('th', { scope: 'row' }, [h('span', { 'class': 'atu', text: p.atu }), ' ', p.label[lang]]);
+      if (p.note) th.appendChild(h('span', { 'class': 'par-note', text: p.note[lang] }));
+      tb.appendChild(h('tr', null, [th, cell(p.friuli, 'friuli'), cell(p.sicily, 'sicily')]));
+    });
+    el.appendChild(h('div', { 'class': 'table-wrap' }, [h('table', { 'class': 'record-table parallels' }, [
+      h('thead', null, [h('tr', null, [h('th', { scope: 'col', text: t('cmp.type') }), h('th', { scope: 'col', text: 'Friuli' }), h('th', { scope: 'col', text: 'Sicilia' })])]),
+      tb
+    ])]));
+  }
+  function renderIndexMore(el) { renderIndexCard(el, 'friuli-pf', 'pagine-friulane.html', 'friuli-venezia giulia · pagine friulane', 'San Pieri nelle Pagine friulane', '03', 'friuli'); renderIndexCard(el, 'pitre-iii', 'pitre.html', 'sicilia · pitrè, vol. iii', 'San Pietro in Pitrè, vol. III', '04', 'sicily'); }
+  function renderIndexCard(el, cid, page, kicker, title, no, mk) {
+    var C = window.CORPUS && window.CORPUS[cid];
     if (!C) return;
     var tales = C.units.filter(function (u) { return u.kind === 'tale'; });
     var n = C.units.reduce(function (a, u) { return a + u.passages.length; }, 0);
     el.appendChild(h('li', { 'class': 'card' }, [
-      h('div', { 'class': 'card-head' }, [h('span', null, [h('span', { 'class': 'mk related', 'aria-hidden': 'true' }), 'sicilia · pitrè, vol. iii']), h('span', { 'class': 'muted', text: t('card.no', { n: '03' }) })]),
+      h('div', { 'class': 'card-head' }, [h('span', null, [h('span', { 'class': 'mk related ' + mk, 'aria-hidden': 'true' }), kicker]), h('span', { 'class': 'muted', text: t('card.no', { n: no }) })]),
       h('div', { 'class': 'card-body' }, [
-        h('h3', { lang: 'it' }, [h('a', { href: 'analysis/pitre.html', text: 'San Pietro in Pitrè, vol. III' })]),
+        h('h3', { lang: 'it' }, [h('a', { href: 'analysis/' + page, text: title })]),
         h('dl', { 'class': 'fields' }, [
           h('dt', { text: t('rec.dialect') }), h('dd', { text: C.dialect[lang] }),
-          h('dt', { text: t('entry.episodes') }), h('dd', { lang: 'scn', text: tales.map(function (u) { return u.n + ' ' + u.heads.orig; }).join(' · ') }),
+          h('dt', { text: t('entry.episodes') }), h('dd', { lang: C.lang, text: tales.map(function (u) { return u.n + ' ' + u.heads.orig; }).join(' · ') }),
           h('dt', { text: t('entry.atu') }), h('dd', { 'class': 'num', text: tales.map(function (u) { return u.atu.code; }).filter(function (x, i, a) { return a.indexOf(x) === i; }).join(' · ') }),
           h('dt', { text: t('rec.place') }), h('dd', { text: C.places.map(function (p) { return p.name; }).join(' · ') }),
           h('dt', { text: t('rec.passages') }), h('dd', { text: String(n) })
         ]),
-        h('div', { 'class': 'card-links' }, [h('a', { href: 'analysis/pitre.html', text: t('entry.read') })])
+        h('div', { 'class': 'card-links' }, [h('a', { href: 'analysis/' + page, text: t('entry.read') })])
       ])
     ]));
   }
@@ -688,6 +725,7 @@
       });
       body.appendChild(note);
     }
+    if (id === 'friuli') body.appendChild(h('p', { 'class': 'edition-note' }, [h('a', { href: 'pagine-friulane.html#pf-sarasin', text: t('note.grano') })]));
     if (C.heads && C.heads.orig) {
       body.appendChild(h('div', { 'class': 'work-title' }, [
         h('h2', { lang: dLang, text: C.heads.orig }),
@@ -702,7 +740,8 @@
       var sec = h('section', { 'class': 'episode' + (u.kind === 'variant' ? ' variant' : ''), id: anchor, 'aria-labelledby': anchor + '-h' });
       var head = h('div', { 'class': 'episode-head' });
       var atu = u.atu || (ep && ep.atu);
-      var kick = u.kind === 'episode' ? t('tale.episode', { n: u.n }) : u.kind === 'variant' ? t('tale.variant') : t('tale.pitre.n', { n: u.n });
+      var yr = /\((\d{4})\)/.exec(u.record[0] || '');
+      var kick = u.kind === 'episode' ? t('tale.episode', { n: u.n }) : u.kind === 'variant' ? t('tale.variant') : id === 'friuli-pf' ? 'Pagine friulane' + (yr ? ', ' + yr[1] : '') : t('tale.pitre.n', { n: u.n });
       head.appendChild(h('div', { 'class': 'ep-no', text: kick + (atu ? ' · ATU ' + atu.code + (u.atu ? ' ' + atu.label : '') : '') }));
       head.appendChild(h('h3', { id: anchor + '-h', lang: u.heads.orig ? dLang : 'it', text: u.heads.orig || u.heads.it }));
       head.appendChild(h('p', { 'class': 't-title' }, [
@@ -718,7 +757,7 @@
       } else {
         u.refs.forEach(function (r) {
           var pe = person(r), pl = place(r);
-          if (pe) meta.appendChild(h('span', { text: (/collector/.test(pe.role) ? t('rec.collector') : t('rec.narrator')) + ': ' + pe.name }));
+          if (pe) meta.appendChild(h('span', { text: (/collector/.test(pe.role) ? t('rec.collector') : /author/.test(pe.role) ? t('rec.author') : t('rec.narrator')) + ': ' + pe.name }));
           if (pl) meta.appendChild(h('span', { text: t('rec.place') + ': ' + pl.name }));
         });
         if (u.record.length) meta.appendChild(h('span', { lang: 'it', text: u.record[0].replace(/; ATU.*$/, '') }));
@@ -785,16 +824,19 @@
     el.className = 'card record-card';
     var list = function (arr) { var d = h('dd'); arr.forEach(function (x, i) { if (i) d.appendChild(document.createTextNode(' · ')); d.appendChild(x); }); return d; };
     var tales = C.units.filter(function (u) { return u.kind === 'tale'; });
-    el.appendChild(h('div', { 'class': 'card-head' }, [h('span', null, [h('span', { 'class': 'mk related', 'aria-hidden': 'true' }), t('tale.record').toLowerCase()]), h('span', { 'class': 'muted', text: C.lang })]));
+    var mk = C.lang === 'fur' ? 'friuli' : 'sicily';
+    el.appendChild(h('div', { 'class': 'card-head' }, [h('span', null, [h('span', { 'class': 'mk related ' + mk, 'aria-hidden': 'true' }), t('tale.record').toLowerCase()]), h('span', { 'class': 'muted', text: C.lang })]));
+    var ofRole = function (rx) { return C.persons.filter(function (p) { return rx.test(p.role); }).map(function (p) { return wdLink(p.wikidata, p.name); }); };
+    var rows = [];
+    [[/author/, 'rec.authors'], [/narrator/, 'rec.narrators'], [/collector/, 'rec.collector']].forEach(function (r) { var l = ofRole(r[0]); if (l.length) rows.push(h('dt', { text: t(r[1]) }), list(l)); });
     el.appendChild(h('div', { 'class': 'card-body' }, [
       h('dl', { 'class': 'fields' }, [
         h('dt', { text: t('rec.dialect') }), h('dd', { text: C.dialect[lang] }),
         h('dt', { text: t('rec.place') }), list(C.places.map(function (p) { return wdLink(p.wikidata[0], p.name); })),
-        h('dt', { text: t('rec.narrators') }), list(C.persons.filter(function (p) { return !/collector/.test(p.role); }).map(function (p) { return wdLink(p.wikidata, p.name); })),
-        h('dt', { text: t('rec.collector') }), list(C.persons.filter(function (p) { return /collector/.test(p.role); }).map(function (p) { return wdLink(p.wikidata, p.name); })),
+      ].concat(rows, [
         h('dt', { text: t('entry.atu') }), h('dd', { 'class': 'num', text: tales.map(function (u) { return u.atu ? u.atu.code : ''; }).filter(function (x, i, a) { return x && a.indexOf(x) === i; }).join(' · ') }),
         h('dt', { text: t('rec.tei') }), h('dd', null, [h('a', { href: base + C.file, text: C.file.replace('tei/', '') })])
-      ]),
+      ])),
       h('h2', { 'class': 'card-sub', text: t('tale.contents').toLowerCase() }),
       h('ol', null, C.units.map(function (u) {
         return h('li', null, [h('span', { 'class': 'muted', text: u.kind === 'variant' ? '↳' : u.n }), h('a', { href: '#' + u.id, lang: 'scn', text: u.heads.orig })]);
@@ -835,12 +877,13 @@
   function passageIndex() {
     var items = [];
     Object.keys(window.CORPUS || {}).forEach(function (cid) {
-      var C = window.CORPUS[cid], tl = tale(cid), page = tl ? 'analysis/' + tl.url : 'analysis/pitre.html';
+      var C = window.CORPUS[cid], tl = tale(cid), page = tl ? 'analysis/' + tl.url : 'analysis/' + ({ 'friuli-pf': 'pagine-friulane.html', 'pitre-iii': 'pitre.html' })[cid];
+      var kindName = cid === 'friuli-pf' ? t('kind.pf') : t('kind.pitre');
       C.units.forEach(function (u) {
-        if (!tl && u.kind !== 'variant') items.push({ label: u.heads.orig + ' / ' + u.heads.it, kind: t('kind.pitre') + ' · n. ' + u.n, href: page + '#' + u.id, hay: fold([u.heads.orig, u.heads.it, u.heads.en, u.n, u.atu ? 'ATU ' + u.atu.code + ' ' + u.atu.label : ''].join(' ')) });
+        if (!tl && u.kind !== 'variant') items.push({ label: u.heads.orig + ' / ' + u.heads.it, kind: kindName + ' · ' + u.n, href: page + '#' + u.id, hay: fold([u.heads.orig, u.heads.it, u.heads.en, u.n, u.atu ? 'ATU ' + u.atu.code + ' ' + u.atu.label : ''].join(' ')) });
         u.passages.forEach(function (p) {
           var all = p.orig.concat(p.it, p.en).join(' ');
-          items.push({ label: (u.heads.orig || u.heads.it), kind: (tl ? tl.region : t('kind.pitre')) + ' · ' + t('kind.passage', { n: p.n }), href: page + '#s-' + p.n.replace(/\s+/g, '').replace(/\./g, '-'), hay: fold(all), text: all, passage: true });
+          items.push({ label: (u.heads.orig || u.heads.it), kind: (tl ? tl.region : kindName) + ' · ' + t('kind.passage', { n: p.n }), href: page + '#s-' + p.n.replace(/\s+/g, '').replace(/\./g, '-'), hay: fold(all), text: all, passage: true });
         });
       });
     });
@@ -910,6 +953,8 @@
     var seg = document.getElementById('fig-segments'), more = document.getElementById('fig-more');
     if (seg) seg.textContent = n('friuli') + n('sicily');
     if (more && C['pitre-iii']) more.textContent = C['pitre-iii'].units.filter(function (u) { return u.kind === 'tale'; }).length;
+    var pf = document.getElementById('fig-pf');
+    if (pf && C['friuli-pf']) pf.textContent = C['friuli-pf'].units.length;
   })();
   function renderDynamic() {
     document.querySelectorAll('[data-tale-index]').forEach(function (el) { renderIndex(el); renderIndexMore(el); });
@@ -919,6 +964,7 @@
     document.querySelectorAll('[data-tale-metrics]').forEach(renderTaleMetrics);
     document.querySelectorAll('[data-sidebar]').forEach(renderSidebar);
     document.querySelectorAll('[data-corpus-sidebar]').forEach(renderCorpusSidebar);
+    document.querySelectorAll('[data-parallels]').forEach(renderParallels);
   }
   applyLang();
   renderDynamic();
