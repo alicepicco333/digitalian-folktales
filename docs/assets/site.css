@@ -391,8 +391,8 @@ details.table-view summary { cursor: pointer; padding: 6px 0; }
 }
 
 /* the further tales: small solid dots on the maps and in the cards */
-.map-svg .marker.related { fill-opacity: 1; stroke: var(--paper); stroke-width: 1.5; }
-.map-svg .marker.related.friuli { fill: var(--friuli); stroke: var(--paper); }
-.map-svg .marker.related.sicily { fill: var(--sicily); stroke: var(--paper); }
+.map-svg .marker.related { fill-opacity: 1; stroke: none; }
+.map-svg .marker.related.friuli { fill: var(--friuli); stroke: none; }
+.map-svg .marker.related.sicily { fill: var(--sicily); stroke: none; }
 .mk.related { width: 9px; height: 9px; border-radius: 50%; border: 0; background: var(--sicily); vertical-align: 1px; }
 .mk.related.friuli { background: var(--friuli); }
